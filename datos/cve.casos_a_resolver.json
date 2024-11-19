@@ -1,0 +1,3338 @@
+[
+  {
+    "id": "CVE-2022-45842",
+    "assigner": "Patchstack",
+    "title": "WordPress WP ULike Plugin <= 4.6.4 is vulnerable to Race Condition vulnerability",
+    "description": "Unauth. Race Condition vulnerability in\u00a0WP ULike Plugin <= 4.6.4 on\u00a0WordPress allows attackers to increase/decrease rating scores.",
+    "affected_products": [
+      "TechnoWich::WP ULike (WordPress plugin)"
+    ],
+    "cwe": "CWE-367",
+    "keywords": [
+      "decrease rating scores",
+      "WordPress WP ULike Plugin",
+      "WordPress",
+      "Unauth",
+      "WP",
+      "<= 4.6.4",
+      "Race Condition vulnerability Unauth",
+      "ULike Plugin",
+      "attackers",
+      "Race Condition vulnerability"
+    ],
+    "metric": {
+      "score": 5.3,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2019-16027",
+    "assigner": "cisco",
+    "title": "Cisco IOS XR Software Intermediate System\u2013to\u2013Intermediate System Denial of Service Vulnerability",
+    "description": "A vulnerability in the implementation of the Intermediate System&ndash;to&ndash;Intermediate System (IS&ndash;IS) routing protocol functionality in Cisco IOS XR Software could allow an authenticated, remote attacker to cause a denial of service (DoS) condition in the IS&ndash;IS process. The vulnerability is due to improper handling of a Simple Network Management Protocol (SNMP) request for specific Object Identifiers (OIDs) by the IS&ndash;IS process. An attacker could exploit this vulnerability by sending a crafted SNMP request to the affected device. A successful exploit could allow the attacker to cause a DoS condition in the IS&ndash;IS process.",
+    "affected_products": [
+      "Cisco::Cisco IOS XR Software"
+    ],
+    "cwe": "CWE-20",
+    "keywords": [
+      "IS&ndash;IS",
+      "a crafted SNMP request",
+      "a DoS condition",
+      "a denial",
+      "an authenticated, remote attacker",
+      "Cisco IOS",
+      "An attacker",
+      "DoS",
+      "Cisco IOS XR Software Intermediate System",
+      "(SNMP",
+      "the Intermediate System&ndash;to&ndash;Intermediate System",
+      "improper handling",
+      "Intermediate System Denial",
+      "OIDs",
+      "the implementation",
+      "this vulnerability",
+      "specific Object Identifiers",
+      "protocol functionality",
+      "the attacker",
+      "Cisco IOS XR Software",
+      "the affected device",
+      "SNMP",
+      "A successful exploit",
+      "The vulnerability",
+      "service (DoS) condition",
+      "Service Vulnerability A vulnerability",
+      "the IS&ndash;IS process",
+      "a Simple Network Management Protocol"
+    ],
+    "metric": {
+      "score": 7.7,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2022-36394",
+    "assigner": "Patchstack",
+    "title": "WordPress Contest Gallery plugin <= 17.0.4 - Authenticated SQL Injection (SQLi) vulnerability",
+    "description": "Authenticated (author+) SQL Injection (SQLi) vulnerability in Contest Gallery plugin <= 17.0.4 at WordPress.",
+    "affected_products": [
+      "Contest Gallery::Contest Gallery (WordPress plugin)"
+    ],
+    "cwe": "CWE-89",
+    "keywords": [
+      "Contest Gallery plugin",
+      "SQL Injection",
+      "Contest Gallery",
+      "SQLi",
+      "WordPress",
+      "Authenticated (author+) SQL Injection",
+      "WordPress Contest Gallery plugin",
+      "vulnerability"
+    ],
+    "metric": {
+      "score": 7.6,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2022-39055",
+    "assigner": "twcert",
+    "title": "Changing Information Technology Inc. RAVA certificate validation system - Server-Side Request Forgery (SSRF)",
+    "description": "RAVA certificate validation system has inadequate filtering for URL parameter. An unauthenticated remote attacker can perform SSRF attack to discover internal network topology base on query response.",
+    "affected_products": [
+      "Changing Information Technology Inc.::RAVA certificate validation system"
+    ],
+    "cwe": "CWE-918",
+    "keywords": [
+      "URL parameter",
+      "RAVA certificate validation system",
+      "Information Technology Inc.",
+      "query response",
+      "Changing Information Technology Inc.",
+      "(SSRF) RAVA certificate validation system",
+      "Server-Side Request Forgery",
+      "inadequate filtering",
+      "SSRF attack",
+      "An unauthenticated remote attacker",
+      "RAVA",
+      "internal network topology base"
+    ],
+    "metric": {
+      "score": 5.3,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2022-22173",
+    "assigner": "juniper",
+    "title": "Junos OS: CRL failing to download causes a memory leak and ultimately a DoS",
+    "description": "A Missing Release of Memory after Effective Lifetime vulnerability in the Public Key Infrastructure daemon (pkid) of Juniper Networks Junos OS allows an unauthenticated networked attacker to cause Denial of Service (DoS). In a scenario where Public Key Infrastructure (PKI) is used in combination with Certificate Revocation List (CRL), if the CRL fails to download the memory allocated to store the CRL is not released. Repeated occurrences will eventually consume all available memory and lead to an inoperable state of the affected system causing a DoS. This issue affects Juniper Networks Junos OS: All versions prior to 18.3R3-S6; 18.4 versions prior to 18.4R2-S9, 18.4R3-S10; 19.1 versions prior to 19.1R2-S3, 19.1R3-S7; 19.2 versions prior to 19.2R1-S8, 19.2R3-S4; 19.3 versions prior to 19.3R3-S4; 19.4 versions prior to 19.4R2-S5, 19.4R3-S5; 20.1 versions prior to 20.1R3-S1; 20.2 versions prior to 20.2R3-S2; 20.3 versions prior to 20.3R3-S1; 20.4 versions prior to 20.4R3; 21.1 versions prior to 21.1R2, 21.1R3; 21.2 versions prior to 21.2R1-S1, 21.2R2. This issue can be observed by monitoring the memory utilization of the pkid process via: root@jtac-srx1500-r2003> show system processes extensive | match pki 20931 root 20 0 733M 14352K select 0:00 0.00% pkid which increases over time: root@jtac-srx1500-r2003> show system processes extensive | match pki 22587 root 20 0 901M 181M select 0:03 0.00% pkid",
+    "affected_products": [
+      "Juniper Networks::Junos OS"
+    ],
+    "cwe": "CWE-401",
+    "keywords": [
+      "the pkid process",
+      "Repeated occurrences",
+      "18.4 versions",
+      "extensive | match",
+      "Service",
+      "an unauthenticated networked attacker",
+      "20.1R3-S1",
+      "Denial",
+      "Denial of Service",
+      "a DoS.",
+      "20.4 versions",
+      "0:00 0.00% pkid",
+      "which",
+      "the memory utilization",
+      "combination",
+      "DoS",
+      "19.1R3-S7",
+      "21.2 versions",
+      "a memory leak",
+      "18.4R3-S10",
+      "19.4 versions",
+      "Certificate Revocation List",
+      "19.2 versions",
+      "19.4R3-S5",
+      "time",
+      "the CRL",
+      "20931 root",
+      "All versions",
+      "all available memory",
+      "Juniper Networks Junos OS",
+      "18.3R3-S6",
+      "extensive | match pki",
+      "ultimately a DoS A Missing Release",
+      "20.2 versions",
+      "Junos OS",
+      "19.1R2-S3",
+      "Memory",
+      "22587 root",
+      "19.2R1-S8",
+      "20.2R3-S2",
+      "Juniper Networks Junos",
+      "19.1 versions",
+      "20.3R3-S1",
+      "This issue",
+      "0:03 0.00% pkid",
+      "21.2R1-S1",
+      "18.4R2-S9",
+      "19.2R3-S4",
+      "20.3 versions",
+      "21.1 versions",
+      "Junos",
+      "a scenario",
+      "19.3R3-S4",
+      "the Public Key Infrastructure daemon",
+      "PKI",
+      "19.3 versions",
+      "r2003",
+      "the Public Key Infrastructure",
+      "Public Key Infrastructure",
+      "20.1 versions",
+      "the affected system",
+      "19.4R2-S5",
+      "Effective Lifetime vulnerability",
+      "lead",
+      "an inoperable state",
+      "the memory",
+      "CRL"
+    ],
+    "metric": {
+      "score": 7.5,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2021-32986",
+    "assigner": "icscert",
+    "title": "Automation Direct CLICK PLC CPU Modules Authentication Bypass Using an Alternate Path or Channel",
+    "description": "After Automation Direct CLICK PLC CPU Modules: C0-1x CPUs with firmware prior to v3.00 is unlocked by an authorized user, the unlocked state does not timeout. If the programming software is interrupted, the PLC remains unlocked. All subsequent programming connections are allowed without authorization. The PLC is only relocked by a power cycle, or when the programming software disconnects correctly.",
+    "affected_products": [
+      "Automation Direct::CLICK PLC CPU Modules: C0-1x CPUs"
+    ],
+    "cwe": "CWE-288",
+    "keywords": [
+      "C0-1x CPUs",
+      "an Alternate Path",
+      "Automation Direct",
+      "an authorized user",
+      "PLC CPU Modules Authentication Bypass",
+      "Channel",
+      "PLC",
+      "v3.00",
+      "the unlocked state",
+      "All subsequent programming connections",
+      "authorization",
+      "PLC CPU Modules",
+      "the PLC",
+      "the programming software",
+      "Automation Direct CLICK PLC",
+      "firmware",
+      "The PLC",
+      "a power cycle"
+    ],
+    "metric": {
+      "score": 9.8,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2022-25617",
+    "assigner": "Patchstack",
+    "title": "WordPress Code Snippets plugin <= 2.14.3 - Reflected Cross-Site Scripting (XSS) vulnerability",
+    "description": "Reflected Cross-Site Scripting (XSS) vulnerability in Code Snippets plugin <= 2.14.3 at WordPress via &orderby vulnerable parameter.",
+    "affected_products": [
+      "Code Snippets Pro::Code Snippets (WordPress plugin)"
+    ],
+    "cwe": "CWE-79",
+    "keywords": [
+      "Code Snippets plugin",
+      "orderby vulnerable parameter",
+      "WordPress",
+      "Reflected Cross-Site Scripting",
+      "= 2.14.3 - Reflected Cross-Site Scripting (XSS) vulnerability",
+      "XSS",
+      "2.14.3 - Reflected Cross-Site",
+      "WordPress Code Snippets",
+      "vulnerability",
+      "Cross-Site Scripting"
+    ],
+    "metric": {
+      "score": 4.7,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2021-42081",
+    "assigner": "DIVD",
+    "title": "Authenticated Remote Command Execution vulnerability in OSNEXUS QuantaStor before 6.0.0.355",
+    "description": "An authenticated administrator is allowed to remotely execute arbitrary shell commands via the API.",
+    "affected_products": [
+      "OSNEXUS::QuantaStor"
+    ],
+    "cwe": "CWE-78",
+    "keywords": [
+      "An authenticated administrator",
+      "API",
+      "Authenticated Remote Command Execution vulnerability",
+      "the API",
+      "Authenticated Remote Command",
+      "OSNEXUS QuantaStor",
+      "arbitrary shell commands"
+    ],
+    "metric": {
+      "score": 9.1,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2022-24831",
+    "assigner": "GitHub_M",
+    "title": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') in OpenClinica",
+    "description": "OpenClinica is an open source software for Electronic Data Capture (EDC) and Clinical Data Management (CDM). Versions prior to 3.16.1 are vulnerable to SQL injection due to the use of string concatenation to create SQL queries instead of prepared statements. No known workarounds exist. This issue has been patched in 3.16.1, 3.15.9, 3.14.1, and 3.13.1 and users are advised to upgrade.",
+    "affected_products": [
+      "OpenClinica::OpenClinica"
+    ],
+    "cwe": "CWE-89",
+    "keywords": [
+      "No known workarounds",
+      "the use",
+      "Clinical Data Management",
+      "Versions",
+      "SQL queries",
+      "users",
+      "Electronic Data Capture",
+      "SQL Injection",
+      "prepared statements",
+      "This issue",
+      "OpenClinica OpenClinica",
+      "string concatenation",
+      "SQL Command",
+      "an open source software",
+      "Special Elements",
+      "Improper Neutralization of Special Elements",
+      "an SQL Command",
+      "SQL",
+      "EDC",
+      "SQL injection",
+      "CDM",
+      "Improper Neutralization"
+    ],
+    "metric": {
+      "score": 8.3,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2021-32532",
+    "assigner": "twcert",
+    "title": "QSAN XEVO - Path Traversal",
+    "description": "Path traversal vulnerability in back-end analysis function in QSAN XEVO allows remote attackers to download arbitrary files without permissions. The referred vulnerability has been solved with the updated version of QSAN XEVO v2.1.0.",
+    "affected_products": [
+      "QSAN::XEVO"
+    ],
+    "cwe": "CWE-22",
+    "keywords": [
+      "Path Traversal Path",
+      "QSAN XEVO - Path Traversal Path",
+      "permissions",
+      "arbitrary files",
+      "The referred vulnerability",
+      "QSAN XEVO",
+      "back-end analysis function",
+      "QSAN XEVO v2.1.0",
+      "the updated version",
+      "remote attackers"
+    ],
+    "metric": {
+      "score": 7.5,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2022-40514",
+    "assigner": "qualcomm",
+    "title": "Buffer copy without checking size of input in WLAN Firmware",
+    "description": "Memory corruption due to buffer copy without checking the size of input in WLAN Firmware while processing CCKM IE in reassoc response frame.",
+    "affected_products": [
+      "Qualcomm, Inc.::Snapdragon"
+    ],
+    "cwe": "CWE-120",
+    "keywords": [
+      "CCKM",
+      "input",
+      "the size",
+      "WLAN Firmware Memory corruption",
+      "Buffer copy",
+      "buffer copy",
+      "CCKM IE",
+      "reassoc response frame",
+      "WLAN Firmware",
+      "size"
+    ],
+    "metric": {
+      "score": 9.8,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2021-31368",
+    "assigner": "juniper",
+    "title": "Junos OS: EX2300 Series, EX3400 Series, and ACX710 might become unresponsive if the out-of-band management port receives a flood of traffic",
+    "description": "An Uncontrolled Resource Consumption vulnerability in the kernel of Juniper Networks JUNOS OS allows an unauthenticated network based attacker to cause 100% CPU load and the device to become unresponsive by sending a flood of traffic to the out-of-band management ethernet port. Continued receipted of a flood will create a sustained Denial of Service (DoS) condition. Once the flood subsides the system will recover by itself. An indication that the system is affected by this issue would be that kernel and netisr process are shown to be using a lot of CPU cycles like in the following example output: user@host> show system processes extensive ... PID USERNAME PRI NICE SIZE RES STATE C TIME WCPU COMMAND 16 root -72 - 0K 304K WAIT 1 839:40 88.96% intr{swi1: netisr 0} 0 root 97 - 0K 160K RUN 1 732:43 87.99% kernel{bcm560xgmac0 que} This issue affects Juniper Networks JUNOS OS on EX2300 Series, EX3400 Series, and ACX710: All versions prior to 18.1R3-S13; 18.2 versions prior to 18.2R3-S8; 18.3 versions prior to 18.3R3-S5; 18.4 versions prior to 18.4R2-S8, 18.4R3-S9; 19.1 versions prior to 19.1R3-S5; 19.2 versions prior to 19.2R1-S7, 19.2R3-S3; 19.3 versions prior to 19.3R2-S6, 19.3R3-S2; 19.4 versions prior to 19.4R1-S4, 19.4R3-S3; 20.1 versions prior to 20.1R2-S2, 20.1R3; 20.2 versions prior to 20.2R3; 20.3 versions prior to 20.3R2-S1, 20.3R3; 20.4 versions prior to 20.4R2.",
+    "affected_products": [
+      "Juniper Networks::Junos OS"
+    ],
+    "cwe": "CWE-400",
+    "keywords": [
+      "19.1R3-S5",
+      "18.4 versions",
+      "19.3R2-S6",
+      "100% CPU load",
+      "20.1R2-S2, 20.1R3; 20.2 versions",
+      "Service (DoS) condition",
+      "a flood",
+      "18.4R2-S8",
+      "20.3R2-S1",
+      "Denial of Service",
+      "20.4 versions",
+      "19.2R3-S3",
+      "that kernel and netisr process",
+      "DoS",
+      "ACX710",
+      "CPU cycles",
+      "19.4 versions",
+      "19.2 versions",
+      "Juniper Networks",
+      "18.4R3-S9",
+      "All versions",
+      "JUNOS",
+      "itself",
+      "18.2R3-S8",
+      "PRI NICE SIZE",
+      "Junos OS",
+      "the kernel",
+      "18.2 versions",
+      "18.3 versions",
+      "the system",
+      "19.4R1-S4",
+      "RES STATE C TIME",
+      "a lot",
+      "19.1 versions",
+      "EX3400 Series",
+      "This issue",
+      "18.3R3-S5",
+      "19.4R3-S3",
+      "K",
+      "An indication",
+      "band",
+      "attacker",
+      "20.3 versions",
+      "Junos",
+      "this issue",
+      "Juniper Networks JUNOS OS",
+      "traffic",
+      "EX2300 Series",
+      "the flood",
+      "the following example",
+      "19.2R1-S7",
+      "19.3R3-S2",
+      "19.3 versions",
+      "20.1 versions",
+      "CPU",
+      "a sustained Denial",
+      "An Uncontrolled Resource Consumption vulnerability",
+      "the device",
+      "user@host> show system processes"
+    ],
+    "metric": {
+      "score": 7.5,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2021-43028",
+    "assigner": "adobe",
+    "title": "Adobe Premiere Rush M4A File Memory Corruption Remote Code Execution",
+    "description": "Adobe Premiere Rush version 1.5.16 (and earlier) is affected by a memory corruption vulnerability due to insecure handling of a malicious M4A file, potentially resulting in arbitrary code execution in the context of the current user. User interaction is required to exploit this vulnerability.",
+    "affected_products": [
+      "Adobe::Premiere Rush"
+    ],
+    "cwe": "CWE-788",
+    "keywords": [
+      "a malicious M4A file",
+      "a memory corruption vulnerability",
+      "Adobe Premiere Rush M4A File Memory Corruption Remote",
+      "User interaction",
+      "Adobe Premiere Rush",
+      "the current user",
+      "insecure handling",
+      "Adobe Premiere Rush M4A File Memory Corruption Remote Code Execution Adobe Premiere Rush version",
+      "arbitrary code execution",
+      "this vulnerability",
+      "the context"
+    ],
+    "metric": {
+      "score": 7.8,
+      "attackVector": "LOCAL"
+    }
+  },
+  {
+    "id": "CVE-2021-32643",
+    "assigner": "GitHub_M",
+    "title": "StaticFile.fromUrl can leak presence of a directory",
+    "description": "Http4s is a Scala interface for HTTP services. `StaticFile.fromUrl` can leak the presence of a directory on a server when the `URL` scheme is not `file://`, and the URL points to a fetchable resource under its scheme and authority. The function returns `F[None]`, indicating no resource, if `url.getFile` is a directory, without first checking the scheme or authority of the URL. If a URL connection to the scheme and URL would return a stream, and the path in the URL exists as a directory on the server, the presence of the directory on the server could be inferred from the 404 response. The contents and other metadata about the directory are not exposed. This affects http4s versions: 0.21.7 through 0.21.23, 0.22.0-M1 through 0.22.0-M8, 0.23.0-M1, and 1.0.0-M1 through 1.0.0-M22. The [patch](https://github.com/http4s/http4s/commit/52e1890665410b4385e37b96bc49c5e3c708e4e9) is available in the following versions: v0.21.24, v0.22.0-M9, v0.23.0-M2, v1.0.0-M23. As a workaround users can avoid calling `StaticFile.fromUrl` with non-file URLs.",
+    "affected_products": [
+      "http4s::http4s"
+    ],
+    "cwe": "CWE-22",
+    "keywords": [
+      "authority",
+      "URL",
+      "a workaround users",
+      "1.0.0-M1",
+      "v0.22.0-M9",
+      "non-file URLs",
+      "the 404 response",
+      "the scheme",
+      "a fetchable resource",
+      "the URL",
+      "a URL connection",
+      "a Scala interface",
+      "the following versions",
+      "a stream",
+      "Scala",
+      "0.22.0-M8",
+      "StaticFile.fromUrl",
+      "F[None",
+      "the path",
+      "M23",
+      "its scheme",
+      "no resource",
+      "the presence",
+      "url.getFile",
+      "0.23.0-M1",
+      "the directory",
+      "http4s versions",
+      "1.0.0-M22",
+      ", 0.22.0-M1",
+      "v1.0.0",
+      "file://",
+      "v0.23.0-M2",
+      "This",
+      "a server",
+      "presence",
+      "v0.21.24",
+      "HTTP services",
+      "other metadata",
+      "the server",
+      "The contents",
+      "a directory",
+      "the `URL` scheme"
+    ],
+    "metric": {
+      "score": 5.8,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2022-2982",
+    "assigner": "@huntrdev",
+    "title": "Use After Free in vim/vim",
+    "description": "Use After Free in GitHub repository vim/vim prior to 9.0.0260.",
+    "affected_products": [
+      "vim::vim/vim"
+    ],
+    "cwe": "CWE-416",
+    "keywords": [
+      "GitHub repository vim/vim",
+      "Use",
+      "vim/vim"
+    ],
+    "metric": {
+      "score": 7.6,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2022-4665",
+    "assigner": "@huntrdev",
+    "title": "Unrestricted Upload of File with Dangerous Type in ampache/ampache",
+    "description": "Unrestricted Upload of File with Dangerous Type in GitHub repository ampache/ampache prior to 5.5.6.",
+    "affected_products": [
+      "ampache::ampache/ampache"
+    ],
+    "cwe": "CWE-434",
+    "keywords": [
+      "ampache/ampache",
+      "File",
+      "Unrestricted Upload of File with Dangerous Type",
+      "Dangerous Type",
+      "Unrestricted Upload",
+      "ampache/ampache Unrestricted Upload",
+      "GitHub repository ampache/ampache"
+    ],
+    "metric": {
+      "score": 3.1,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2021-44710",
+    "assigner": "adobe",
+    "title": "Adobe Acrobat Reader Use-after-free could lead to Arbitrary code execution",
+    "description": "Acrobat Reader DC version 21.007.20099 (and earlier), 20.004.30017 (and earlier) and 17.011.30204 (and earlier) are affected by a use-after-free vulnerability in the processing of Format event actions that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+    "affected_products": [
+      "Adobe::Acrobat Reader"
+    ],
+    "cwe": "CWE-416",
+    "keywords": [
+      "that",
+      "Exploitation",
+      "a use-after-free vulnerability",
+      "the current user",
+      "this issue",
+      "user interaction",
+      "arbitrary code execution",
+      "Adobe Acrobat Reader Use",
+      "21.007.20099",
+      "the processing",
+      "a victim",
+      "Format",
+      "a malicious file",
+      "the context",
+      "event actions",
+      "Adobe",
+      "Arbitrary code execution Acrobat Reader DC version"
+    ],
+    "metric": {
+      "score": 7.8,
+      "attackVector": "LOCAL"
+    }
+  },
+  {
+    "id": "CVE-2022-20704",
+    "assigner": "cisco",
+    "title": "Cisco Small Business RV Series Routers Vulnerabilities",
+    "description": "Multiple vulnerabilities in Cisco Small Business RV160, RV260, RV340, and RV345 Series Routers could allow an attacker to do any of the following: Execute arbitrary code Elevate privileges Execute arbitrary commands Bypass authentication and authorization protections Fetch and run unsigned software Cause denial of service (DoS) For more information about these vulnerabilities, see the Details section of this advisory.",
+    "affected_products": [
+      "Cisco::Cisco Small Business RV Series Router Firmware"
+    ],
+    "cwe": "CWE-121",
+    "keywords": [
+      "RV345 Series Routers",
+      "Bypass authentication",
+      "Cisco Small Business RV160",
+      "RV260",
+      "arbitrary commands",
+      "RV340",
+      "DoS",
+      "authorization protections",
+      "Cisco Small Business RV Series Routers Vulnerabilities",
+      "Multiple vulnerabilities",
+      "service",
+      "unsigned software Cause denial",
+      "more information",
+      "arbitrary code Elevate privileges",
+      "the Details section",
+      "any",
+      "this advisory",
+      "these vulnerabilities",
+      "an attacker",
+      "Cisco Small Business RV Series"
+    ],
+    "metric": {
+      "score": 10,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2022-46854",
+    "assigner": "Patchstack",
+    "title": "WordPress Launchpad \u2013 Coming Soon & Maintenance Mode Plugin Plugin <= 1.0.13 is vulnerable to Cross Site Request Forgery (CSRF)",
+    "description": "Cross-Site Request Forgery (CSRF) vulnerability in Obox Themes Launchpad \u2013 Coming Soon & Maintenance Mode plugin <=\u00a01.0.13 versions.",
+    "affected_products": [
+      "Obox Themes::Launchpad \u2013 Coming Soon & Maintenance Mode Plugin"
+    ],
+    "cwe": "CWE-352",
+    "keywords": [
+      "versions",
+      "Coming Soon & Maintenance Mode Plugin Plugin",
+      "Cross Site Request Forgery (CSRF) Cross-Site Request Forgery (CSRF) vulnerability",
+      "Cross-Site Request Forgery (CSRF",
+      "Coming Soon & Maintenance Mode plugin",
+      "Obox Themes Launchpad",
+      "WordPress Launchpad",
+      "Coming Soon & Maintenance Mode",
+      "Cross Site Request Forgery (CSRF"
+    ],
+    "metric": {
+      "score": 5.4,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2021-4092",
+    "assigner": "@huntrdev",
+    "title": "Cross-Site Request Forgery (CSRF) in yetiforcecompany/yetiforcecrm",
+    "description": "yetiforcecrm is vulnerable to Cross-Site Request Forgery (CSRF)",
+    "affected_products": [
+      "yetiforcecompany::yetiforcecompany/yetiforcecrm"
+    ],
+    "cwe": "CWE-352",
+    "keywords": [
+      "Cross-Site Request Forgery",
+      "CSRF",
+      "yetiforcecompany/yetiforcecrm yetiforcecrm",
+      "Cross-Site Request Forgery (CSRF",
+      "(CSRF"
+    ],
+    "metric": {
+      "score": 4.3,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2021-46817",
+    "assigner": "adobe",
+    "title": "Adobe Media Encoder M4A file memory corruption vulnerability could lead to remote code execution",
+    "description": "Adobe Media Encoder version 15.4 (and earlier) are affected by a memory corruption vulnerability. An unauthenticated attacker could leverage this vulnerability to achieve arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious M4A file.",
+    "affected_products": [
+      "Adobe::Media Encoder"
+    ],
+    "cwe": "CWE-787",
+    "keywords": [
+      "remote code execution",
+      "a malicious M4A file",
+      "a memory corruption vulnerability",
+      "Exploitation",
+      "the current user",
+      "Adobe Media",
+      "Adobe Media Encoder version",
+      "Adobe Media Encoder",
+      "arbitrary code execution",
+      "user interaction",
+      "this vulnerability",
+      "a victim",
+      "the context",
+      "Adobe Media Encoder M4A file memory corruption vulnerability",
+      "this issue",
+      "An unauthenticated attacker"
+    ],
+    "metric": {
+      "score": 7.8,
+      "attackVector": "LOCAL"
+    }
+  },
+  {
+    "id": "CVE-2020-24405",
+    "assigner": "adobe",
+    "title": "Incorrect permissions in Inventory module could lead to unauthorized modification of inventory stock data",
+    "description": "Magento version 2.4.0 and 2.3.5p1 (and earlier) are affected by an incorrect permissions issue vulnerability in the Inventory module. This vulnerability could be abused by authenticated users to modify inventory stock data without authorization.",
+    "affected_products": [
+      "Adobe::Magento Commerce"
+    ],
+    "cwe": "CWE-285",
+    "keywords": [
+      "Inventory module",
+      "Incorrect permissions",
+      "authorization",
+      "unauthorized modification",
+      "Inventory",
+      "authenticated users",
+      "inventory stock data",
+      "inventory stock data Magento version",
+      "an incorrect permissions issue vulnerability",
+      "the Inventory module",
+      "Magento",
+      "This vulnerability"
+    ],
+    "metric": {
+      "score": 4.3,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2021-41213",
+    "assigner": "GitHub_M",
+    "title": "Deadlock in mutually recursive `tf.function` objects",
+    "description": "TensorFlow is an open source platform for machine learning. In affected versions the code behind `tf.function` API can be made to deadlock when two `tf.function` decorated Python functions are mutually recursive. This occurs due to using a non-reentrant `Lock` Python object. Loading any model which contains mutually recursive functions is vulnerable. An attacker can cause denial of service by causing users to load such models and calling a recursive `tf.function`, although this is not a frequent scenario. The fix will be included in TensorFlow 2.7.0. We will also cherrypick this commit on TensorFlow 2.6.1, TensorFlow 2.5.2, and TensorFlow 2.4.4, as these are also affected and still in supported range.",
+    "affected_products": [
+      "tensorflow::tensorflow"
+    ],
+    "cwe": "CWE-667",
+    "keywords": [
+      "mutually recursive functions",
+      "these",
+      "`tf.function` API",
+      "which",
+      "affected versions",
+      "An attacker",
+      "this",
+      "supported range",
+      "TensorFlow",
+      "tf.function",
+      "this commit",
+      "Deadlock",
+      "users",
+      "service",
+      "any model",
+      "a non-reentrant `Lock` Python object",
+      "API",
+      "a frequent scenario",
+      "the code",
+      "denial",
+      "Lock` Python",
+      "This",
+      "a recursive `tf.function",
+      "such models",
+      "The fix",
+      "an open source platform",
+      "two `tf.function` decorated Python functions",
+      "We",
+      "machine learning",
+      "Python"
+    ],
+    "metric": {
+      "score": 5.5,
+      "attackVector": "LOCAL"
+    }
+  },
+  {
+    "id": "CVE-2020-2033",
+    "assigner": "palo_alto",
+    "title": "GlobalProtect App: Missing certificate validation vulnerability can disclose pre-logon authentication cookie",
+    "description": "When the pre-logon feature is enabled, a missing certification validation in Palo Alto Networks GlobalProtect app can disclose the pre-logon authentication cookie to a man-in-the-middle attacker on the same local area network segment with the ability to manipulate ARP or to conduct ARP spoofing attacks. This allows the attacker to access the GlobalProtect Server as allowed by configured Security rules for the 'pre-login' user. This access may be limited compared to the network access of regular users. This issue affects: GlobalProtect app 5.0 versions earlier than GlobalProtect app 5.0.10 when the prelogon feature is enabled; GlobalProtect app 5.1 versions earlier than GlobalProtect app 5.1.4 when the prelogon feature is enabled.",
+    "affected_products": [
+      "Palo Alto Networks::GlobalProtect App"
+    ],
+    "cwe": "CWE-290",
+    "keywords": [
+      "a man-in-the-middle attacker",
+      "regular users",
+      "the 'pre-login' user",
+      "the pre-logon feature",
+      "5.0 versions",
+      "Palo Alto Networks GlobalProtect app",
+      "the network access",
+      "the GlobalProtect Server",
+      "This issue",
+      "spoofing attacks",
+      "the attacker",
+      "the pre-logon authentication cookie",
+      "GlobalProtect app",
+      "the prelogon feature",
+      "This",
+      "the same local area network segment",
+      "ARP",
+      "Palo Alto Networks GlobalProtect",
+      "GlobalProtect Server",
+      "GlobalProtect App",
+      "pre-logon authentication cookie",
+      "Missing certificate validation vulnerability",
+      "the ability",
+      "Security rules",
+      "a missing certification validation",
+      "This access",
+      "GlobalProtect",
+      "5.1 versions"
+    ],
+    "metric": {
+      "score": 5.3,
+      "attackVector": "ADJACENT_NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2022-0587",
+    "assigner": "@huntrdev",
+    "title": "Improper Authorization in librenms/librenms",
+    "description": "Improper Authorization in Packagist librenms/librenms prior to 22.2.0.",
+    "affected_products": [
+      "librenms::librenms/librenms"
+    ],
+    "cwe": "CWE-285",
+    "keywords": [
+      "Improper Authorization",
+      "Packagist",
+      "librenms/librenms Improper Authorization",
+      "Packagist librenms/librenms"
+    ],
+    "metric": {
+      "score": 7.1,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2022-20830",
+    "assigner": "cisco",
+    "title": "Cisco Software-Defined Application Visibility and Control on Cisco vManage Authentication Bypass Vulnerability",
+    "description": "A vulnerability in authentication mechanism of Cisco Software-Defined Application Visibility and Control (SD-AVC) on Cisco vManage could allow an unauthenticated, remote attacker to access the GUI of Cisco SD-AVC without authentication. This vulnerability exists because the GUI is accessible on self-managed cloud installations or local server installations of Cisco vManage. An attacker could exploit this vulnerability by accessing the exposed GUI of Cisco SD-AVC. A successful exploit could allow the attacker to view managed device names, SD-AVC logs, and SD-AVC DNS server IP addresses.",
+    "affected_products": [
+      "Cisco::Cisco SD-WAN vManage"
+    ],
+    "cwe": "CWE-306",
+    "keywords": [
+      "Cisco Software",
+      "SD-AVC logs",
+      "SD-AVC DNS server IP addresses",
+      "managed device names",
+      "the exposed GUI",
+      "local server installations",
+      "Cisco SD-AVC",
+      "An attacker",
+      "authentication mechanism",
+      "This vulnerability",
+      "self-managed cloud installations",
+      "Cisco vManage",
+      "authentication",
+      "this vulnerability",
+      "DNS",
+      "Control (SD-AVC",
+      "GUI",
+      "Cisco vManage Authentication Bypass Vulnerability A vulnerability",
+      "an unauthenticated, remote attacker",
+      "the attacker",
+      "Control",
+      "Cisco Software-Defined Application Visibility",
+      "A successful exploit",
+      "SD-AVC",
+      "the GUI"
+    ],
+    "metric": {
+      "score": 5.3,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2022-38700",
+    "assigner": "OpenHarmony",
+    "title": "multimedia subsystem has a permission bypass vulnerability. LAN attackers can bypass permission control and get control of camera service.",
+    "description": "OpenHarmony-v3.1.1 and prior versions have a permission bypass vulnerability. LAN attackers can bypass permission control and get control of camera service.",
+    "affected_products": [
+      "OpenHarmony::OpenHarmony"
+    ],
+    "cwe": "CWE-305",
+    "keywords": [
+      "LAN attackers",
+      "LAN",
+      "multimedia subsystem",
+      "OpenHarmony-v3.1.1",
+      "permission control",
+      "camera service",
+      "prior versions",
+      "control",
+      "a permission bypass vulnerability"
+    ],
+    "metric": {
+      "score": 8.8,
+      "attackVector": "ADJACENT_NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2021-4274",
+    "assigner": "VulDB",
+    "title": "sileht bird-lg layout.html cross site scripting",
+    "description": "A vulnerability, which was classified as problematic, has been found in sileht bird-lg. This issue affects some unknown processing of the file templates/layout.html. The manipulation of the argument request_args leads to cross site scripting. The attack may be initiated remotely. The name of the patch is ef6b32c527478fefe7a4436e10b96ee28ed5b308. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-216479.",
+    "affected_products": [
+      "sileht::bird-lg"
+    ],
+    "cwe": "CWE-707",
+    "keywords": [
+      "The attack",
+      "It",
+      "which",
+      "sileht bird-lg layout.html cross",
+      "lg",
+      "A vulnerability",
+      "the argument",
+      "the patch",
+      "this vulnerability",
+      "The name",
+      "bird-lg layout.html cross site",
+      "The manipulation",
+      "sileht bird",
+      "VDB-216479",
+      "This issue",
+      "the file templates",
+      "this issue",
+      "The associated identifier",
+      "cross site scripting",
+      "a patch",
+      "some unknown processing"
+    ],
+    "metric": {
+      "score": 3.5,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2019-0044",
+    "assigner": "juniper",
+    "title": "Junos OS: SRX5000 series: Kernel crash (vmcore) upon receipt of a specific packet on fxp0 interface",
+    "description": "Receipt of a specific packet on the out-of-band management interface fxp0 may cause the system to crash and restart (vmcore). By continuously sending a specially crafted packet to the fxp0 interface, an attacker can repetitively crash the rpd process causing prolonged Denial of Service (DoS). Affected releases are Juniper Networks SRX5000 Series: 12.1X46 versions prior to 12.1X46-D82; 12.3X48 versions prior to 12.3X48-D80; 15.1X49 versions prior to 15.1X49-D160.",
+    "affected_products": [
+      "Juniper Networks::Junos OS"
+    ],
+    "cwe": "CWE-404",
+    "keywords": [
+      "Service",
+      "receipt",
+      "Denial of Service",
+      "the fxp0 interface",
+      "Affected releases",
+      "DoS",
+      "a specific packet",
+      "Kernel crash",
+      "Junos OS: SRX5000 series",
+      "a specially crafted packet",
+      "15.1X49 versions",
+      "the rpd process",
+      "the system",
+      "12.3X48-D80",
+      "fxp0",
+      "Juniper Networks SRX5000 Series",
+      "band",
+      "Junos",
+      "12.3X48 versions",
+      "12.1X46 versions",
+      "15.1X49-D160",
+      "an attacker",
+      "vmcore",
+      "prolonged Denial",
+      "fxp0 interface Receipt"
+    ],
+    "metric": {
+      "score": 7.5,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2020-4068",
+    "assigner": "GitHub_M",
+    "title": "Heap-based Buffer Overflow in APNSwift",
+    "description": "In APNSwift 1.0.0, calling APNSwiftSigner.sign(digest:) is likely to result in a heap buffer overflow. This has been fixed in 1.0.1.",
+    "affected_products": [
+      "kylebrowning::APNSwift"
+    ],
+    "cwe": "CWE-122",
+    "keywords": [
+      "Heap-based Buffer Overflow",
+      "APNSwift",
+      "Buffer Overflow",
+      "This",
+      "APNSwiftSigner.sign(digest",
+      "a heap buffer overflow"
+    ],
+    "metric": {
+      "score": 6.3,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2021-21308",
+    "assigner": "GitHub_M",
+    "title": "Improper session management for soft logout",
+    "description": "PrestaShop is a fully scalable open source e-commerce solution. In PrestaShop before version 1.7.2 the soft logout system is not complete and an attacker is able to foreign request and executes customer commands. The problem is fixed in 1.7.7.2",
+    "affected_products": [
+      "PrestaShop::PrestaShop"
+    ],
+    "cwe": "CWE-287",
+    "keywords": [
+      "a fully scalable open source e-commerce solution",
+      "soft logout PrestaShop",
+      "an attacker",
+      "version",
+      "foreign request",
+      "The problem",
+      "the soft logout system",
+      "customer commands",
+      "Improper session management",
+      "PrestaShop"
+    ],
+    "metric": {
+      "score": 6.1,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2022-41990",
+    "assigner": "Patchstack",
+    "title": "WordPress 3D Tag Cloud Plugin <= 3.8 is vulnerable to Cross Site Request Forgery (CSRF)",
+    "description": "Cross-Site Request Forgery (CSRF) vulnerability in Vinoj Cardoza 3D Tag Cloud allows Stored XSS.This issue affects 3D Tag Cloud: from n/a through 3.8.\n\n",
+    "affected_products": [
+      "Vinoj Cardoza::3D Tag Cloud"
+    ],
+    "cwe": "CWE-352",
+    "keywords": [
+      "3D Tag Cloud",
+      "Tag Cloud",
+      "Stored XSS.This issue",
+      "WordPress",
+      "Cross Site Request Forgery (CSRF) Cross-Site Request Forgery (CSRF) vulnerability",
+      "Cross-Site Request Forgery (CSRF",
+      "WordPress 3D Tag Cloud Plugin",
+      "Vinoj Cardoza 3D Tag Cloud",
+      "Cross Site Request Forgery (CSRF",
+      "a"
+    ],
+    "metric": {
+      "score": 7.1,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2022-45821",
+    "assigner": "Patchstack",
+    "title": "WordPress NOO Timetable Plugin <= 2.1.3 is vulnerable to Cross Site Scripting (XSS)",
+    "description": "Auth. (contributor+) Stored Cross-Site Scripting (XSS) vulnerability in NooTheme Noo Timetable plugin <=\u00a02.1.3 versions.",
+    "affected_products": [
+      "NooTheme::Noo Timetable"
+    ],
+    "cwe": "CWE-79",
+    "keywords": [
+      "(contributor+) Stored Cross-Site Scripting",
+      "WordPress NOO Timetable Plugin",
+      "WordPress",
+      "2.1.3 versions",
+      "Auth",
+      "Cross Site Scripting",
+      "NooTheme Noo Timetable",
+      "(XSS",
+      "=",
+      "2.1.3",
+      "XSS) Auth",
+      "= 2.1.3",
+      "vulnerability"
+    ],
+    "metric": {
+      "score": 6.5,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2021-36059",
+    "assigner": "adobe",
+    "title": "Adobe Bridge Memory Corruption Vulnerability Could Lead to Arbitrary Code Execution",
+    "description": "Adobe Bridge version 11.1 (and earlier) is affected by a memory corruption vulnerability due to insecure handling of a malicious Bridge file, potentially resulting in arbitrary code execution in the context of the current user. User interaction is required to exploit this vulnerability.",
+    "affected_products": [
+      "Adobe::Bridge"
+    ],
+    "cwe": "CWE-788",
+    "keywords": [
+      "a memory corruption vulnerability",
+      "User interaction",
+      "the current user",
+      "insecure handling",
+      "Arbitrary Code Execution Adobe Bridge version",
+      "arbitrary code execution",
+      "this vulnerability",
+      "Adobe Bridge Memory Corruption Vulnerability",
+      "the context",
+      "a malicious Bridge file"
+    ],
+    "metric": {
+      "score": 7.8,
+      "attackVector": "LOCAL"
+    }
+  },
+  {
+    "id": "CVE-2022-24838",
+    "assigner": "GitHub_M",
+    "title": "Command Injection in Appointment Emails for Nextcloud Calendar",
+    "description": "Nextcloud Calendar is a calendar application for the nextcloud framework. SMTP Command Injection in Appointment Emails via Newlines: as newlines and special characters are not sanitized in the email value in the JSON request, a malicious attacker can inject newlines to break out of the `RCPT TO:<BOOKING USER'S EMAIL> ` SMTP command and begin injecting arbitrary SMTP commands. It is recommended that Calendar is upgraded to 3.2.2. There are no workaround available.",
+    "affected_products": [
+      "nextcloud::security-advisories"
+    ],
+    "cwe": "CWE-74",
+    "keywords": [
+      "Newlines",
+      "It",
+      "Command Injection",
+      "` SMTP command",
+      "the JSON request",
+      "the `RCPT TO:<BOOKING",
+      "newlines",
+      "Nextcloud Calendar Nextcloud Calendar",
+      "arbitrary SMTP commands",
+      "no workaround",
+      "SMTP",
+      "the nextcloud framework",
+      "Calendar",
+      "JSON",
+      "a malicious attacker",
+      "Appointment Emails",
+      "the email value",
+      "the `RCPT TO:<BOOKING USER'S EMAIL",
+      "SMTP Command Injection",
+      "a calendar application",
+      "special characters"
+    ],
+    "metric": {
+      "score": 5.3,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2021-32706",
+    "assigner": "GitHub_M",
+    "title": "(Authenticated) Remote Code Execution Possible in Web Interface 5.5",
+    "description": "Pi-hole's Web interface provides a central location to manage a Pi-hole instance and review performance statistics. Prior to Pi-hole Web interface version 5.5.1, the `validDomainWildcard` preg_match filter allows a malicious character through that can be used to execute code, list directories, and overwrite sensitive files. The issue lies in the fact that one of the periods is not escaped, allowing any character to be used in its place. A patch for this vulnerability was released in version 5.5.1.",
+    "affected_products": [
+      "pi-hole::AdminLTE"
+    ],
+    "cwe": "CWE-94",
+    "keywords": [
+      "a Pi-hole instance",
+      "performance statistics",
+      "that",
+      "the `validDomainWildcard` preg_match filter",
+      "sensitive files",
+      "Web Interface 5.5 Pi-hole's Web interface",
+      "its place",
+      "version",
+      "a malicious character",
+      "code",
+      "this vulnerability",
+      "The issue",
+      "A patch",
+      "the periods",
+      "list directories",
+      "(Authenticated) Remote Code Execution",
+      "any character",
+      "a central location",
+      "Pi-hole Web interface version",
+      "the fact"
+    ],
+    "metric": {
+      "score": 7.6,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2022-30705",
+    "assigner": "Patchstack",
+    "title": "WordPress WordPress Ping Optimizer Plugin <= 2.35.1.2.3 is vulnerable to Cross Site Request Forgery (CSRF)",
+    "description": "Cross-Site Request Forgery (CSRF) vulnerability in Pankaj Jha WordPress Ping Optimizer plugin <=\u00a02.35.1.2.3 versions.",
+    "affected_products": [
+      "Pankaj Jha::WordPress Ping Optimizer"
+    ],
+    "cwe": "CWE-352",
+    "keywords": [
+      "WordPress WordPress Ping Optimizer Plugin",
+      "Pankaj Jha WordPress Ping Optimizer",
+      "WordPress",
+      "Cross Site Request Forgery (CSRF) Cross-Site Request Forgery (CSRF) vulnerability",
+      "Cross-Site Request Forgery (CSRF",
+      "=",
+      "Pankaj Jha",
+      "2.35.1.2.3 versions",
+      "Cross Site Request Forgery (CSRF"
+    ],
+    "metric": {
+      "score": 5.4,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2022-20681",
+    "assigner": "cisco",
+    "title": "Cisco IOS XE Software for Cisco Catalyst 9000 Family Switches and Catalyst 9000 Family Wireless Controllers Privilege Escalation Vulnerability",
+    "description": "A vulnerability in the CLI of Cisco IOS XE Software for Cisco Catalyst 9000 Family Switches and Cisco Catalyst 9000 Family Wireless Controllers could allow an authenticated, local attacker to elevate privileges to level 15 on an affected device. This vulnerability is due to insufficient validation of user privileges after the user executes certain CLI commands. An attacker could exploit this vulnerability by logging in to an affected device as a low-privileged user and then executing certain CLI commands. A successful exploit could allow the attacker to execute arbitrary commands with level 15 privileges on the affected device.",
+    "affected_products": [
+      "Cisco::Cisco IOS XE Software"
+    ],
+    "cwe": "CWE-266",
+    "keywords": [
+      "the CLI",
+      "insufficient validation",
+      "Cisco Catalyst",
+      "level 15 privileges",
+      "user privileges",
+      "Vulnerability A vulnerability",
+      "An attacker",
+      "arbitrary commands",
+      "an affected device",
+      "This vulnerability",
+      "the user",
+      "Cisco Catalyst 9000 Family Wireless Controllers",
+      "Family Wireless Controllers",
+      "this vulnerability",
+      "an authenticated, local attacker",
+      "Catalyst 9000 Family Wireless Controllers Privilege Escalation Vulnerability A",
+      "Cisco Catalyst 9000 Family Switches",
+      "privileges",
+      "the attacker",
+      "Catalyst 9000 Family Wireless Controllers Privilege Escalation",
+      "the affected device",
+      "A successful exploit",
+      "certain CLI commands",
+      "Cisco IOS XE Software",
+      "CLI",
+      "a low-privileged user"
+    ],
+    "metric": {
+      "score": 7.8,
+      "attackVector": "LOCAL"
+    }
+  },
+  {
+    "id": "CVE-2019-12713",
+    "assigner": "cisco",
+    "title": "Cisco Prime Infrastructure Cross-Site Scripting Vulnerability",
+    "description": "A vulnerability in the web-based management interface of Cisco Prime Infrastructure could allow an unauthenticated, remote attacker to conduct a cross-site scripting (XSS) attack against a user of the web-based management interface of the affected software. The vulnerability is due to insufficient validation of user-supplied input by the web-based management interface of the affected software. An attacker could exploit this vulnerability by persuading a user of the interface to click a crafted link. A successful exploit could allow the attacker to execute arbitrary script code in the context of the affected interface or access sensitive browser-based information.",
+    "affected_products": [
+      "Cisco::Cisco Prime Infrastructure"
+    ],
+    "cwe": "CWE-79",
+    "keywords": [
+      "insufficient validation",
+      "user-supplied input",
+      "arbitrary script code",
+      "Cisco Prime Infrastructure",
+      "An attacker",
+      "a crafted link",
+      "a user",
+      "Cisco Prime Infrastructure Cross-Site Scripting",
+      "this vulnerability",
+      "a cross-site scripting",
+      "Cisco Prime Infrastructure Cross-Site Scripting Vulnerability A vulnerability",
+      "an unauthenticated, remote attacker",
+      "the attacker",
+      "the affected software",
+      "the affected interface or access sensitive browser-based information",
+      "the web-based management interface",
+      "A successful exploit",
+      "The vulnerability",
+      "the interface",
+      "XSS) attack",
+      "the context"
+    ],
+    "metric": {
+      "score": 6.1,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2022-39381",
+    "assigner": "GitHub_M",
+    "title": "Unchecked Return Value to NULL Pointer Dereference in PDFDocumentHandler.cpp",
+    "description": "Muhammara is a node module with c/cpp bindings to modify PDF with js for node or electron (based/replacement on/of galkhana/hummusjs). The package muhammara before 2.6.0; all versions of package hummus are vulnerable to Denial of Service (DoS) when supplied with a maliciously crafted PDF file to be appended to another. This issue has been patched in 2.6.0 for muhammara and not at all for hummus. As a workaround, do not process files from untrusted sources.",
+    "affected_products": [
+      "julianhille::MuhammaraJS"
+    ],
+    "cwe": "CWE-690",
+    "keywords": [
+      "(based/replacement",
+      "muhammara",
+      "Service",
+      "untrusted sources",
+      "a maliciously crafted PDF file",
+      "Denial",
+      "Denial of Service",
+      "c/cpp bindings",
+      "hummus",
+      "node",
+      "DoS",
+      "a node module",
+      "galkhana/hummusjs",
+      "PDFDocumentHandler.cpp",
+      "Muhammara",
+      "electron",
+      "package hummus",
+      "This issue",
+      "all versions",
+      "a workaround",
+      "another",
+      "files",
+      "Unchecked Return Value",
+      "PDF",
+      "js",
+      "The package",
+      "NULL Pointer Dereference"
+    ],
+    "metric": {
+      "score": 7.5,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2022-24810",
+    "assigner": "GitHub_M",
+    "title": "net-snmp: A malformed OID in a SET to the nsVacmAccessTable can cause a NULL pointer dereference.",
+    "description": "net-snmp provides various tools relating to the Simple Network Management Protocol. Prior to version 5.9.2, a user with read-write credentials can use a malformed OID in a SET to the nsVacmAccessTable to cause a NULL pointer dereference. Version 5.9.2 contains a patch. Users should use strong SNMPv3 credentials and avoid sharing the credentials. Those who must use SNMPv1 or SNMPv2c should use a complex community string and enhance the protection by restricting access to a given IP address range.\n",
+    "affected_products": [
+      "net-snmp::net-snmp"
+    ],
+    "cwe": "CWE-476",
+    "keywords": [
+      "net-snmp",
+      "the protection",
+      "who",
+      "access",
+      "read-write credentials",
+      "strong SNMPv3 credentials",
+      "version",
+      "a user",
+      "the nsVacmAccessTable",
+      "a given IP address range",
+      "the credentials",
+      "various tools",
+      "Users",
+      "a complex community string",
+      "a malformed OID",
+      "the Simple Network Management Protocol",
+      "a SET",
+      "A malformed OID",
+      "Version 5.9.2",
+      "a NULL pointer dereference",
+      "SNMPv2c",
+      "Those",
+      "a patch",
+      "SNMPv1"
+    ],
+    "metric": {
+      "score": 6.5,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2022-1429",
+    "assigner": "@huntrdev",
+    "title": "SQL injection in GridHelperService.php in pimcore/pimcore",
+    "description": "SQL injection in GridHelperService.php in GitHub repository pimcore/pimcore prior to 10.3.6. This vulnerability is capable of steal the data",
+    "affected_products": [
+      "pimcore::pimcore/pimcore"
+    ],
+    "cwe": "CWE-89",
+    "keywords": [
+      "GitHub repository pimcore/pimcore",
+      "GridHelperService.php",
+      "GitHub",
+      "pimcore/pimcore SQL injection",
+      "SQL",
+      "the data",
+      "SQL injection",
+      "This vulnerability"
+    ],
+    "metric": {
+      "score": 7.2,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2022-0266",
+    "assigner": "@huntrdev",
+    "title": "Authorization Bypass Through User-Controlled Key in livehelperchat/livehelperchat",
+    "description": "Authorization Bypass Through User-Controlled Key in Packagist remdex/livehelperchat prior to 3.92v.",
+    "affected_products": [
+      "livehelperchat::livehelperchat/livehelperchat"
+    ],
+    "cwe": "CWE-639",
+    "keywords": [
+      "Authorization Bypass",
+      "Packagist remdex",
+      "Packagist",
+      "User-Controlled Key"
+    ],
+    "metric": {
+      "score": 6.5,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2022-38141",
+    "assigner": "Patchstack",
+    "title": "WordPress Sales Report Email for WooCommerce Plugin <= 2.8 is vulnerable to Broken Access Control",
+    "description": "Missing Authorization vulnerability in Zorem Sales Report Email for WooCommerce.This issue affects Sales Report Email for WooCommerce: from n/a through 2.8.\n\n",
+    "affected_products": [
+      "Zorem::Sales Report Email for WooCommerce"
+    ],
+    "cwe": "CWE-862",
+    "keywords": [
+      "Zorem Sales Report Email",
+      "Broken Access Control Missing Authorization",
+      "WooCommerce",
+      "WooCommerce Plugin",
+      "WordPress",
+      "This issue",
+      "Zorem Sales Report",
+      "Broken Access Control Missing Authorization vulnerability",
+      "Sales Report Email",
+      "WordPress Sales Report Email",
+      "a"
+    ],
+    "metric": {
+      "score": 4.3,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2021-3061",
+    "assigner": "palo_alto",
+    "title": "PAN-OS: OS Command Injection Vulnerability in the Command Line Interface (CLI)",
+    "description": "An OS command injection vulnerability in the Palo Alto Networks PAN-OS command line interface (CLI) enables an authenticated administrator with access to the CLI to execute arbitrary OS commands to escalate privileges. This issue impacts: PAN-OS 8.1 versions earlier than PAN-OS 8.1.20-h1; PAN-OS 9.0 versions earlier than PAN-OS 9.0.14-h3; PAN-OS 9.1 versions earlier than PAN-OS 9.1.11-h2; PAN-OS 10.0 versions earlier than PAN-OS 10.0.8; PAN-OS 10.1 versions earlier than PAN-OS 10.1.3. Prisma Access customers that have Prisma Access 2.1 firewalls are impacted by this issue.",
+    "affected_products": [
+      "Palo Alto Networks::Prisma Access",
+      "Palo Alto Networks::PAN-OS"
+    ],
+    "cwe": "CWE-78",
+    "keywords": [
+      "the Command Line Interface (CLI",
+      "the CLI",
+      "9.1",
+      "An OS command injection vulnerability",
+      "PAN-OS 8.1.20-h1",
+      "the Command Line Interface",
+      "Prisma Access",
+      "an authenticated administrator",
+      "PAN-OS 9.1 versions",
+      "access",
+      "that",
+      "PAN-OS 8.1 versions",
+      "PAN-OS 10.1",
+      "PAN-OS 8.1.20",
+      "PAN",
+      "PAN-OS 10.1.3",
+      "Prisma Access 2.1 firewalls",
+      "PAN-OS 10.1 versions",
+      "the Palo Alto Networks PAN-OS command line interface",
+      "Prisma Access customers",
+      "PAN-OS 10.0 versions",
+      "PAN-OS 9.0.14-h3",
+      "PAN-OS",
+      "This issue",
+      "privileges",
+      "PAN-OS 10.0.8",
+      "OS Command Injection Vulnerability",
+      "PAN-OS 9.0 versions",
+      "this issue",
+      "PAN-OS 9.1.11-h2",
+      "arbitrary OS commands",
+      "CLI"
+    ],
+    "metric": {
+      "score": 6.4,
+      "attackVector": "LOCAL"
+    }
+  },
+  {
+    "id": "CVE-2021-22557",
+    "assigner": "Google",
+    "title": "Code execution in SLO Generator via YAML Payload",
+    "description": "SLO generator allows for loading of YAML files that if crafted in a specific format can allow for code execution within the context of the SLO Generator. We recommend upgrading SLO Generator past https://github.com/google/slo-generator/pull/173",
+    "affected_products": [
+      "Google LLC::SLO Generator"
+    ],
+    "cwe": "CWE-94",
+    "keywords": [
+      "https://github.com/google/slo-generator/pull/173",
+      "YAML",
+      "SLO Generator",
+      "We",
+      "code execution",
+      "YAML files",
+      "loading",
+      "a specific format",
+      "YAML Payload SLO generator",
+      "the SLO Generator",
+      "Code execution",
+      "the context"
+    ],
+    "metric": {
+      "score": 5.3,
+      "attackVector": "LOCAL"
+    }
+  },
+  {
+    "id": "CVE-2020-15242",
+    "assigner": "GitHub_M",
+    "title": "Open Redirect in Next.js",
+    "description": "Next.js versions >=9.5.0 and <9.5.4 are vulnerable to an Open Redirect. Specially encoded paths could be used with the trailing slash redirect to allow an open redirect to occur to an external site. In general, this redirect does not directly harm users although can allow for phishing attacks by redirecting to an attackers domain from a trusted domain. The issue is fixed in version 9.5.4.",
+    "affected_products": [
+      "vercel::next.js"
+    ],
+    "cwe": "CWE-601",
+    "keywords": [
+      "the trailing slash",
+      "Next.js",
+      "Next.js Next.js versions",
+      "an Open Redirect",
+      "this redirect",
+      "Open Redirect",
+      "phishing attacks",
+      "version",
+      "a trusted domain",
+      "Specially encoded paths",
+      "an open redirect",
+      "an external site",
+      "an attackers domain",
+      "9.5.4",
+      "The issue",
+      "users"
+    ],
+    "metric": {
+      "score": 4.7,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2021-21029",
+    "assigner": "adobe",
+    "title": "Magento Commerce Reflected Cross-site Scripting Vulnerability Could Lead To Arbitrary JavaScript Execution",
+    "description": "Magento versions 2.4.1 (and earlier), 2.4.0-p1 (and earlier) and 2.3.6 (and earlier) are affected by a Reflected Cross-site Scripting vulnerability via 'file' parameter. Successful exploitation could lead to arbitrary JavaScript execution in the victim's browser. Access to the admin console is required for successful exploitation.",
+    "affected_products": [
+      "Adobe::Magento Commerce"
+    ],
+    "cwe": "CWE-79",
+    "keywords": [
+      "Arbitrary JavaScript Execution Magento versions",
+      "the admin console",
+      "JavaScript",
+      "Access",
+      "Magento Commerce Reflected Cross",
+      "Successful exploitation",
+      "Cross-site Scripting Vulnerability",
+      "arbitrary JavaScript execution",
+      "Reflected Cross",
+      "a Reflected Cross-site Scripting vulnerability",
+      "file' parameter",
+      "successful exploitation",
+      "the victim's browser",
+      "Magento Commerce",
+      "Magento"
+    ],
+    "metric": {
+      "score": 4.8,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2019-15956",
+    "assigner": "cisco",
+    "title": "Cisco Web Security Appliance Unauthorized Device Reset Vulnerability",
+    "description": "A vulnerability in the web management interface of Cisco AsyncOS Software for Cisco Web Security Appliance (WSA) could allow an authenticated, remote attacker to perform an unauthorized system reset on an affected device. The vulnerability is due to improper authorization controls for a specific URL in the web management interface. An attacker could exploit this vulnerability by sending a crafted HTTP request to an affected device. A successful exploit could have a twofold impact: the attacker could either change the administrator password, gaining privileged access, or reset the network configuration details, causing a denial of service (DoS) condition. In both scenarios, manual intervention is required to restore normal operations.",
+    "affected_products": [
+      "Cisco::Cisco Web Security Appliance (WSA)"
+    ],
+    "cwe": "CWE-284",
+    "keywords": [
+      "a denial",
+      "an authenticated, remote attacker",
+      "an unauthorized system",
+      "Vulnerability A vulnerability",
+      "An attacker",
+      "privileged access",
+      "DoS",
+      "an affected device",
+      "Cisco Web Security Appliance",
+      "manual intervention",
+      "the administrator password",
+      "both scenarios",
+      "this vulnerability",
+      "normal operations",
+      "a specific URL",
+      "a crafted HTTP request",
+      "a twofold impact",
+      "the attacker",
+      "the web management interface",
+      "the network configuration details",
+      "A successful exploit",
+      "The vulnerability",
+      "improper authorization controls",
+      "Cisco AsyncOS Software",
+      "service (DoS) condition",
+      "WSA",
+      "Cisco Web Security Appliance Unauthorized Device"
+    ],
+    "metric": {
+      "score": 8.8,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2021-39845",
+    "assigner": "adobe",
+    "title": "Adobe Acrobat Reader Page Tree Node Recursive Stack Overflow",
+    "description": "Acrobat Reader DC versions 2021.005.20060 (and earlier), 2020.004.30006 (and earlier) and 2017.011.30199 (and earlier) are affected by a stack overflow vulnerability due to insecure handling of a crafted PDF file, potentially resulting in memory corruption in the context of the current user. Exploitation requires user interaction in that a victim must open a crafted PDF file in Acrobat Reader.",
+    "affected_products": [
+      "Adobe::Acrobat Reader"
+    ],
+    "cwe": "CWE-121",
+    "keywords": [
+      "memory corruption",
+      "a crafted PDF file",
+      "2021.005.20060",
+      "Exploitation",
+      "the current user",
+      "insecure handling",
+      "Acrobat Reader",
+      "user interaction",
+      "a stack overflow vulnerability",
+      "a victim",
+      "the context",
+      "PDF",
+      "Reader DC",
+      "Adobe",
+      "Adobe Acrobat Reader Page Tree Node Recursive Stack Overflow Acrobat Reader DC versions 2021.005.20060"
+    ],
+    "metric": {
+      "score": 6.1,
+      "attackVector": "LOCAL"
+    }
+  },
+  {
+    "id": "CVE-2020-8029",
+    "assigner": "suse",
+    "title": "skuba: Insecure handling of private key",
+    "description": "A Incorrect Permission Assignment for Critical Resource vulnerability in skuba of SUSE CaaS Platform 4.5 allows local attackers to gain access to the kublet key. This issue affects: SUSE CaaS Platform 4.5 skuba versions prior to https://github.com/SUSE/skuba/pull/1416.",
+    "affected_products": [
+      "SUSE::SUSE CaaS Platform 4.5"
+    ],
+    "cwe": "CWE-732",
+    "keywords": [
+      "skuba",
+      "the kublet key",
+      "SUSE",
+      "local attackers",
+      "CaaS",
+      "This issue",
+      "Platform 4.5 skuba versions",
+      "Critical Resource",
+      "SUSE CaaS",
+      "Insecure handling",
+      "private key A Incorrect Permission Assignment",
+      "Critical Resource vulnerability",
+      "access",
+      "https://github.com/SUSE/skuba/pull/1416"
+    ],
+    "metric": {
+      "score": 2.9,
+      "attackVector": "LOCAL"
+    }
+  },
+  {
+    "id": "CVE-2022-0495",
+    "assigner": "TR-CERT",
+    "title": "SQL Injection in KOHA",
+    "description": "The library automation system product KOHA developed by Parantez Teknoloji before version 19.05.03 has an unauthenticated SQL Injection vulnerability. This has been fixed in the version 19.05.03.01.",
+    "affected_products": [
+      "Parantez Teknoloji::Parantez Teknoloji"
+    ],
+    "cwe": "CWE-89",
+    "keywords": [
+      "SQL Injection",
+      "KOHA",
+      "version",
+      "an unauthenticated SQL Injection vulnerability",
+      "This",
+      "Parantez Teknoloji",
+      "The library automation system product",
+      "19.05.03"
+    ],
+    "metric": {
+      "score": 9.4,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2022-2333",
+    "assigner": "icscert",
+    "title": "Honeywell SoftMaster Uncontrolled Search Path Element",
+    "description": "If an attacker manages to trick a valid user into loading a malicious DLL, the attacker may be able to achieve code execution in Honeywell SoftMaster version 4.51 application\u2019s context and permissions.",
+    "affected_products": [
+      "Honeywell::SoftMaster"
+    ],
+    "cwe": "CWE-427",
+    "keywords": [
+      "4.51 application\u2019s context",
+      "an attacker",
+      "Honeywell SoftMaster Uncontrolled Search Path Element",
+      "Honeywell SoftMaster version",
+      "a malicious DLL",
+      "permissions",
+      "a valid user",
+      "the attacker",
+      "code execution",
+      "DLL",
+      "Honeywell SoftMaster"
+    ],
+    "metric": {
+      "score": 8.8,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2022-3273",
+    "assigner": "@huntrdev",
+    "title": "Allocation of Resources Without Limits or Throttling in ikus060/rdiffweb",
+    "description": "Allocation of Resources Without Limits or Throttling in GitHub repository ikus060/rdiffweb prior to 2.5.0a4.",
+    "affected_products": [
+      "ikus060::ikus060/rdiffweb"
+    ],
+    "cwe": "CWE-770",
+    "keywords": [
+      "Allocation of Resources Without Limits or Throttling",
+      "Limits",
+      "GitHub repository ikus060/rdiffweb",
+      "Allocation",
+      "Resources"
+    ],
+    "metric": {
+      "score": 3.6,
+      "attackVector": "PHYSICAL"
+    }
+  },
+  {
+    "id": "CVE-2021-1380",
+    "assigner": "cisco",
+    "title": "Cisco Unified Communications Products Cross-Site Scripting Vulnerabilities",
+    "description": "Multiple vulnerabilities in the web-based management interface of Cisco Unified Communications Manager (Unified CM), Cisco Unified Communications Manager IM &amp; Presence Service (Unified CM IM&amp;P), Cisco Unified Communications Manager Session Management Edition (Unified CM SME), and Cisco Unity Connection could allow an unauthenticated, remote attacker to conduct a cross-site scripting (XSS) attack against an interface user. These vulnerabilities exist because the web-based management interface does not properly validate user-supplied input. An attacker could exploit these vulnerabilities by persuading an interface user to click a crafted link. A successful exploit could allow the attacker to execute arbitrary script code in the context of the affected interface or access sensitive browser-based information.",
+    "affected_products": [
+      "Cisco::Cisco Unity Connection"
+    ],
+    "cwe": "CWE-89",
+    "keywords": [
+      "user-supplied input",
+      "arbitrary script code",
+      "Cisco Unified Communications Products Cross-Site Scripting Vulnerabilities Multiple",
+      "Unified CM SME",
+      "Unified CM",
+      "An attacker",
+      "a crafted link",
+      "Cisco Unity Connection",
+      "an interface user",
+      "Multiple vulnerabilities",
+      "Presence Service",
+      "amp",
+      "a cross-site scripting",
+      "Cisco Unified Communications Products Cross-Site Scripting Vulnerabilities",
+      "Cisco Unified Communications Manager",
+      "Cisco Unified Communications",
+      "Cisco Unified Communications Manager Session Management Edition",
+      "an unauthenticated, remote attacker",
+      "the attacker",
+      "the affected interface or access sensitive browser-based information",
+      "the web-based management interface",
+      "These vulnerabilities",
+      "A successful exploit",
+      "Cisco Unified Communications Manager IM",
+      "these vulnerabilities",
+      "IM &",
+      "XSS) attack",
+      "the context"
+    ],
+    "metric": {
+      "score": 6.1,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2020-3154",
+    "assigner": "cisco",
+    "title": "Cisco Cloud Web Security SQL Injection Vulnerability",
+    "description": "A vulnerability in the web UI of Cisco Cloud Web Security (CWS) could allow an authenticated, remote attacker to execute arbitrary SQL queries. The vulnerability exists because the web-based management interface improperly validates SQL values. An authenticated attacker could exploit this vulnerability sending malicious requests to the affected device. An exploit could allow the attacker to modify values on or return values from the underlying database.",
+    "affected_products": [
+      "Cisco::Cisco Cloud Web Security"
+    ],
+    "cwe": "CWE-89",
+    "keywords": [
+      "Cisco Cloud Web Security",
+      "CWS",
+      "an authenticated, remote attacker",
+      "UI",
+      "the web UI",
+      "this vulnerability",
+      "An authenticated attacker",
+      "values",
+      "the attacker",
+      "arbitrary SQL queries",
+      "Cisco Cloud Web Security SQL Injection Vulnerability A vulnerability",
+      "the web-based management interface",
+      "the affected device",
+      "The vulnerability",
+      "An exploit",
+      "the underlying database",
+      "SQL",
+      "SQL values",
+      "malicious requests",
+      "Cisco Cloud Web Security SQL Injection Vulnerability A"
+    ],
+    "metric": {
+      "score": 4.9,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2019-16775",
+    "assigner": "GitHub_M",
+    "title": "Unauthorized File Access in npm CLI before before version 6.13.3",
+    "description": "Versions of the npm CLI prior to 6.13.3 are vulnerable to an Arbitrary File Write. It is possible for packages to create symlinks to files outside of thenode_modules folder through the bin field upon installation. A properly constructed entry in the package.json bin field would allow a package publisher to create a symlink pointing to arbitrary files on a user's system when the package is installed. This behavior is still possible through install scripts. This vulnerability bypasses a user using the --ignore-scripts install option.",
+    "affected_products": [
+      "npm::cli"
+    ],
+    "cwe": "CWE-61",
+    "keywords": [
+      "It",
+      "install scripts",
+      "npm CLI",
+      "installation",
+      "a package publisher",
+      "the package.json bin field",
+      "This vulnerability",
+      "an Arbitrary File Write",
+      "This behavior",
+      "A properly constructed entry",
+      "version",
+      "the npm CLI",
+      "a user",
+      "packages",
+      "Versions",
+      "a user's system",
+      "a symlink pointing",
+      "Unauthorized File Access",
+      "files",
+      "arbitrary files",
+      "symlinks",
+      "CLI",
+      "the package",
+      "thenode_modules",
+      "the --ignore-scripts install option",
+      "the bin field"
+    ],
+    "metric": {
+      "score": 7.7,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2022-46307",
+    "assigner": "twcert",
+    "title": "SGUDA U-Lock - Broken Access Control",
+    "description": "SGUDA U-Lock central lock control service\u2019s lock management function has incorrect authorization. A remote attacker with general privilege can exploit this vulnerability to call privileged APIs to acquire information, manipulate or disrupt the functionality of arbitrary electronic locks.",
+    "affected_products": [
+      "SGUDA::U-Lock"
+    ],
+    "cwe": "CWE-863",
+    "keywords": [
+      "incorrect authorization",
+      "the functionality",
+      "this vulnerability",
+      "Lock - Broken Access Control",
+      "arbitrary electronic locks",
+      "general privilege",
+      "privileged APIs",
+      "information",
+      "A remote attacker"
+    ],
+    "metric": {
+      "score": 8.8,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2022-28763",
+    "assigner": "Zoom",
+    "title": "Improper URL parsing in Zoom Clients",
+    "description": "The Zoom Client for Meetings (for Android, iOS, Linux, macOS, and Windows) before version 5.12.2 is susceptible to a URL parsing vulnerability. If a malicious Zoom meeting URL is opened, the malicious link may direct the user to connect to an arbitrary network address, leading to additional attacks including session takeovers.",
+    "affected_products": [
+      "Zoom Video Communications Inc::Zoom Client for Meetings (for Android, iOS, Linux, macOS, and Windows)",
+      "Zoom Video Communications Inc::Zoom VDI Windows Meeting Clients",
+      "Zoom Video Communications Inc::Zoom Rooms for Conference Room (for Android, iOS, Linux, macOS, and Windows)"
+    ],
+    "cwe": "CWE-20",
+    "keywords": [
+      "Windows",
+      "Android",
+      "Linux",
+      "the user",
+      "Meetings",
+      "iOS",
+      "macOS",
+      "version",
+      "a URL parsing vulnerability",
+      "a malicious Zoom meeting URL",
+      "an arbitrary network address",
+      "Zoom Clients",
+      "additional attacks",
+      "Zoom",
+      "the malicious link",
+      "Improper URL parsing",
+      "The Zoom Client",
+      "session takeovers"
+    ],
+    "metric": {
+      "score": 8.8,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2021-29589",
+    "assigner": "GitHub_M",
+    "title": "Division by zero in TFLite's implementation of `GatherNd`",
+    "description": "TensorFlow is an end-to-end open source platform for machine learning. The reference implementation of the `GatherNd` TFLite operator is vulnerable to a division by zero error(https://github.com/tensorflow/tensorflow/blob/0d45ea1ca641b21b73bcf9c00e0179cda284e7e7/tensorflow/lite/kernels/internal/reference/reference_ops.h#L966). An attacker can craft a model such that `params` input would be an empty tensor. In turn, `params_shape.Dims(.)` would be zero, in at least one dimension. The fix will be included in TensorFlow 2.5.0. We will also cherrypick this commit on TensorFlow 2.4.2, TensorFlow 2.3.3, TensorFlow 2.2.3 and TensorFlow 2.1.4, as these are also affected and still in supported range.",
+    "affected_products": [
+      "tensorflow::tensorflow"
+    ],
+    "cwe": "CWE-369",
+    "keywords": [
+      "TensorFlow 2.4.2",
+      "these",
+      "the `GatherNd` TFLite operator",
+      "An attacker",
+      "supported range",
+      "this commit",
+      "internal/reference/reference_ops.h#L966",
+      "TensorFlow 2.3.3",
+      "tensorflow",
+      "TFLite",
+      "turn",
+      "`GatherNd` TensorFlow",
+      "The reference implementation",
+      "zero error(https://github.com/tensorflow/tensorflow/blob/0d45ea1ca641b21b73bcf9c00e0179cda284e7e7/tensorflow/lite/kernels",
+      "TensorFlow 2.2.3",
+      "at least one dimension",
+      "an empty tensor",
+      "the `GatherNd` TFLite",
+      "end",
+      "The fix",
+      "a division",
+      "We",
+      "machine learning",
+      "a model",
+      "Division",
+      "`params` input",
+      "TFLite's implementation"
+    ],
+    "metric": {
+      "score": 2.5,
+      "attackVector": "LOCAL"
+    }
+  },
+  {
+    "id": "CVE-2021-1609",
+    "assigner": "cisco",
+    "title": "Cisco RV340, RV340W, RV345, and RV345P Dual WAN Gigabit VPN Routers Web Management Vulnerabilities",
+    "description": "Multiple vulnerabilities in the web-based management interface of the Cisco Small Business RV340, RV340W, RV345, and RV345P Dual WAN Gigabit VPN Routers could allow an attacker to do the following: Execute arbitrary code Cause a denial of service (DoS) condition Execute arbitrary commands For more information about these vulnerabilities, see the Details section of this advisory.",
+    "affected_products": [
+      "Cisco::Cisco Small Business RV Series Router Firmware"
+    ],
+    "cwe": "CWE-121",
+    "keywords": [
+      "the Cisco Small Business RV340",
+      "a denial",
+      "WAN Gigabit VPN Routers Web Management",
+      "RV340W",
+      "arbitrary commands",
+      "DoS",
+      "the following",
+      "Multiple vulnerabilities",
+      "Cisco RV340",
+      "more information",
+      "RV345",
+      "the Details section",
+      "the web-based management interface",
+      "arbitrary code",
+      "this advisory",
+      "these vulnerabilities",
+      "an attacker",
+      "WAN Gigabit VPN Routers",
+      "Dual",
+      "service (DoS) condition"
+    ],
+    "metric": {
+      "score": 9.8,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2019-1818",
+    "assigner": "cisco",
+    "title": "Cisco Prime Infrastructure and Evolved Programmable Network Manager Path Traversal Vulnerability",
+    "description": "A vulnerability in the web-based management interface of Cisco Prime Infrastructure and Cisco Evolved Programmable Network (EPN) Manager software could allow an authenticated, remote attacker to download and view files within the application that should be restricted. This vulnerability is due to improper sanitization of user-supplied input in HTTP request parameters that describe filenames. An attacker could exploit this vulnerability by using directory traversal techniques to submit a path to a desired file location. A successful exploit could allow the attacker to view application files that may contain sensitive information.",
+    "affected_products": [
+      "Cisco::Cisco Prime Infrastructure"
+    ],
+    "cwe": "CWE-22",
+    "keywords": [
+      "filenames",
+      "user-supplied input",
+      "an authenticated, remote attacker",
+      "application files",
+      "HTTP",
+      "Cisco Prime Infrastructure",
+      "request parameters",
+      "An attacker",
+      "a path",
+      "the application",
+      "a desired file location",
+      "that",
+      "This vulnerability",
+      "directory traversal techniques",
+      "this vulnerability",
+      "EPN",
+      "Cisco Prime Infrastructure and Evolved Programmable Network Manager Path Traversal Vulnerability A vulnerability",
+      "the attacker",
+      "files",
+      "Cisco Evolved Programmable Network",
+      "the web-based management interface",
+      "A successful exploit",
+      "sensitive information",
+      "Path Traversal",
+      "Manager software",
+      "improper sanitization"
+    ],
+    "metric": {
+      "score": 6.5,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2021-32966",
+    "assigner": "icscert",
+    "title": "Philips Interoperability Solution XDS - Clear Text Transmission of Sensitive Information",
+    "description": "Philips Interoperability Solution XDS versions 2.5 through 3.11 and 2018-1 through 2021-1 are vulnerable to clear text transmission of sensitive information when configured to use LDAP via TLS and where the domain controller returns LDAP referrals, which may allow an attacker to remotely read LDAP system credentials.",
+    "affected_products": [
+      "Philips::Interoperability Solution XDS"
+    ],
+    "cwe": "CWE-319",
+    "keywords": [
+      "clear text transmission",
+      "Sensitive Information Philips Interoperability Solution",
+      "an attacker",
+      "LDAP system credentials",
+      "sensitive information",
+      "which",
+      "LDAP",
+      "Philips Interoperability Solution XDS - Clear Text Transmission",
+      "TLS"
+    ],
+    "metric": {
+      "score": 3.7,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2022-0911",
+    "assigner": "@huntrdev",
+    "title": "Cross-site Scripting (XSS) - Stored in pimcore/pimcore",
+    "description": "Cross-site Scripting (XSS) - Stored in GitHub repository pimcore/pimcore prior to 10.4.0.",
+    "affected_products": [
+      "pimcore::pimcore/pimcore"
+    ],
+    "cwe": "CWE-79",
+    "keywords": [
+      "pimcore/pimcore Cross-site Scripting",
+      "Cross-site Scripting",
+      "GitHub repository pimcore/pimcore",
+      "GitHub",
+      "(XSS",
+      "XSS",
+      "Cross"
+    ],
+    "metric": {
+      "score": 6.8,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2022-0697",
+    "assigner": "@huntrdev",
+    "title": "Open Redirect in archivy/archivy",
+    "description": "Open Redirect in GitHub repository archivy/archivy prior to 1.7.0.",
+    "affected_products": [
+      "archivy::archivy/archivy"
+    ],
+    "cwe": "CWE-601",
+    "keywords": [
+      "archivy/archivy Open Redirect",
+      "GitHub",
+      "GitHub repository archivy/archivy",
+      "Redirect"
+    ],
+    "metric": {
+      "score": 3.4,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2022-41912",
+    "assigner": "GitHub_M",
+    "title": "crewjam/saml go library is vulnerable to signature bypass via multiple Assertion elements",
+    "description": "The crewjam/saml go library prior to version 0.4.9 is vulnerable to an authentication bypass when processing SAML responses containing multiple Assertion elements. This issue has been corrected in version 0.4.9. There are no workarounds other than upgrading to a fixed version.",
+    "affected_products": [
+      "crewjam::saml"
+    ],
+    "cwe": "CWE-287",
+    "keywords": [
+      "crewjam/saml",
+      "multiple Assertion elements",
+      "no workarounds",
+      "an authentication bypass",
+      "a fixed version",
+      "signature bypass",
+      "version",
+      "This issue",
+      "library",
+      "crewjam/saml go library",
+      "The crewjam/saml",
+      "SAML",
+      "SAML responses"
+    ],
+    "metric": {
+      "score": 9.1,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2022-3065",
+    "assigner": "@huntrdev",
+    "title": "Improper Access Control in jgraph/drawio",
+    "description": "Improper Access Control in GitHub repository jgraph/drawio prior to 20.2.8.",
+    "affected_products": [
+      "jgraph::jgraph/drawio"
+    ],
+    "cwe": "CWE-284",
+    "keywords": [
+      "jgraph",
+      "GitHub repository jgraph/drawio",
+      "GitHub",
+      "jgraph/drawio Improper Access Control",
+      "Improper Access Control"
+    ],
+    "metric": {
+      "score": 5.3,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2022-4401",
+    "assigner": "VulDB",
+    "title": "pallidlight online-course-selection-system cross site scripting",
+    "description": "A vulnerability was found in pallidlight online-course-selection-system. It has been classified as problematic. Affected is an unknown function. The manipulation leads to cross site scripting. It is possible to launch the attack remotely. The identifier of this vulnerability is VDB-215268.",
+    "affected_products": [
+      "pallidlight::online-course-selection-system"
+    ],
+    "cwe": "CWE-707",
+    "keywords": [
+      "The manipulation",
+      "an unknown function",
+      "the attack",
+      "The identifier",
+      "It",
+      "pallidlight online-course-selection-system",
+      "pallidlight online-course-selection-system cross site",
+      "this vulnerability",
+      "cross site scripting",
+      "VDB-215268",
+      "A vulnerability"
+    ],
+    "metric": {
+      "score": 3.5,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2022-20773",
+    "assigner": "cisco",
+    "title": "Cisco Umbrella Virtual Appliance Static SSH Host Key Vulnerability",
+    "description": "A vulnerability in the key-based SSH authentication mechanism of Cisco Umbrella Virtual Appliance (VA) could allow an unauthenticated, remote attacker to impersonate a VA. This vulnerability is due to the presence of a static SSH host key. An attacker could exploit this vulnerability by performing a man-in-the-middle attack on an SSH connection to the Umbrella VA. A successful exploit could allow the attacker to learn the administrator credentials, change configurations, or reload the VA. Note: SSH is not enabled by default on the Umbrella VA.",
+    "affected_products": [
+      "Cisco::Cisco Umbrella Insights Virtual Appliance"
+    ],
+    "cwe": "CWE-321",
+    "keywords": [
+      "the key-based SSH authentication mechanism",
+      "a man-in-the-middle attack",
+      "An attacker",
+      "This vulnerability",
+      "default",
+      "an SSH connection",
+      "the administrator credentials",
+      "this vulnerability",
+      "the presence",
+      "a VA",
+      "a static SSH host key",
+      "the VA",
+      "the Umbrella VA",
+      "VA",
+      "an unauthenticated, remote attacker",
+      "the attacker",
+      "Cisco Umbrella Virtual Appliance Static SSH Host Key Vulnerability A vulnerability",
+      "SSH",
+      "A successful exploit",
+      "change configurations",
+      "Cisco Umbrella Virtual Appliance",
+      "Cisco Umbrella Virtual Appliance Static"
+    ],
+    "metric": {
+      "score": 7.5,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2021-39155",
+    "assigner": "GitHub_M",
+    "title": "Authorization Policy Bypass Due to Case Insensitive Host Comparison",
+    "description": "Istio is an open source platform for providing a uniform way to integrate microservices, manage traffic flow across microservices, enforce policies and aggregate telemetry data. According to [RFC 4343](https://datatracker.ietf.org/doc/html/rfc4343), Istio authorization policy should compare the hostname in the HTTP Host header in a case insensitive way, but currently the comparison is case sensitive. The proxy will route the request hostname in a case-insensitive way which means the authorization policy could be bypassed. As an example, the user may have an authorization policy that rejects request with hostname \"httpbin.foo\" for some source IPs, but the attacker can bypass this by sending the request with hostname \"Httpbin.Foo\". Patches are available in Istio 1.11.1, Istio 1.10.4 and Istio 1.9.8. As a work around a Lua filter may be written to normalize Host header before the authorization check. This is similar to the Path normalization presented in the [Security Best Practices](https://istio.io/latest/docs/ops/best-practices/security/#case-normalization) guide.",
+    "affected_products": [
+      "istio::istio"
+    ],
+    "cwe": "CWE-178",
+    "keywords": [
+      "Insensitive Host",
+      "[RFC 4343](https://datatracker.ietf.org/doc/html/rfc4343",
+      "the comparison",
+      "hostname",
+      "Host header",
+      "microservices",
+      "the authorization policy",
+      "which",
+      "this",
+      "The proxy",
+      "policies",
+      "that",
+      "the user",
+      "the request hostname",
+      "best-practices/security/#case-normalization",
+      "Patches",
+      "some source IPs",
+      "a uniform way",
+      "a case-insensitive way",
+      "an example",
+      "Comparison Istio",
+      "Istio authorization policy",
+      "Foo",
+      "the HTTP Host header",
+      "a work",
+      "Istio 1.9.8",
+      "the request",
+      "the attacker",
+      "an authorization policy",
+      "Httpbin",
+      "the authorization check",
+      "traffic flow",
+      "a Lua filter",
+      "This",
+      "the Path normalization",
+      "request",
+      "Istio",
+      "Authorization Policy Bypass",
+      "an open source platform",
+      "the hostname",
+      "Case",
+      "a case",
+      "aggregate telemetry data"
+    ],
+    "metric": {
+      "score": 8.3,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2021-1201",
+    "assigner": "cisco",
+    "title": "Cisco Small Business RV110W, RV130, RV130W, and RV215W Routers Management Interface Remote Command Execution and Denial of Service Vulnerabilities",
+    "description": "Multiple vulnerabilities in the web-based management interface of Cisco Small Business RV110W, RV130, RV130W, and RV215W Routers could allow an authenticated, remote attacker to execute arbitrary code or cause an affected device to restart unexpectedly. The vulnerabilities are due to improper validation of user-supplied input in the web-based management interface. An attacker could exploit these vulnerabilities by sending crafted HTTP requests to an affected device. A successful exploit could allow the attacker to execute arbitrary code as the root user on the underlying operating system or cause the device to reload, resulting in a denial of service (DoS) condition. To exploit these vulnerabilities, an attacker would need to have valid administrator credentials on the affected device. Cisco has not released software updates that address these vulnerabilities.",
+    "affected_products": [
+      "Cisco::Cisco Small Business RV Series Router Firmware"
+    ],
+    "cwe": "CWE-121",
+    "keywords": [
+      "the underlying operating system",
+      "RV215W Routers Management Interface Remote Command Execution",
+      "a denial",
+      "user-supplied input",
+      "Routers Management Interface Remote Command",
+      "an authenticated, remote attacker",
+      "The vulnerabilities",
+      "Denial",
+      "Denial of Service",
+      "An attacker",
+      "DoS",
+      "an affected device",
+      "Service Vulnerabilities",
+      "RV110W",
+      "that",
+      "software updates",
+      "improper validation",
+      "Multiple vulnerabilities",
+      "crafted HTTP requests",
+      "Routers",
+      "the root user",
+      "the attacker",
+      "arbitrary code",
+      "the web-based management interface",
+      "the affected device",
+      "A successful exploit",
+      "these vulnerabilities",
+      "an attacker",
+      "valid administrator credentials",
+      "RV130",
+      "Cisco Small Business",
+      "service (DoS) condition",
+      "Cisco",
+      "the device"
+    ],
+    "metric": {
+      "score": 7.2,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2021-34594",
+    "assigner": "CERTVDE",
+    "title": "Beckhoff: Relative path traversal vulnerability through TwinCAT OPC UA Server",
+    "description": "TwinCAT OPC UA Server in TF6100 and TS6100 in product versions before 4.3.48.0 or with TcOpcUaServer versions below 3.2.0.194 are prone to a relative path traversal that allow administrators to create or delete any files on the system.",
+    "affected_products": [
+      "Beckhoff Automation::TwinCAT OPC UA Server"
+    ],
+    "cwe": "CWE-23",
+    "keywords": [
+      "TwinCAT",
+      "product versions",
+      "4.3.48.0",
+      "Relative path traversal vulnerability",
+      "TcOpcUaServer versions",
+      "TF6100",
+      "OPC UA Server TwinCAT OPC UA Server",
+      "administrators",
+      "a relative path traversal",
+      "TcOpcUaServer",
+      "any files",
+      "OPC UA Server",
+      "Beckhoff",
+      "the system",
+      "that",
+      "TS6100"
+    ],
+    "metric": {
+      "score": 6.5,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2021-4173",
+    "assigner": "@huntrdev",
+    "title": "Use After Free in vim/vim",
+    "description": "vim is vulnerable to Use After Free",
+    "affected_products": [
+      "vim::vim/vim"
+    ],
+    "cwe": "CWE-416",
+    "keywords": [
+      "vim",
+      "Use"
+    ],
+    "metric": {
+      "score": 6.8,
+      "attackVector": "LOCAL"
+    }
+  },
+  {
+    "id": "CVE-2022-47395",
+    "assigner": "icscert",
+    "title": "CVE-2022-47395",
+    "description": "Sewio\u2019s Real-Time Location System (RTLS) Studio version 2.0.0 up to and including version 2.6.2 is vulnerable to cross-site request forgery in its monitor services. An attacker could take advantage of this vulnerability to execute arbitrary maintenance operations and cause a denial-of-service condition.\n\n",
+    "affected_products": [
+      "Sewio::RTLS Studio"
+    ],
+    "cwe": "CWE-352",
+    "keywords": [
+      "version",
+      "arbitrary maintenance operations",
+      "its monitor services",
+      "CVE-2022-47395 Sewio\u2019s Real-Time Location System",
+      "advantage",
+      "Studio version",
+      "this vulnerability",
+      "Sewio",
+      "An attacker",
+      "RTLS",
+      "cross-site request forgery",
+      "service"
+    ],
+    "metric": {
+      "score": 8.1,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2022-44589",
+    "assigner": "Patchstack",
+    "title": "WordPress miniOrange's Google Authenticator Plugin <= 5.6.1 is vulnerable to Sensitive Data Exposure",
+    "description": "Exposure of Sensitive Information to an Unauthorized Actor vulnerability in miniOrange miniOrange's Google Authenticator \u2013 WordPress Two Factor Authentication \u2013 2FA , Two Factor, OTP SMS and Email | Passwordless login.This issue affects miniOrange's Google Authenticator \u2013 WordPress Two Factor Authentication \u2013 2FA , Two Factor, OTP SMS and Email | Passwordless login: from n/a through 5.6.1.\n\n",
+    "affected_products": [
+      "miniOrange::miniOrange's Google Authenticator \u2013 WordPress Two Factor Authentication \u2013 2FA , Two Factor, OTP SMS and Email | Passwordless login"
+    ],
+    "cwe": "CWE-200",
+    "keywords": [
+      "WordPress miniOrange's Google Authenticator Plugin",
+      "Two Factor",
+      "| Passwordless login",
+      "WordPress",
+      "Sensitive Data Exposure Exposure",
+      "an Unauthorized Actor vulnerability",
+      "miniOrange miniOrange's Google Authenticator",
+      "Sensitive Information",
+      "This issue",
+      "= 5.6.1",
+      "OTP SMS",
+      "Email",
+      "WordPress Two Factor Authentication",
+      "miniOrange's Google Authenticator",
+      "a"
+    ],
+    "metric": {
+      "score": 8.1,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2021-28511",
+    "assigner": "Arista",
+    "title": "This advisory documents the impact of an internally found vulnerability in Arista EOS for security ACL bypass.  The impact of this vulnerability is that the security ACL drop rule might be bypassed if a NAT ACL rule filter with permit action matches t ...",
+    "description": "This advisory documents the impact of an internally found vulnerability in Arista EOS for security ACL bypass. The impact of this vulnerability is that the security ACL drop rule might be bypassed if a NAT ACL rule filter with permit action matches the packet flow. This could allow a host with an IP address in a range that matches the range allowed by a NAT ACL and a range denied by a Security ACL to be forwarded incorrectly as it should have been denied by the Security ACL. This can enable an ACL bypass.",
+    "affected_products": [
+      "Arista Networks::EOS"
+    ],
+    "cwe": "CWE-284",
+    "keywords": [
+      "This advisory",
+      "an ACL bypass",
+      "an IP address",
+      "that",
+      "Arista EOS",
+      "a NAT ACL rule filter",
+      "the Security ACL",
+      "this vulnerability",
+      "the impact",
+      "permit action",
+      "a NAT ACL",
+      "ACL",
+      "permit action matches t",
+      "a Security ACL",
+      "the range",
+      "a range",
+      "security ACL bypass",
+      "This",
+      "a host",
+      "NAT ACL",
+      "Arista",
+      "an internally found vulnerability",
+      "The impact",
+      "the packet flow",
+      "IP",
+      "it",
+      "the security ACL drop rule"
+    ],
+    "metric": {
+      "score": 5.8,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2021-36016",
+    "assigner": "adobe",
+    "title": "Adobe Media Encoder FLV File Parsing Out-Of-Bounds Read Information Disclosure Vulnerability",
+    "description": "Adobe Media Encoder version 15.2 (and earlier) is affected by an Out-of-bounds Read vulnerability when parsing a specially crafted file. An unauthenticated attacker could leverage this vulnerability to read arbitrary file system information in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+    "affected_products": [
+      "Adobe::Media Encoder"
+    ],
+    "cwe": "CWE-125",
+    "keywords": [
+      "a specially crafted file",
+      "Exploitation",
+      "the current user",
+      "Adobe Media Encoder FLV",
+      "Bounds",
+      "the context",
+      "this issue",
+      "user interaction",
+      "bounds",
+      "this vulnerability",
+      "a victim",
+      "Vulnerability Adobe Media Encoder version",
+      "a malicious file",
+      "arbitrary file system information",
+      "Adobe Media Encoder FLV File Parsing",
+      "An unauthenticated attacker"
+    ],
+    "metric": {
+      "score": 3.3,
+      "attackVector": "LOCAL"
+    }
+  },
+  {
+    "id": "CVE-2020-1768",
+    "assigner": "OTRS",
+    "title": "External Interface does not invalidate session",
+    "description": "The external frontend system uses numerous background calls to the backend. Each background request is treated as user activity so the SessionMaxIdleTime will not be reached. This issue affects: OTRS 7.0.x version 7.0.14 and prior versions.",
+    "affected_products": [
+      "OTRS AG::OTRS"
+    ],
+    "cwe": "CWE-613",
+    "keywords": [
+      "user activity",
+      "The external frontend system",
+      "External Interface",
+      "the SessionMaxIdleTime",
+      "This issue",
+      "7.0.x version",
+      "session",
+      "the backend",
+      "numerous background calls",
+      "Each background request",
+      "prior versions"
+    ],
+    "metric": {
+      "score": 5.4,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2021-3034",
+    "assigner": "palo_alto",
+    "title": "Cortex XSOAR: Secrets for SAML single sign-on (SSO) integration may be logged in system logs",
+    "description": "An information exposure through log file vulnerability exists in Cortex XSOAR software where the secrets configured for the SAML single sign-on (SSO) integration can be logged to the '/var/log/demisto/' server logs when testing the integration during setup. This logged information includes the private key and identity provider certificate used to configure the SAML SSO integration. This issue impacts: Cortex XSOAR 5.5.0 builds earlier than 98622; Cortex XSOAR 6.0.1 builds earlier than 830029; Cortex XSOAR 6.0.2 builds earlier than 98623; Cortex XSOAR 6.1.0 builds earlier than 848144.",
+    "affected_products": [
+      "Palo Alto Networks::Cortex XSOAR"
+    ],
+    "cwe": "CWE-532",
+    "keywords": [
+      "the secrets",
+      "SSO",
+      "the integration",
+      "Cortex XSOAR 6.0.2",
+      "the private key and identity provider certificate",
+      "(SSO) integration",
+      "the SAML SSO integration",
+      "Secrets",
+      "This issue",
+      "SAML",
+      "log file vulnerability",
+      "This",
+      "Cortex XSOAR software",
+      "system",
+      "the SAML single sign-on (SSO) integration",
+      "the '/var/log/demisto/' server logs",
+      "setup",
+      "Cortex XSOAR 6.1.0",
+      "Cortex XSOAR",
+      "An information exposure"
+    ],
+    "metric": {
+      "score": 5.1,
+      "attackVector": "LOCAL"
+    }
+  },
+  {
+    "id": "CVE-2021-44741",
+    "assigner": "adobe",
+    "title": "Adobe Acrobat Pro DC NULL Pointer Dereference could lead to Application-denial-of-service",
+    "description": "Acrobat Reader DC version 21.007.20099 (and earlier), 20.004.30017 (and earlier) and 17.011.30204 (and earlier) are affected by a Null pointer dereference vulnerability when parsing a specially crafted file. An unauthenticated attacker could leverage this vulnerability to achieve an application denial-of-service in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+    "affected_products": [
+      "Adobe::Acrobat Reader"
+    ],
+    "cwe": "CWE-476",
+    "keywords": [
+      "a specially crafted file",
+      "Exploitation",
+      "the current user",
+      "a Null pointer dereference vulnerability",
+      "this issue",
+      "user interaction",
+      "Adobe Acrobat Pro DC NULL Pointer Dereference",
+      "this vulnerability",
+      "an application denial",
+      "Adobe Acrobat Pro DC",
+      "a victim",
+      "a malicious file",
+      "the context",
+      "Reader DC",
+      "service",
+      "21.007.20099",
+      "An unauthenticated attacker"
+    ],
+    "metric": {
+      "score": 3.3,
+      "attackVector": "LOCAL"
+    }
+  },
+  {
+    "id": "CVE-2021-1172",
+    "assigner": "cisco",
+    "title": "Cisco Small Business RV110W, RV130, RV130W, and RV215W Routers Management Interface Remote Command Execution and Denial of Service Vulnerabilities",
+    "description": "Multiple vulnerabilities in the web-based management interface of Cisco Small Business RV110W, RV130, RV130W, and RV215W Routers could allow an authenticated, remote attacker to execute arbitrary code or cause an affected device to restart unexpectedly. The vulnerabilities are due to improper validation of user-supplied input in the web-based management interface. An attacker could exploit these vulnerabilities by sending crafted HTTP requests to an affected device. A successful exploit could allow the attacker to execute arbitrary code as the root user on the underlying operating system or cause the device to reload, resulting in a denial of service (DoS) condition. To exploit these vulnerabilities, an attacker would need to have valid administrator credentials on the affected device. Cisco has not released software updates that address these vulnerabilities.",
+    "affected_products": [
+      "Cisco::Cisco Small Business RV Series Router Firmware"
+    ],
+    "cwe": "CWE-121",
+    "keywords": [
+      "the underlying operating system",
+      "RV215W Routers Management Interface Remote Command Execution",
+      "a denial",
+      "user-supplied input",
+      "Routers Management Interface Remote Command",
+      "an authenticated, remote attacker",
+      "The vulnerabilities",
+      "Denial",
+      "Denial of Service",
+      "An attacker",
+      "DoS",
+      "an affected device",
+      "Service Vulnerabilities",
+      "RV110W",
+      "that",
+      "software updates",
+      "improper validation",
+      "Multiple vulnerabilities",
+      "crafted HTTP requests",
+      "Routers",
+      "the root user",
+      "the attacker",
+      "arbitrary code",
+      "the web-based management interface",
+      "the affected device",
+      "A successful exploit",
+      "these vulnerabilities",
+      "an attacker",
+      "valid administrator credentials",
+      "RV130",
+      "Cisco Small Business",
+      "service (DoS) condition",
+      "Cisco",
+      "the device"
+    ],
+    "metric": {
+      "score": 7.2,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2020-3386",
+    "assigner": "cisco",
+    "title": "Cisco Data Center Network Manager Improper Authorization Vulnerability",
+    "description": "A vulnerability in the REST API endpoint of Cisco Data Center Network Manager (DCNM) could allow an authenticated, remote attacker with a low-privileged account to bypass authorization on the API of an affected device. The vulnerability is due to insufficient authorization of certain API functions. An attacker could exploit this vulnerability by sending a crafted request to the API using low-privileged credentials. A successful exploit could allow the attacker to perform arbitrary actions through the REST API with administrative privileges.",
+    "affected_products": [
+      "Cisco::Cisco Data Center Network Manager"
+    ],
+    "cwe": "CWE-285",
+    "keywords": [
+      "low-privileged credentials",
+      "the REST API endpoint",
+      "Cisco Data Center Network",
+      "an authenticated, remote attacker",
+      "arbitrary actions",
+      "a low-privileged account",
+      "An attacker",
+      "an affected device",
+      "authorization",
+      "Cisco Data Center Network Manager Improper Authorization Vulnerability A vulnerability",
+      "insufficient authorization",
+      "the API",
+      "this vulnerability",
+      "administrative privileges",
+      "Cisco Data Center Network Manager",
+      "a crafted request",
+      "API",
+      "the REST API",
+      "the attacker",
+      "A successful exploit",
+      "The vulnerability",
+      "DCNM",
+      "Improper Authorization Vulnerability",
+      "certain API functions"
+    ],
+    "metric": {
+      "score": 8.8,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2022-33259",
+    "assigner": "qualcomm",
+    "title": "Buffer copy without checking the size of input in Modem",
+    "description": "Memory corruption due to buffer copy without checking the size of input in modem while decoding raw SMS received.",
+    "affected_products": [
+      "Qualcomm, Inc.::Snapdragon"
+    ],
+    "cwe": "CWE-120",
+    "keywords": [
+      "input",
+      "the size",
+      "modem",
+      "Buffer copy",
+      "buffer copy",
+      "raw SMS",
+      "Modem Memory",
+      "Modem Memory corruption",
+      "SMS"
+    ],
+    "metric": {
+      "score": 9.8,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2020-3406",
+    "assigner": "cisco",
+    "title": "Cisco SD-WAN vManage Software Cross-Site Scripting Vulnerability",
+    "description": "A vulnerability in the web-based management interface of the Cisco SD-WAN vManage Software could allow an authenticated, remote attacker to conduct a cross-site scripting (XSS) attack against a user of the interface. The vulnerability exists because the web-based management interface does not properly validate user-supplied input. An attacker could exploit this vulnerability by persuading a user to click a crafted link. A successful exploit could allow the attacker to execute arbitrary script code in the context of the interface or access sensitive, browser-based information.",
+    "affected_products": [
+      "Cisco::Cisco SD-WAN vManage"
+    ],
+    "cwe": "CWE-79",
+    "keywords": [
+      "user-supplied input",
+      "arbitrary script code",
+      "an authenticated, remote attacker",
+      "Cisco SD-WAN vManage Software Cross-Site",
+      "An attacker",
+      "a crafted link",
+      ", browser-based information",
+      "access",
+      "the Cisco SD-WAN vManage Software",
+      "a user",
+      "this vulnerability",
+      "a cross-site scripting",
+      "the attacker",
+      "Cisco SD-WAN vManage Software",
+      "Cisco SD-WAN vManage Software Cross-Site Scripting Vulnerability A vulnerability",
+      "the web-based management interface",
+      "A successful exploit",
+      "the interface",
+      "The vulnerability",
+      "XSS) attack",
+      "the context"
+    ],
+    "metric": {
+      "score": 6.4,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2020-5301",
+    "assigner": "GitHub_M",
+    "title": "Information disclosure of source code in SimpleSAMLphp",
+    "description": "SimpleSAMLphp versions before 1.18.6 contain an information disclosure vulnerability. The module controller in `SimpleSAML\\Module` that processes requests for pages hosted by modules, has code to identify paths ending with `.php` and process those as PHP code. If no other suitable way of handling the given path exists it presents the file to the browser. The check to identify paths ending with `.php` does not account for uppercase letters. If someone requests a path ending with e.g. `.PHP` and the server is serving the code from a case-insensitive file system, such as on Windows, the processing of the PHP code does not occur, and the source code is instead presented to the browser. An attacker may use this issue to gain access to the source code in third-party modules that is meant to be private, or even sensitive. However, the attack surface is considered small, as the attack will only work when SimpleSAMLphp serves such content from a file system that is not case-sensitive, such as on Windows. This issue is fixed in version 1.18.6.",
+    "affected_products": [
+      "simplesamlphp::simplesamlphp"
+    ],
+    "cwe": "CWE-200",
+    "keywords": [
+      "an information disclosure vulnerability",
+      "such content",
+      "the attack surface",
+      "someone",
+      "a file system",
+      "An attacker",
+      "modules",
+      "a path",
+      "the browser",
+      "the source code",
+      "access",
+      "that",
+      "those",
+      "the attack",
+      "version",
+      "the PHP code",
+      "code",
+      "PHP code",
+      "The check",
+      "SimpleSAML\\Module",
+      "a case-insensitive file system",
+      "This issue",
+      "source code",
+      "the code",
+      ".php",
+      "the processing",
+      "Information disclosure",
+      "the file",
+      "the given path",
+      "pages",
+      "SimpleSAMLphp SimpleSAMLphp versions",
+      "Windows",
+      "paths",
+      "this issue",
+      "The module controller",
+      "PHP",
+      "no other suitable way",
+      "uppercase letters",
+      "the server",
+      "third-party modules",
+      "SimpleSAMLphp",
+      "it",
+      "requests"
+    ],
+    "metric": {
+      "score": 3,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2022-34219",
+    "assigner": "adobe",
+    "title": "Adobe Acrobat Reader DC Font Parsing Use-After-Free Remote Code Execution Vulnerability",
+    "description": "Adobe Acrobat Reader versions 22.001.20142 (and earlier), 20.005.30334 (and earlier) and 17.012.30229 (and earlier) are affected by a Use After Free vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+    "affected_products": [
+      "Adobe::Acrobat Reader"
+    ],
+    "cwe": "CWE-416",
+    "keywords": [
+      "a Use",
+      "DC Font",
+      "Free Remote Code Execution",
+      "Exploitation",
+      "the current user",
+      "this issue",
+      "user interaction",
+      "Adobe Acrobat Reader DC Font",
+      "Free vulnerability",
+      "arbitrary code execution",
+      "a malicious file",
+      "a victim",
+      "22.001.20142",
+      "the context",
+      "that",
+      "Adobe Acrobat Reader"
+    ],
+    "metric": {
+      "score": 7.8,
+      "attackVector": "LOCAL"
+    }
+  },
+  {
+    "id": "CVE-2021-3815",
+    "assigner": "@huntrdev",
+    "title": "Prototype Pollution in fabiocaccamo/utils.js",
+    "description": "utils.js is vulnerable to Improperly Controlled Modification of Object Prototype Attributes ('Prototype Pollution')",
+    "affected_products": [
+      "fabiocaccamo::fabiocaccamo/utils.js"
+    ],
+    "cwe": "CWE-1321",
+    "keywords": [
+      "fabiocaccamo",
+      "Improperly Controlled Modification",
+      "Prototype Pollution",
+      "utils.js",
+      "Object Prototype Attributes"
+    ],
+    "metric": {
+      "score": 8,
+      "attackVector": "LOCAL"
+    }
+  },
+  {
+    "id": "CVE-2022-43973",
+    "assigner": "trellix",
+    "title": "Arbitrary code execution in Linksys WRT54GL",
+    "description": "An arbitrary code execution vulnerability exisits in Linksys WRT54GL Wireless-G Broadband Router with firmware <= 4.30.18.006. The Check_TSSI function within the httpd binary uses unvalidated user input in the construction of a system command. An authenticated attacker with administrator privileges can leverage this vulnerability over the network via a malicious POST request to /apply.cgi to execute arbitrary commands on the underlying Linux operating system as root.",
+    "affected_products": [
+      "Linksys::WRT54GL Wireless-G Broadband Router"
+    ],
+    "cwe": "CWE-78",
+    "keywords": [
+      "POST",
+      "administrator privileges",
+      "Linksys WRT54GL Wireless-G Broadband Router",
+      "the network",
+      "arbitrary commands",
+      "Arbitrary code execution",
+      "An arbitrary code execution vulnerability",
+      "this vulnerability",
+      "WRT54GL",
+      "a malicious POST request",
+      "a system command",
+      "An authenticated attacker",
+      "the construction",
+      "unvalidated user input",
+      "the httpd binary",
+      "firmware",
+      "the underlying Linux operating system",
+      "Linux",
+      "root",
+      "The Check_TSSI",
+      "Linksys"
+    ],
+    "metric": {
+      "score": 7.2,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2021-37673",
+    "assigner": "GitHub_M",
+    "title": "`CHECK`-fail in `MapStage` in TensorFlow",
+    "description": "TensorFlow is an end-to-end open source platform for machine learning. In affected versions an attacker can trigger a denial of service via a `CHECK`-fail in `tf.raw_ops.MapStage`. The [implementation](https://github.com/tensorflow/tensorflow/blob/460e000de3a83278fb00b61a16d161b1964f15f4/tensorflow/core/kernels/map_stage_op.cc#L513) does not check that the `key` input is a valid non-empty tensor. We have patched the issue in GitHub commit d7de67733925de196ec8863a33445b73f9562d1d. The fix will be included in TensorFlow 2.6.0. We will also cherrypick this commit on TensorFlow 2.5.1, TensorFlow 2.4.3, and TensorFlow 2.3.4, as these are also affected and still in supported range.",
+    "affected_products": [
+      "tensorflow::tensorflow"
+    ],
+    "cwe": "CWE-20",
+    "keywords": [
+      "a denial",
+      "these",
+      "a `CHECK`-fail",
+      "tf.raw_ops",
+      "affected versions",
+      "the issue",
+      "supported range",
+      "TensorFlow",
+      "this commit",
+      "TensorFlow TensorFlow",
+      "service",
+      "d7de67733925de196ec8863a33445b73f9562d1d",
+      "MapStage",
+      "TensorFlow 2.6.0",
+      "end",
+      "an attacker",
+      "a valid non-empty tensor",
+      "the `key` input",
+      "The fix",
+      "GitHub",
+      "We",
+      "machine learning",
+      "The [implementation](https://github.com/tensorflow/tensorflow/blob/460e000de3a83278fb00b61a16d161b1964f15f4/tensorflow/core/kernels/map_stage_op.cc#L513"
+    ],
+    "metric": {
+      "score": 5.5,
+      "attackVector": "LOCAL"
+    }
+  },
+  {
+    "id": "CVE-2021-42528",
+    "assigner": "adobe",
+    "title": "XMP-Toolkit Null Pointer Dereference Application denial-of-service",
+    "description": "XMP Toolkit 2021.07 (and earlier) is affected by a Null pointer dereference vulnerability when parsing a specially crafted file. An unauthenticated attacker could leverage this vulnerability to achieve an application denial-of-service in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+    "affected_products": [
+      "Adobe::XMP Toolkit"
+    ],
+    "cwe": "CWE-476",
+    "keywords": [
+      "a specially crafted file",
+      "Exploitation",
+      "the current user",
+      "a Null pointer dereference vulnerability",
+      "user interaction",
+      "this vulnerability",
+      "an application denial",
+      "a victim",
+      "XMP-Toolkit Null Pointer Dereference Application",
+      "XMP Toolkit 2021.07",
+      "a malicious file",
+      "the context",
+      "service",
+      "this issue",
+      "An unauthenticated attacker"
+    ],
+    "metric": {
+      "score": 5.5,
+      "attackVector": "LOCAL"
+    }
+  },
+  {
+    "id": "CVE-2021-21019",
+    "assigner": "adobe",
+    "title": "Magento Commerce XML Injection Could Lead To Remote Code Execution",
+    "description": "Magento versions 2.4.1 (and earlier), 2.4.0-p1 (and earlier) and 2.3.6 (and earlier) are vulnerable to XML injection in the Widgets module. Successful exploitation could lead to arbitrary code execution by an authenticated attacker. Access to the admin console is required for successful exploitation.",
+    "affected_products": [
+      "Adobe::Magento Commerce"
+    ],
+    "cwe": "CWE-91",
+    "keywords": [
+      "the admin console",
+      "Access",
+      "Magento Commerce XML",
+      "the Widgets module",
+      "arbitrary code execution",
+      "Remote Code Execution Magento versions",
+      "Successful exploitation",
+      "Widgets",
+      "an authenticated attacker",
+      "XML injection",
+      "Magento Commerce XML Injection",
+      "successful exploitation",
+      "Magento"
+    ],
+    "metric": {
+      "score": 9.1,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2021-29118",
+    "assigner": "Esri",
+    "title": "Esri ArcReader PMF File Parsing Out-Of-Bounds Read Information  Disclosure Vulnerability",
+    "description": "An out-of-bounds read vulnerability exists when parsing a specially crafted file in Esri ArcReader 10.8.1 (and earlier) which allow an unauthenticated attacker to induce an information disclosure issue in the context of the current user.",
+    "affected_products": [
+      "Esri::ArcReader"
+    ],
+    "cwe": "CWE-125",
+    "keywords": [
+      "a specially crafted file",
+      "the current user",
+      "Bounds",
+      "PMF File Parsing",
+      "an unauthenticated attacker",
+      "Esri ArcReader",
+      "bounds",
+      "which",
+      "Vulnerability",
+      "the context",
+      "an information disclosure issue"
+    ],
+    "metric": {
+      "score": 3.3,
+      "attackVector": "LOCAL"
+    }
+  },
+  {
+    "id": "CVE-2020-24440",
+    "assigner": "adobe",
+    "title": "Uncontrolled Search Path Element in Adobe Prelude for Windows",
+    "description": "Adobe Prelude version 9.0.1 (and earlier) is affected by an uncontrolled search path element that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+    "affected_products": [
+      "Adobe::Prelude"
+    ],
+    "cwe": "CWE-427",
+    "keywords": [
+      "Adobe",
+      "Exploitation",
+      "the current user",
+      "this issue",
+      "Windows Adobe Prelude version",
+      "user interaction",
+      "Windows Adobe",
+      "arbitrary code execution",
+      "Adobe Prelude",
+      "a victim",
+      "a malicious file",
+      "the context",
+      "an uncontrolled search path element",
+      "Uncontrolled Search Path Element",
+      "that"
+    ],
+    "metric": {
+      "score": 7,
+      "attackVector": "LOCAL"
+    }
+  },
+  {
+    "id": "CVE-2022-3216",
+    "assigner": "VulDB",
+    "title": "Nintendo Game Boy Color Mobile Adapter GB Tetsuji memory corruption",
+    "description": "A vulnerability has been found in Nintendo Game Boy Color and classified as problematic. This vulnerability affects unknown code of the component Mobile Adapter GB. The manipulation leads to memory corruption. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. VDB-208606 is the identifier assigned to this vulnerability.",
+    "affected_products": [
+      "Nintendo::Game Boy Color"
+    ],
+    "cwe": "CWE-119",
+    "keywords": [
+      "VDB-208606",
+      "memory corruption",
+      "Mobile Adapter GB",
+      "Nintendo Game Boy Color Mobile Adapter GB Tetsuji memory corruption",
+      "The manipulation",
+      "The attack",
+      "unknown code",
+      "the component Mobile Adapter GB",
+      "this vulnerability",
+      "Nintendo Game",
+      "This vulnerability",
+      "the public",
+      "Nintendo Game Boy Color",
+      "The exploit",
+      "the identifier",
+      "A vulnerability"
+    ],
+    "metric": {
+      "score": 5,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2019-0020",
+    "assigner": "juniper",
+    "title": "Juniper ATP: Hard coded credentials used in Web Collector",
+    "description": "Juniper ATP ships with hard coded credentials in the Web Collector instance which gives an attacker the ability to take full control of any installation of the software. Affected releases are Juniper Networks Juniper ATP: 5.0 versions prior to 5.0.3.",
+    "affected_products": [
+      "Juniper Networks::Juniper ATP"
+    ],
+    "cwe": "CWE-798",
+    "keywords": [
+      "an attacker",
+      "any installation",
+      "the ability",
+      "the software",
+      "the Web Collector",
+      "Juniper Networks Juniper ATP",
+      "hard coded credentials",
+      "which",
+      "Web Collector Juniper ATP ships",
+      "5.0 versions",
+      "full control",
+      "Juniper ATP",
+      "Affected releases",
+      "Hard coded credentials",
+      "the Web Collector instance"
+    ],
+    "metric": {
+      "score": 10,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2022-24939",
+    "assigner": "Silabs",
+    "title": " Malformed Zigbee packet with invalid destination address causes Assert ",
+    "description": "\n\u00a0A malformed packet containing an invalid destination address, causes a stack overflow in the Ember ZNet stack. This causes an assert which leads to a reset, immediately clearing the error.\n\n",
+    "affected_products": [
+      "silabs.com::Ember ZNet"
+    ],
+    "cwe": "CWE-119",
+    "keywords": [
+      "the Ember ZNet stack",
+      "a reset",
+      "an assert",
+      "Zigbee",
+      "the error",
+      "Ember",
+      " Malformed Zigbee packet",
+      "which",
+      "a stack overflow",
+      "A malformed packet",
+      "an invalid destination address",
+      "This",
+      "invalid destination address"
+    ],
+    "metric": {
+      "score": 5.7,
+      "attackVector": "ADJACENT_NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2022-41216",
+    "assigner": "DIVD",
+    "title": "Cloudflow - Local File Inclusion Vulnerability",
+    "description": "Local File Inclusion vulnerability within Cloudflow allows attackers to retrieve confidential information from the system.",
+    "affected_products": [
+      "Hybrid Software::Cloudflow"
+    ],
+    "cwe": "CWE-829",
+    "keywords": [
+      "confidential information",
+      "Cloudflow - Local File Inclusion Vulnerability Local File Inclusion",
+      "attackers",
+      "Cloudflow",
+      "Cloudflow - Local File Inclusion Vulnerability Local File Inclusion vulnerability",
+      "the system"
+    ],
+    "metric": {
+      "score": 8.3,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2022-47423",
+    "assigner": "Patchstack",
+    "title": "WordPress WP-dTree Plugin <= 4.4.5 is vulnerable to Cross Site Scripting (XSS)",
+    "description": "Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Ulf Benjaminsson WP-dTree plugin <=\u00a04.4.5 versions.",
+    "affected_products": [
+      "Ulf Benjaminsson::WP-dTree"
+    ],
+    "cwe": "CWE-79",
+    "keywords": [
+      "WordPress WP-dTree Plugin",
+      "WP-dTree Plugin",
+      "WordPress",
+      "Auth",
+      "Cross Site Scripting",
+      "(XSS",
+      "4.4.5 versions",
+      "(admin+) Stored Cross-Site Scripting",
+      "XSS) Auth",
+      "Ulf Benjaminsson WP-dTree plugin",
+      "Ulf Benjaminsson",
+      "vulnerability"
+    ],
+    "metric": {
+      "score": 5.9,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2021-29478",
+    "assigner": "GitHub_M",
+    "title": "Vulnerability in the COPY command for large intsets",
+    "description": "Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache, and message broker. An integer overflow bug in Redis 6.2 before 6.2.3 could be exploited to corrupt the heap and potentially result with remote code execution. Redis 6.0 and earlier are not directly affected by this issue. The problem is fixed in version 6.2.3. An additional workaround to mitigate the problem without patching the `redis-server` executable is to prevent users from modifying the `set-max-intset-entries` configuration parameter. This can be done using ACL to restrict unprivileged users from using the `CONFIG SET` command.",
+    "affected_products": [
+      "redis::redis"
+    ],
+    "cwe": "CWE-190",
+    "keywords": [
+      "the `CONFIG SET` command",
+      "an open source",
+      "An integer overflow bug",
+      "memory",
+      "Redis",
+      "message broker",
+      "An additional workaround",
+      "a database",
+      "Vulnerability",
+      "the problem",
+      "unprivileged users",
+      "BSD",
+      "users",
+      "remote code execution",
+      "the `set-max-intset-entries` configuration parameter",
+      "ACL",
+      "the heap",
+      "large intsets",
+      "the `redis-server` executable",
+      "The problem",
+      "This",
+      "this issue",
+      "the COPY command",
+      "cache"
+    ],
+    "metric": {
+      "score": 7.5,
+      "attackVector": "NETWORK"
+    }
+  },
+  {
+    "id": "CVE-2022-35978",
+    "assigner": "GitHub_M",
+    "title": "Lua sandbox escape from mod in Minetest",
+    "description": "Minetest is a free open-source voxel game engine with easy modding and game creation. In **single player**, a mod can set a global setting that controls the Lua script loaded to display the main menu. The script is then loaded as soon as the game session is exited. The Lua environment the menu runs in is not sandboxed and can directly interfere with the user's system. There are currently no known workarounds.",
+    "affected_products": [
+      "minetest::minetest"
+    ],
+    "cwe": "CWE-693",
+    "keywords": [
+      "the game session",
+      "mod",
+      "easy modding",
+      "that",
+      "*single player",
+      "a mod",
+      "*",
+      "no known workarounds",
+      "game creation",
+      "Lua sandbox escape",
+      "the Lua script",
+      "the user's system",
+      "a global setting",
+      "The script",
+      "the menu",
+      "Minetest Minetest",
+      "The Lua environment",
+      "the main menu",
+      "a free open-source voxel game engine"
+    ],
+    "metric": {
+      "score": 7.7,
+      "attackVector": "NETWORK"
+    }
+  }
+]

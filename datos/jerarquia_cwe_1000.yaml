@@ -1,0 +1,2789 @@
+name: RaizCWE
+children:
+  - name: CWE-707
+    title: Improper Neutralization
+    children:
+      - name: CWE-170
+        title: Improper Null Termination
+      - name: CWE-116
+        title: Improper Encoding or Escaping of Output
+        children:
+          - name: CWE-644
+            title: Improper Neutralization of HTTP Headers for Scripting Syntax
+          - name: CWE-838
+            title: Inappropriate Encoding for Output Context
+          - name: CWE-117
+            title: Improper Output Neutralization for Logs
+      - name: CWE-463
+        title: Deletion of Data Structure Sentinel
+      - name: CWE-138
+        title: Improper Neutralization of Special Elements
+        children:
+          - name: CWE-151
+            title: Improper Neutralization of Comment Delimiters
+          - name: CWE-148
+            title: Improper Neutralization of Input Leaders
+          - name: CWE-155
+            title: Improper Neutralization of Wildcards or Matching Symbols
+            children:
+              - name: CWE-56
+                title: Path Equivalence  'filedir*' (Wildcard)
+          - name: CWE-164
+            title: Improper Neutralization of Internal Special Elements
+            children:
+              - name: CWE-165
+                title: Improper Neutralization of Multiple Internal Special Elements
+                children:
+                  - name: CWE-53
+                    title: Path Equivalence  '\multiple\\internal\backslash'
+                  - name: CWE-45
+                    title: Path Equivalence  'file...name' (Multiple Internal Dot)
+          - name: CWE-153
+            title: Improper Neutralization of Substitution Characters
+          - name: CWE-150
+            title: Improper Neutralization of Escape, Meta, or Control Sequences
+          - name: CWE-157
+            title: Failure to Sanitize Paired Delimiters
+          - name: CWE-159
+            title: Improper Handling of Invalid Use of Special Elements
+            children:
+              - name: CWE-168
+                title: Improper Handling of Inconsistent Special Elements
+              - name: CWE-167
+                title: Improper Handling of Additional Special Element
+              - name: CWE-166
+                title: Improper Handling of Missing Special Element
+          - name: CWE-147
+            title: Improper Neutralization of Input Terminators
+            children:
+              - name: CWE-626
+                title: Null Byte Interaction Error (Poison Null Byte)
+          - name: CWE-160
+            title: Improper Neutralization of Leading Special Elements
+            children:
+              - name: CWE-161
+                title: Improper Neutralization of Multiple Leading Special Elements
+                children:
+                  - name: CWE-50
+                    title: Path Equivalence  '//multiple/leading/slash'
+              - name: CWE-37
+                title: Path Traversal  '/absolute/pathname/here'
+          - name: CWE-790
+            title: Improper Filtering of Special Elements
+            children:
+              - name: CWE-791
+                title: Incomplete Filtering of Special Elements
+                children:
+                  - name: CWE-795
+                    title: Only Filtering Special Elements at a Specified Location
+                    children:
+                      - name: CWE-796
+                        title: Only Filtering Special Elements Relative to a Marker
+                      - name: CWE-797
+                        title: Only Filtering Special Elements at an Absolute Position
+                  - name: CWE-792
+                    title: Incomplete Filtering of One or More Instances of Special Elements
+                    children:
+                      - name: CWE-793
+                        title: Only Filtering One Instance of a Special Element
+                      - name: CWE-794
+                        title: Incomplete Filtering of Multiple Instances of Special Elements
+          - name: CWE-152
+            title: Improper Neutralization of Macro Symbols
+          - name: CWE-464
+            title: Addition of Data Structure Sentinel
+          - name: CWE-156
+            title: Improper Neutralization of Whitespace
+          - name: CWE-140
+            title: Improper Neutralization of Delimiters
+            children:
+              - name: CWE-141
+                title: Improper Neutralization of Parameter/Argument Delimiters
+              - name: CWE-142
+                title: Improper Neutralization of Value Delimiters
+              - name: CWE-143
+                title: Improper Neutralization of Record Delimiters
+              - name: CWE-144
+                title: Improper Neutralization of Line Delimiters
+              - name: CWE-145
+                title: Improper Neutralization of Section Delimiters
+              - name: CWE-146
+                title: Improper Neutralization of Expression/Command Delimiters
+          - name: CWE-158
+            title: Improper Neutralization of Null Byte or NUL Character
+          - name: CWE-162
+            title: Improper Neutralization of Trailing Special Elements
+            children:
+              - name: CWE-49
+                title: Path Equivalence  'filename/' (Trailing Slash)
+              - name: CWE-46
+                title: Path Equivalence  'filename ' (Trailing Space)
+              - name: CWE-163
+                title: Improper Neutralization of Multiple Trailing Special Elements
+                children:
+                  - name: CWE-52
+                    title: Path Equivalence  '/multiple/trailing/slash//'
+                  - name: CWE-43
+                    title: Path Equivalence  'filename....' (Multiple Trailing Dot)
+              - name: CWE-54
+                title: Path Equivalence  'filedir\' (Trailing Backslash)
+              - name: CWE-42
+                title: Path Equivalence  'filename.' (Trailing Dot)
+                children:
+                  - name: CWE-43
+                    title: Path Equivalence  'filename....' (Multiple Trailing Dot)
+          - name: CWE-149
+            title: Improper Neutralization of Quoting Syntax
+          - name: CWE-154
+            title: Improper Neutralization of Variable Name Delimiters
+      - name: CWE-172
+        title: Encoding Error
+        children:
+          - name: CWE-177
+            title: Improper Handling of URL Encoding (Hex Encoding)
+          - name: CWE-174
+            title: Double Decoding of the Same Data
+          - name: CWE-175
+            title: Improper Handling of Mixed Encoding
+          - name: CWE-173
+            title: Improper Handling of Alternate Encoding
+          - name: CWE-176
+            title: Improper Handling of Unicode Encoding
+      - name: CWE-20
+        title: Improper Input Validation
+        children:
+          - name: CWE-1287
+            title: Improper Validation of Specified Type of Input
+          - name: CWE-1284
+            title: Improper Validation of Specified Quantity in Input
+            children:
+              - name: CWE-606
+                title: Unchecked Input for Loop Condition
+          - name: CWE-179
+            title: Incorrect Behavior Order  Early Validation
+            children:
+              - name: CWE-181
+                title: Incorrect Behavior Order  Validate Before Filter
+              - name: CWE-180
+                title: Incorrect Behavior Order  Validate Before Canonicalize
+          - name: CWE-1286
+            title: Improper Validation of Syntactic Correctness of Input
+            children:
+              - name: CWE-112
+                title: Missing XML Validation
+          - name: CWE-622
+            title: Improper Validation of Function Hook Arguments
+          - name: CWE-1285
+            title: Improper Validation of Specified Index, Position, or Offset in Input
+            children:
+              - name: CWE-129
+                title: Improper Validation of Array Index
+              - name: CWE-781
+                title: Improper Address Validation in IOCTL with METHOD_NEITHER I/O Control Code
+          - name: CWE-1173
+            title: Improper Use of Validation Framework
+            children:
+              - name: CWE-1174
+                title: ASP.NET Misconfiguration  Improper Model Validation
+              - name: CWE-108
+                title: Struts  Unvalidated Action Form
+              - name: CWE-109
+                title: Struts  Validator Turned Off
+              - name: CWE-554
+                title: ASP.NET Misconfiguration  Not Using Input Validation Framework
+              - name: CWE-106
+                title: Struts  Plug-in Framework not in Use
+              - name: CWE-105
+                title: Struts  Form Field Without Validator
+              - name: CWE-102
+                title: Struts  Duplicate Validation Forms
+          - name: CWE-1288
+            title: Improper Validation of Consistency within Input
+          - name: CWE-1289
+            title: Improper Validation of Unsafe Equivalence in Input
+      - name: CWE-74
+        title: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')
+        children:
+          - name: CWE-94
+            title: Improper Control of Generation of Code ('Code Injection')
+            children:
+              - name: CWE-1336
+                title: Improper Neutralization of Special Elements Used in a Template Engine
+              - name: CWE-96
+                title: Improper Neutralization of Directives in Statically Saved Code ('Static Code Injection')
+                children:
+                  - name: CWE-97
+                    title: Improper Neutralization of Server-Side Includes (SSI) Within a Web Page
+              - name: CWE-95
+                title: Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection')
+          - name: CWE-1236
+            title: Improper Neutralization of Formula Elements in a CSV File
+          - name: CWE-93
+            title: Improper Neutralization of CRLF Sequences ('CRLF Injection')
+            children:
+              - name: CWE-113
+                title: Improper Neutralization of CRLF Sequences in HTTP Headers ('HTTP Request/Response Splitting')
+          - name: CWE-79
+            title: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')
+            children:
+              - name: CWE-86
+                title: Improper Neutralization of Invalid Characters in Identifiers in Web Pages
+              - name: CWE-87
+                title: Improper Neutralization of Alternate XSS Syntax
+              - name: CWE-85
+                title: Doubled Character XSS Manipulations
+              - name: CWE-83
+                title: Improper Neutralization of Script in Attributes in a Web Page
+                children:
+                  - name: CWE-82
+                    title: Improper Neutralization of Script in Attributes of IMG Tags in a Web Page
+              - name: CWE-84
+                title: Improper Neutralization of Encoded URI Schemes in a Web Page
+              - name: CWE-80
+                title: Improper Neutralization of Script-Related HTML Tags in a Web Page (Basic XSS)
+              - name: CWE-81
+                title: Improper Neutralization of Script in an Error Message Web Page
+          - name: CWE-77
+            title: Improper Neutralization of Special Elements used in a Command ('Command Injection')
+            children:
+              - name: CWE-88
+                title: Improper Neutralization of Argument Delimiters in a Command ('Argument Injection')
+              - name: CWE-917
+                title: Improper Neutralization of Special Elements used in an Expression Language Statement ('Expression Language Injection')
+              - name: CWE-78
+                title: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')
+              - name: CWE-624
+                title: Executable Regular Expression Error
+          - name: CWE-75
+            title: Failure to Sanitize Special Elements into a Different Plane (Special Element Injection)
+            children:
+              - name: CWE-76
+                title: Improper Neutralization of Equivalent Special Elements
+          - name: CWE-91
+            title: XML Injection (aka Blind XPath Injection)
+            children:
+              - name: CWE-652
+                title: Improper Neutralization of Data within XQuery Expressions ('XQuery Injection')
+              - name: CWE-643
+                title: Improper Neutralization of Data within XPath Expressions ('XPath Injection')
+          - name: CWE-943
+            title: Improper Neutralization of Special Elements in Data Query Logic
+            children:
+              - name: CWE-652
+                title: Improper Neutralization of Data within XQuery Expressions ('XQuery Injection')
+              - name: CWE-643
+                title: Improper Neutralization of Data within XPath Expressions ('XPath Injection')
+              - name: CWE-89
+                title: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')
+                children:
+                  - name: CWE-564
+                    title: SQL Injection  Hibernate
+              - name: CWE-90
+                title: Improper Neutralization of Special Elements used in an LDAP Query ('LDAP Injection')
+          - name: CWE-99
+            title: Improper Control of Resource Identifiers ('Resource Injection')
+            children:
+              - name: CWE-914
+                title: Improper Control of Dynamically-Identified Variables
+                children:
+                  - name: CWE-627
+                    title: Dynamic Variable Evaluation
+                  - name: CWE-621
+                    title: Variable Extraction Error
+              - name: CWE-641
+                title: Improper Restriction of Names for Files and Other Resources
+              - name: CWE-694
+                title: Use of Multiple Resources with Duplicate Identifier
+                children:
+                  - name: CWE-462
+                    title: Duplicate Key in Associative List (Alist)
+                  - name: CWE-102
+                    title: Struts  Duplicate Validation Forms
+      - name: CWE-228
+        title: Improper Handling of Syntactically Invalid Structure
+        children:
+          - name: CWE-229
+            title: Improper Handling of Values
+            children:
+              - name: CWE-231
+                title: Improper Handling of Extra Values
+              - name: CWE-232
+                title: Improper Handling of Undefined Values
+              - name: CWE-230
+                title: Improper Handling of Missing Values
+          - name: CWE-241
+            title: Improper Handling of Unexpected Data Type
+          - name: CWE-233
+            title: Improper Handling of Parameters
+            children:
+              - name: CWE-236
+                title: Improper Handling of Undefined Parameters
+              - name: CWE-235
+                title: Improper Handling of Extra Parameters
+              - name: CWE-234
+                title: Failure to Handle Missing Parameter
+          - name: CWE-237
+            title: Improper Handling of Structural Elements
+            children:
+              - name: CWE-239
+                title: Failure to Handle Incomplete Element
+              - name: CWE-240
+                title: Improper Handling of Inconsistent Structural Elements
+                children:
+                  - name: CWE-130
+                    title: Improper Handling of Length Parameter Inconsistency
+              - name: CWE-238
+                title: Improper Handling of Incomplete Structural Elements
+      - name: CWE-240
+        title: Improper Handling of Inconsistent Structural Elements
+        children:
+          - name: CWE-130
+            title: Improper Handling of Length Parameter Inconsistency
+  - name: CWE-682
+    title: Incorrect Calculation
+    children:
+      - name: CWE-193
+        title: Off-by-one Error
+      - name: CWE-1335
+        title: Incorrect Bitwise Shift of Integer
+      - name: CWE-128
+        title: Wrap-around Error
+      - name: CWE-135
+        title: Incorrect Calculation of Multi-Byte String Length
+      - name: CWE-131
+        title: Incorrect Calculation of Buffer Size
+        children:
+          - name: CWE-467
+            title: Use of sizeof() on a Pointer Type
+      - name: CWE-469
+        title: Use of Pointer Subtraction to Determine Size
+      - name: CWE-1339
+        title: Insufficient Precision or Accuracy of a Real Number
+      - name: CWE-369
+        title: Divide By Zero
+      - name: CWE-191
+        title: Integer Underflow (Wrap or Wraparound)
+      - name: CWE-468
+        title: Incorrect Pointer Scaling
+      - name: CWE-190
+        title: Integer Overflow or Wraparound
+        children:
+          - name: CWE-680
+            title: Integer Overflow to Buffer Overflow
+  - name: CWE-691
+    title: Insufficient Control Flow Management
+    children:
+      - name: CWE-1279
+        title: Cryptographic Operations are run Before Supporting Units are Ready
+      - name: CWE-362
+        title: Concurrent Execution using Shared Resource with Improper Synchronization ('Race Condition')
+        children:
+          - name: CWE-367
+            title: Time-of-check Time-of-use (TOCTOU) Race Condition
+            children:
+              - name: CWE-363
+                title: Race Condition Enabling Link Following
+          - name: CWE-368
+            title: Context Switching Race Condition
+          - name: CWE-689
+            title: Permission Race Condition During Resource Copy
+          - name: CWE-366
+            title: Race Condition within a Thread
+          - name: CWE-1223
+            title: Race Condition for Write-Once Attributes
+          - name: CWE-1298
+            title: Hardware Logic Contains Race Conditions
+          - name: CWE-364
+            title: Signal Handler Race Condition
+            children:
+              - name: CWE-831
+                title: Signal Handler Function Associated with Multiple Signals
+              - name: CWE-828
+                title: Signal Handler with Functionality that is not Asynchronous-Safe
+                children:
+                  - name: CWE-479
+                    title: Signal Handler Use of a Non-reentrant Function
+              - name: CWE-432
+                title: Dangerous Signal Handler not Disabled During Sensitive Operations
+          - name: CWE-421
+            title: Race Condition During Access to Alternate Channel
+      - name: CWE-430
+        title: Deployment of Wrong Handler
+      - name: CWE-834
+        title: Excessive Iteration
+        children:
+          - name: CWE-835
+            title: Loop with Unreachable Exit Condition ('Infinite Loop')
+          - name: CWE-674
+            title: Uncontrolled Recursion
+            children:
+              - name: CWE-776
+                title: Improper Restriction of Recursive Entity References in DTDs ('XML Entity Expansion')
+          - name: CWE-1322
+            title: Use of Blocking Code in Single-threaded, Non-blocking Context
+      - name: CWE-799
+        title: Improper Control of Interaction Frequency
+        children:
+          - name: CWE-307
+            title: Improper Restriction of Excessive Authentication Attempts
+          - name: CWE-837
+            title: Improper Enforcement of a Single, Unique Action
+      - name: CWE-670
+        title: Always-Incorrect Control Flow Implementation
+        children:
+          - name: CWE-483
+            title: Incorrect Block Delimitation
+          - name: CWE-698
+            title: Execution After Redirect (EAR)
+          - name: CWE-484
+            title: Omitted Break Statement in Switch
+          - name: CWE-480
+            title: Use of Incorrect Operator
+            children:
+              - name: CWE-482
+                title: Comparing instead of Assigning
+              - name: CWE-481
+                title: Assigning instead of Comparing
+              - name: CWE-597
+                title: Use of Wrong Operator in String Comparison
+          - name: CWE-617
+            title: Reachable Assertion
+          - name: CWE-783
+            title: Operator Precedence Logic Error
+      - name: CWE-841
+        title: Improper Enforcement of Behavioral Workflow
+      - name: CWE-431
+        title: Missing Handler
+      - name: CWE-662
+        title: Improper Synchronization
+        children:
+          - name: CWE-1058
+            title: Invokable Control Element in Multi-Thread Context with non-Final Static Storable or Member Element
+          - name: CWE-821
+            title: Incorrect Synchronization
+            children:
+              - name: CWE-1264
+                title: Hardware Logic with Insecure De-Synchronization between Control and Data Channels
+              - name: CWE-572
+                title: Call to Thread run() instead of start()
+              - name: CWE-574
+                title: EJB Bad Practices  Use of Synchronization Primitives
+              - name: CWE-1088
+                title: Synchronous Access of Remote Resource without Timeout
+          - name: CWE-820
+            title: Missing Synchronization
+            children:
+              - name: CWE-567
+                title: Unsynchronized Access to Shared Data in a Multithreaded Context
+              - name: CWE-543
+                title: Use of Singleton Pattern Without Synchronization in a Multithreaded Context
+              - name: CWE-1096
+                title: Singleton Class Instance Creation without Proper Locking or Synchronization
+          - name: CWE-663
+            title: Use of a Non-reentrant Function in a Concurrent Context
+            children:
+              - name: CWE-479
+                title: Signal Handler Use of a Non-reentrant Function
+              - name: CWE-558
+                title: Use of getlogin() in Multithreaded Application
+          - name: CWE-667
+            title: Improper Locking
+            children:
+              - name: CWE-412
+                title: Unrestricted Externally Accessible Lock
+              - name: CWE-413
+                title: Improper Resource Locking
+                children:
+                  - name: CWE-591
+                    title: Sensitive Data Storage in Improperly Locked Memory
+              - name: CWE-765
+                title: Multiple Unlocks of a Critical Resource
+              - name: CWE-764
+                title: Multiple Locks of a Critical Resource
+              - name: CWE-832
+                title: Unlock of a Resource that is not Locked
+              - name: CWE-414
+                title: Missing Lock Check
+              - name: CWE-609
+                title: Double-Checked Locking
+              - name: CWE-1233
+                title: Security-Sensitive Hardware Controls with Missing Lock Bit Protection
+              - name: CWE-1234
+                title: Hardware Internal or Debug Modes Allow Override of Locks
+              - name: CWE-1232
+                title: Improper Lock Behavior After Power State Transition
+              - name: CWE-833
+                title: Deadlock
+      - name: CWE-705
+        title: Incorrect Control Flow Scoping
+        children:
+          - name: CWE-395
+            title: Use of NullPointerException Catch to Detect NULL Pointer Dereference
+          - name: CWE-397
+            title: Declaration of Throws for Generic Exception
+          - name: CWE-698
+            title: Execution After Redirect (EAR)
+          - name: CWE-396
+            title: Declaration of Catch for Generic Exception
+          - name: CWE-584
+            title: Return Inside Finally Block
+          - name: CWE-382
+            title: J2EE Bad Practices  Use of System.exit()
+          - name: CWE-248
+            title: Uncaught Exception
+            children:
+              - name: CWE-600
+                title: Uncaught Exception in Servlet
+          - name: CWE-455
+            title: Non-exit on Failed Initialization
+      - name: CWE-1281
+        title: Sequence of Processor Instructions Leads to Unexpected Behavior
+      - name: CWE-696
+        title: Incorrect Behavior Order
+        children:
+          - name: CWE-179
+            title: Incorrect Behavior Order  Early Validation
+            children:
+              - name: CWE-181
+                title: Incorrect Behavior Order  Validate Before Filter
+              - name: CWE-180
+                title: Incorrect Behavior Order  Validate Before Canonicalize
+          - name: CWE-1190
+            title: DMA Device Enabled Too Early in Boot Phase
+          - name: CWE-551
+            title: Incorrect Behavior Order  Authorization Before Parsing and Canonicalization
+          - name: CWE-1193
+            title: Power-On of Untrusted Execution Core Before Enabling Fabric Access Control
+          - name: CWE-408
+            title: Incorrect Behavior Order  Early Amplification
+          - name: CWE-1280
+            title: Access Control Check Implemented After Asset is Accessed
+      - name: CWE-768
+        title: Incorrect Short Circuit Evaluation
+      - name: CWE-1265
+        title: Unintended Reentrant Invocation of Non-reentrant Code Via Nested Calls
+  - name: CWE-435
+    title: Improper Interaction Between Multiple Correctly-Behaving Entities
+    children:
+      - name: CWE-439
+        title: Behavioral Change in New Version or Environment
+      - name: CWE-188
+        title: Reliance on Data/Memory Layout
+        children:
+          - name: CWE-198
+            title: Use of Incorrect Byte Ordering
+      - name: CWE-1038
+        title: Insecure Automated Optimizations
+        children:
+          - name: CWE-1037
+            title: Processor Optimization Removal or Modification of Security-critical Code
+          - name: CWE-733
+            title: Compiler Optimization Removal or Modification of Security-critical Code
+            children:
+              - name: CWE-14
+                title: Compiler Removal of Code to Clear Buffers
+      - name: CWE-436
+        title: Interpretation Conflict
+        children:
+          - name: CWE-86
+            title: Improper Neutralization of Invalid Characters in Identifiers in Web Pages
+          - name: CWE-115
+            title: Misinterpretation of Input
+          - name: CWE-650
+            title: Trusting HTTP Permission Methods on the Server Side
+          - name: CWE-113
+            title: Improper Neutralization of CRLF Sequences in HTTP Headers ('HTTP Request/Response Splitting')
+          - name: CWE-444
+            title: Inconsistent Interpretation of HTTP Requests ('HTTP Request/Response Smuggling')
+          - name: CWE-437
+            title: Incomplete Model of Endpoint Features
+          - name: CWE-626
+            title: Null Byte Interaction Error (Poison Null Byte)
+  - name: CWE-710
+    title: Improper Adherence to Coding Standards
+    children:
+      - name: CWE-1120
+        title: Excessive Code Complexity
+        children:
+          - name: CWE-1064
+            title: Invokable Control Element with Signature Containing an Excessive Number of Parameters
+          - name: CWE-1056
+            title: Invokable Control Element with Variadic Parameters
+          - name: CWE-1122
+            title: Excessive Halstead Complexity
+          - name: CWE-1080
+            title: Source Code File with Excessive Number of Lines of Code
+          - name: CWE-1075
+            title: Unconditional Control Flow Transfer outside of Switch Block
+          - name: CWE-1047
+            title: Modules with Circular Dependencies
+          - name: CWE-1095
+            title: Loop Condition Value Update within the Loop
+          - name: CWE-1060
+            title: Excessive Number of Inefficient Server-Side Data Accesses
+          - name: CWE-1124
+            title: Excessively Deep Nesting
+          - name: CWE-1125
+            title: Excessive Attack Surface
+          - name: CWE-1119
+            title: Excessive Use of Unconditional Branching
+          - name: CWE-1121
+            title: Excessive McCabe Cyclomatic Complexity
+          - name: CWE-1123
+            title: Excessive Use of Self-Modifying Code
+      - name: CWE-1164
+        title: Irrelevant Code
+        children:
+          - name: CWE-561
+            title: Dead Code
+          - name: CWE-107
+            title: Struts  Unused Validation Form
+          - name: CWE-110
+            title: Struts  Validator Without Form Field
+          - name: CWE-1071
+            title: Empty Code Block
+            children:
+              - name: CWE-585
+                title: Empty Synchronized Block
+              - name: CWE-1069
+                title: Empty Exception Block
+          - name: CWE-563
+            title: Assignment to Variable without Use
+      - name: CWE-477
+        title: Use of Obsolete Function
+      - name: CWE-1093
+        title: Excessively Complex Data Representation
+        children:
+          - name: CWE-1086
+            title: Class with Excessive Number of Child Classes
+          - name: CWE-1074
+            title: Class with Excessively Deep Inheritance
+          - name: CWE-1043
+            title: Data Element Aggregating an Excessively Large Number of Non-Primitive Elements
+          - name: CWE-1055
+            title: Multiple Inheritance from Concrete Classes
+      - name: CWE-571
+        title: Expression is Always True
+      - name: CWE-657
+        title: Violation of Secure Design Principles
+        children:
+          - name: CWE-637
+            title: Unnecessary Complexity in Protection Mechanism (Not Using 'Economy of Mechanism')
+          - name: CWE-638
+            title: Not Using Complete Mediation
+            children:
+              - name: CWE-424
+                title: Improper Protection of Alternate Path
+                children:
+                  - name: CWE-425
+                    title: Direct Request ('Forced Browsing')
+          - name: CWE-1192
+            title: System-on-Chip (SoC) Using Components without Unique, Immutable Identifiers
+          - name: CWE-250
+            title: Execution with Unnecessary Privileges
+          - name: CWE-655
+            title: Insufficient Psychological Acceptability
+          - name: CWE-656
+            title: Reliance on Security Through Obscurity
+          - name: CWE-671
+            title: Lack of Administrator Control over Security
+            children:
+              - name: CWE-798
+                title: Use of Hard-coded Credentials
+                children:
+                  - name: CWE-321
+                    title: Use of Hard-coded Cryptographic Key
+                  - name: CWE-259
+                    title: Use of Hard-coded Password
+              - name: CWE-447
+                title: Unimplemented or Unsupported Feature in UI
+          - name: CWE-654
+            title: Reliance on a Single Factor in a Security Decision
+            children:
+              - name: CWE-308
+                title: Use of Single-factor Authentication
+              - name: CWE-309
+                title: Use of Password System for Primary Authentication
+          - name: CWE-636
+            title: Not Failing Securely ('Failing Open')
+            children:
+              - name: CWE-455
+                title: Non-exit on Failed Initialization
+          - name: CWE-653
+            title: Improper Isolation or Compartmentalization
+            children:
+              - name: CWE-1189
+                title: Improper Isolation of Shared Resources on System-on-a-Chip (SoC)
+                children:
+                  - name: CWE-1303
+                    title: Non-Transparent Sharing of Microarchitectural Resources
+              - name: CWE-1331
+                title: Improper Isolation of Shared Resources in Network On Chip (NoC)
+          - name: CWE-1395
+            title: Dependency on Vulnerable Third-Party Component
+      - name: CWE-1126
+        title: Declaration of Variable with Unnecessarily Wide Scope
+      - name: CWE-476
+        title: NULL Pointer Dereference
+      - name: CWE-1066
+        title: Missing Serialization Control Element
+      - name: CWE-758
+        title: Reliance on Undefined, Unspecified, or Implementation-Defined Behavior
+        children:
+          - name: CWE-1102
+            title: Reliance on Machine-Dependent Data Representation
+          - name: CWE-1103
+            title: Use of Platform-Dependent Third Party Components
+          - name: CWE-1105
+            title: Insufficient Encapsulation of Machine-Dependent Functionality
+            children:
+              - name: CWE-188
+                title: Reliance on Data/Memory Layout
+                children:
+                  - name: CWE-198
+                    title: Use of Incorrect Byte Ordering
+          - name: CWE-588
+            title: Attempt to Access Child of a Non-structure Pointer
+          - name: CWE-474
+            title: Use of Function with Inconsistent Implementations
+            children:
+              - name: CWE-589
+                title: Call to Non-ubiquitous API
+          - name: CWE-587
+            title: Assignment of a Fixed Address to a Pointer
+          - name: CWE-562
+            title: Return of Stack Variable Address
+          - name: CWE-1038
+            title: Insecure Automated Optimizations
+            children:
+              - name: CWE-1037
+                title: Processor Optimization Removal or Modification of Security-critical Code
+              - name: CWE-733
+                title: Compiler Optimization Removal or Modification of Security-critical Code
+                children:
+                  - name: CWE-14
+                    title: Compiler Removal of Code to Clear Buffers
+      - name: CWE-1076
+        title: Insufficient Adherence to Expected Conventions
+        children:
+          - name: CWE-586
+            title: Explicit Call to Finalize()
+          - name: CWE-1045
+            title: Parent Class with a Virtual Destructor and a Child Class without a Virtual Destructor
+          - name: CWE-1078
+            title: Inappropriate Source Code Style or Formatting
+            children:
+              - name: CWE-1113
+                title: Inappropriate Comment Style
+              - name: CWE-1115
+                title: Source Code Element without Standard Prologue
+              - name: CWE-1117
+                title: Callable with Insufficient Behavioral Summary
+              - name: CWE-1109
+                title: Use of Same Variable for Multiple Purposes
+              - name: CWE-1106
+                title: Insufficient Use of Symbolic Constants
+              - name: CWE-1099
+                title: Inconsistent Naming Conventions for Identifiers
+              - name: CWE-1085
+                title: Invokable Control Element with Excessive Volume of Commented-out Code
+              - name: CWE-1114
+                title: Inappropriate Whitespace Style
+              - name: CWE-1116
+                title: Inaccurate Comments
+              - name: CWE-546
+                title: Suspicious Comment
+              - name: CWE-1107
+                title: Insufficient Isolation of Symbolic Constant Definitions
+              - name: CWE-547
+                title: Use of Hard-coded, Security-relevant Constants
+          - name: CWE-1098
+            title: Data Element containing Pointer Item without Proper Copy Control Element
+          - name: CWE-1082
+            title: Class Instance Self Destruction Control Element
+          - name: CWE-1079
+            title: Parent Class without Virtual Destructor Method
+          - name: CWE-1091
+            title: Use of Object without Invoking Destructor Method
+          - name: CWE-1108
+            title: Excessive Reliance on Global Variables
+          - name: CWE-1087
+            title: Class with Virtual Method without a Virtual Destructor
+          - name: CWE-1097
+            title: Persistent Storable Data Element without Associated Comparison Control Element
+      - name: CWE-1041
+        title: Use of Redundant Code
+      - name: CWE-1209
+        title: Failure to Disable Reserved Bits
+      - name: CWE-1357
+        title: Reliance on Insufficiently Trustworthy Component
+        children:
+          - name: CWE-1329
+            title: Reliance on Component That is Not Updateable
+            children:
+              - name: CWE-1277
+                title: Firmware Not Updateable
+              - name: CWE-1310
+                title: Missing Ability to Patch ROM Code
+          - name: CWE-1104
+            title: Use of Unmaintained Third Party Components
+      - name: CWE-489
+        title: Active Debug Code
+        children:
+          - name: CWE-11
+            title: ASP.NET Misconfiguration  Creating Debug Binary
+      - name: CWE-594
+        title: J2EE Framework  Saving Unserializable Objects to Disk
+      - name: CWE-1070
+        title: Serializable Data Element Containing non-Serializable Item Elements
+      - name: CWE-1127
+        title: Compilation with Insufficient Warnings or Errors
+      - name: CWE-1048
+        title: Invokable Control Element with Large Number of Outward Calls
+      - name: CWE-1065
+        title: Runtime Resource Management Control Element in a Component Built to Run on Application Servers
+      - name: CWE-573
+        title: Improper Following of Specification by Caller
+        children:
+          - name: CWE-103
+            title: Struts  Incomplete validate() Method Definition
+          - name: CWE-675
+            title: Multiple Operations on Resource in Single-Operation Context
+            children:
+              - name: CWE-174
+                title: Double Decoding of the Same Data
+              - name: CWE-605
+                title: Multiple Binds to the Same Port
+              - name: CWE-765
+                title: Multiple Unlocks of a Critical Resource
+              - name: CWE-764
+                title: Multiple Locks of a Critical Resource
+              - name: CWE-1341
+                title: Multiple Releases of Same Resource or Handle
+                children:
+                  - name: CWE-415
+                    title: Double Free
+          - name: CWE-104
+            title: Struts  Form Bean Does Not Extend Validation Class
+          - name: CWE-358
+            title: Improperly Implemented Security Check for Standard
+          - name: CWE-579
+            title: J2EE Bad Practices  Non-serializable Object Stored in Session
+          - name: CWE-695
+            title: Use of Low-Level Functionality
+            children:
+              - name: CWE-246
+                title: J2EE Bad Practices  Direct Use of Sockets
+              - name: CWE-576
+                title: EJB Bad Practices  Use of Java I/O
+              - name: CWE-574
+                title: EJB Bad Practices  Use of Synchronization Primitives
+              - name: CWE-575
+                title: EJB Bad Practices  Use of AWT Swing
+              - name: CWE-245
+                title: J2EE Bad Practices  Direct Management of Connections
+              - name: CWE-383
+                title: J2EE Bad Practices  Direct Use of Threads
+              - name: CWE-111
+                title: Direct Use of Unsafe JNI
+          - name: CWE-577
+            title: EJB Bad Practices  Use of Sockets
+          - name: CWE-304
+            title: Missing Critical Step in Authentication
+          - name: CWE-568
+            title: finalize() Method Without super.finalize()
+          - name: CWE-253
+            title: Incorrect Check of Function Return Value
+          - name: CWE-580
+            title: clone() Method Without super.clone()
+          - name: CWE-329
+            title: Generation of Predictable IV with CBC Mode
+          - name: CWE-325
+            title: Missing Cryptographic Step
+          - name: CWE-581
+            title: Object Model Violation  Just One of Equals and Hashcode Defined
+          - name: CWE-475
+            title: Undefined Behavior for Input to API
+          - name: CWE-628
+            title: Function Call with Incorrectly Specified Arguments
+            children:
+              - name: CWE-687
+                title: Function Call With Incorrectly Specified Argument Value
+                children:
+                  - name: CWE-560
+                    title: Use of umask() with chmod-style Argument
+              - name: CWE-683
+                title: Function Call With Incorrect Order of Arguments
+              - name: CWE-686
+                title: Function Call With Incorrect Argument Type
+              - name: CWE-685
+                title: Function Call With Incorrect Number of Arguments
+              - name: CWE-688
+                title: Function Call With Incorrect Variable or Reference as Argument
+          - name: CWE-694
+            title: Use of Multiple Resources with Duplicate Identifier
+            children:
+              - name: CWE-462
+                title: Duplicate Key in Associative List (Alist)
+              - name: CWE-102
+                title: Struts  Duplicate Validation Forms
+          - name: CWE-296
+            title: Improper Following of a Certificate's Chain of Trust
+          - name: CWE-243
+            title: Creation of chroot Jail Without Changing Working Directory
+          - name: CWE-578
+            title: EJB Bad Practices  Use of Class Loader
+      - name: CWE-1044
+        title: Architecture with Number of Horizontal Layers Outside of Expected Range
+      - name: CWE-570
+        title: Expression is Always False
+      - name: CWE-1177
+        title: Use of Prohibited Code
+        children:
+          - name: CWE-676
+            title: Use of Potentially Dangerous Function
+            children:
+              - name: CWE-785
+                title: Use of Path Manipulation Function without Maximum-sized Buffer
+          - name: CWE-242
+            title: Use of Inherently Dangerous Function
+      - name: CWE-1101
+        title: Reliance on Runtime Component in Generated Code
+      - name: CWE-1068
+        title: Inconsistency Between Implementation and Documented Design
+      - name: CWE-1061
+        title: Insufficient Encapsulation
+        children:
+          - name: CWE-1105
+            title: Insufficient Encapsulation of Machine-Dependent Functionality
+            children:
+              - name: CWE-188
+                title: Reliance on Data/Memory Layout
+                children:
+                  - name: CWE-198
+                    title: Use of Incorrect Byte Ordering
+          - name: CWE-1062
+            title: Parent Class with References to Child Class
+          - name: CWE-1057
+            title: Data Access Operations Outside of Expected Data Manager Component
+          - name: CWE-766
+            title: Critical Data Element Declared Public
+          - name: CWE-1083
+            title: Data Access from Outside Expected Data Manager Component
+          - name: CWE-1090
+            title: Method Containing Access of a Member Element from Another Class
+          - name: CWE-1054
+            title: Invocation of a Control Element at an Unnecessarily Deep Horizontal Layer
+          - name: CWE-1100
+            title: Insufficient Isolation of System-Dependent Functions
+      - name: CWE-484
+        title: Omitted Break Statement in Switch
+      - name: CWE-1092
+        title: Use of Same Invokable Control Element in Multiple Architectural Layers
+      - name: CWE-684
+        title: Incorrect Provision of Specified Functionality
+        children:
+          - name: CWE-392
+            title: Missing Report of Error Condition
+          - name: CWE-912
+            title: Hidden Functionality
+            children:
+              - name: CWE-506
+                title: Embedded Malicious Code
+                children:
+                  - name: CWE-510
+                    title: Trapdoor
+                  - name: CWE-507
+                    title: Trojan Horse
+                    children:
+                      - name: CWE-508
+                        title: Non-Replicating Malicious Code
+                      - name: CWE-509
+                        title: Replicating Malicious Code (Virus or Worm)
+                  - name: CWE-512
+                    title: Spyware
+                  - name: CWE-511
+                    title: Logic/Time Bomb
+          - name: CWE-440
+            title: Expected Behavior Violation
+          - name: CWE-393
+            title: Return of Wrong Status Code
+          - name: CWE-451
+            title: User Interface (UI) Misrepresentation of Critical Information
+            children:
+              - name: CWE-1007
+                title: Insufficient Visual Distinction of Homoglyphs Presented to User
+              - name: CWE-1021
+                title: Improper Restriction of Rendered UI Layers or Frames
+          - name: CWE-1245
+            title: Improper Finite State Machines (FSMs) in Hardware Logic
+          - name: CWE-446
+            title: UI Discrepancy for Security Feature
+            children:
+              - name: CWE-449
+                title: The UI Performs the Wrong Action
+              - name: CWE-448
+                title: Obsolete Feature in UI
+              - name: CWE-447
+                title: Unimplemented or Unsupported Feature in UI
+      - name: CWE-1059
+        title: Insufficient Technical Documentation
+        children:
+          - name: CWE-1118
+            title: Insufficient Documentation of Error Handling Techniques
+          - name: CWE-1110
+            title: Incomplete Design Documentation
+          - name: CWE-1111
+            title: Incomplete I/O Documentation
+          - name: CWE-1112
+            title: Incomplete Documentation of Program Execution
+          - name: CWE-1053
+            title: Missing Documentation for Design
+  - name: CWE-693
+    title: Protection Mechanism Failure
+    children:
+      - name: CWE-1338
+        title: Improper Protections Against Hardware Overheating
+      - name: CWE-327
+        title: Use of a Broken or Risky Cryptographic Algorithm
+        children:
+          - name: CWE-780
+            title: Use of RSA Algorithm without OAEP
+          - name: CWE-1240
+            title: Use of a Cryptographic Primitive with a Risky Implementation
+          - name: CWE-328
+            title: Use of Weak Hash
+            children:
+              - name: CWE-916
+                title: Use of Password Hash With Insufficient Computational Effort
+                children:
+                  - name: CWE-759
+                    title: Use of a One-Way Hash without a Salt
+                  - name: CWE-760
+                    title: Use of a One-Way Hash with a Predictable Salt
+      - name: CWE-345
+        title: Insufficient Verification of Data Authenticity
+        children:
+          - name: CWE-353
+            title: Missing Support for Integrity Check
+          - name: CWE-349
+            title: Acceptance of Extraneous Untrusted Data With Trusted Data
+          - name: CWE-924
+            title: Improper Enforcement of Message Integrity During Transmission in a Communication Channel
+          - name: CWE-494
+            title: Download of Code Without Integrity Check
+          - name: CWE-360
+            title: Trust of System Event Data
+            children:
+              - name: CWE-422
+                title: Unprotected Windows Messaging Channel ('Shatter')
+          - name: CWE-348
+            title: Use of Less Trusted Source
+          - name: CWE-649
+            title: Reliance on Obfuscation or Encryption of Security-Relevant Inputs without Integrity Checking
+          - name: CWE-616
+            title: Incomplete Identification of Uploaded File Variables (PHP)
+          - name: CWE-347
+            title: Improper Verification of Cryptographic Signature
+          - name: CWE-646
+            title: Reliance on File Name or Extension of Externally-Supplied File
+          - name: CWE-354
+            title: Improper Validation of Integrity Check Value
+          - name: CWE-346
+            title: Origin Validation Error
+            children:
+              - name: CWE-940
+                title: Improper Verification of Source of a Communication Channel
+                children:
+                  - name: CWE-925
+                    title: Improper Verification of Intent by Broadcast Receiver
+              - name: CWE-1385
+                title: Missing Origin Validation in WebSockets
+          - name: CWE-1293
+            title: Missing Source Correlation of Multiple Independent Data
+          - name: CWE-352
+            title: Cross-Site Request Forgery (CSRF)
+          - name: CWE-351
+            title: Insufficient Type Distinction
+      - name: CWE-358
+        title: Improperly Implemented Security Check for Standard
+      - name: CWE-330
+        title: Use of Insufficiently Random Values
+        children:
+          - name: CWE-334
+            title: Small Space of Random Values
+            children:
+              - name: CWE-6
+                title: J2EE Misconfiguration  Insufficient Session-ID Length
+          - name: CWE-344
+            title: Use of Invariant Value in Dynamically Changing Context
+            children:
+              - name: CWE-587
+                title: Assignment of a Fixed Address to a Pointer
+              - name: CWE-798
+                title: Use of Hard-coded Credentials
+                children:
+                  - name: CWE-321
+                    title: Use of Hard-coded Cryptographic Key
+                  - name: CWE-259
+                    title: Use of Hard-coded Password
+              - name: CWE-323
+                title: Reusing a Nonce, Key Pair in Encryption
+          - name: CWE-1241
+            title: Use of Predictable Algorithm in Random Number Generator
+          - name: CWE-1204
+            title: Generation of Weak Initialization Vector (IV)
+            children:
+              - name: CWE-329
+                title: Generation of Predictable IV with CBC Mode
+          - name: CWE-338
+            title: Use of Cryptographically Weak Pseudo-Random Number Generator (PRNG)
+          - name: CWE-331
+            title: Insufficient Entropy
+            children:
+              - name: CWE-332
+                title: Insufficient Entropy in PRNG
+              - name: CWE-333
+                title: Improper Handling of Insufficient Entropy in TRNG
+          - name: CWE-340
+            title: Generation of Predictable Numbers or Identifiers
+            children:
+              - name: CWE-342
+                title: Predictable Exact Value from Previous Values
+              - name: CWE-341
+                title: Predictable from Observable State
+              - name: CWE-343
+                title: Predictable Value Range from Previous Values
+          - name: CWE-335
+            title: Incorrect Usage of Seeds in Pseudo-Random Number Generator (PRNG)
+            children:
+              - name: CWE-337
+                title: Predictable Seed in Pseudo-Random Number Generator (PRNG)
+              - name: CWE-336
+                title: Same Seed in Pseudo-Random Number Generator (PRNG)
+              - name: CWE-339
+                title: Small Seed Space in PRNG
+      - name: CWE-184
+        title: Incomplete List of Disallowed Inputs
+        children:
+          - name: CWE-692
+            title: Incomplete Denylist to Cross-Site Scripting
+      - name: CWE-1269
+        title: Product Released in Non-Release Configuration
+      - name: CWE-1278
+        title: Missing Protection Against Hardware Reverse Engineering Using Integrated Circuit (IC) Imaging Techniques
+      - name: CWE-1319
+        title: Improper Protection against Electromagnetic Fault Injection (EM-FI)
+      - name: CWE-424
+        title: Improper Protection of Alternate Path
+        children:
+          - name: CWE-425
+            title: Direct Request ('Forced Browsing')
+      - name: CWE-311
+        title: Missing Encryption of Sensitive Data
+        children:
+          - name: CWE-312
+            title: Cleartext Storage of Sensitive Information
+            children:
+              - name: CWE-526
+                title: Cleartext Storage of Sensitive Information in an Environment Variable
+              - name: CWE-317
+                title: Cleartext Storage of Sensitive Information in GUI
+              - name: CWE-313
+                title: Cleartext Storage in a File or on Disk
+              - name: CWE-315
+                title: Cleartext Storage of Sensitive Information in a Cookie
+              - name: CWE-318
+                title: Cleartext Storage of Sensitive Information in Executable
+              - name: CWE-316
+                title: Cleartext Storage of Sensitive Information in Memory
+              - name: CWE-314
+                title: Cleartext Storage in the Registry
+          - name: CWE-319
+            title: Cleartext Transmission of Sensitive Information
+            children:
+              - name: CWE-614
+                title: Sensitive Cookie in HTTPS Session Without 'Secure' Attribute
+              - name: CWE-5
+                title: J2EE Misconfiguration  Data Transmission Without Encryption
+      - name: CWE-653
+        title: Improper Isolation or Compartmentalization
+        children:
+          - name: CWE-1189
+            title: Improper Isolation of Shared Resources on System-on-a-Chip (SoC)
+            children:
+              - name: CWE-1303
+                title: Non-Transparent Sharing of Microarchitectural Resources
+          - name: CWE-1331
+            title: Improper Isolation of Shared Resources in Network On Chip (NoC)
+      - name: CWE-1248
+        title: Semiconductor Defects in Hardware Logic with Security-Sensitive Implications
+      - name: CWE-1291
+        title: Public Key Re-Use for Signing both Debug and Production Code
+      - name: CWE-1326
+        title: Missing Immutable Root of Trust in Hardware
+      - name: CWE-656
+        title: Reliance on Security Through Obscurity
+      - name: CWE-182
+        title: Collapse of Data into Unsafe Value
+      - name: CWE-602
+        title: Client-Side Enforcement of Server-Side Security
+        children:
+          - name: CWE-565
+            title: Reliance on Cookies without Validation and Integrity Checking
+            children:
+              - name: CWE-784
+                title: Reliance on Cookies without Validation and Integrity Checking in a Security Decision
+          - name: CWE-603
+            title: Use of Client-Side Authentication
+      - name: CWE-1253
+        title: Incorrect Selection of Fuse Values
+      - name: CWE-1318
+        title: Missing Support for Security Features in On-chip Fabrics or Buses
+      - name: CWE-357
+        title: Insufficient UI Warning of Dangerous Operations
+        children:
+          - name: CWE-450
+            title: Multiple Interpretations of UI Input
+      - name: CWE-655
+        title: Insufficient Psychological Acceptability
+      - name: CWE-1039
+        title: Automated Recognition Mechanism with Inadequate Detection or Handling of Adversarial Input Perturbations
+      - name: CWE-778
+        title: Insufficient Logging
+      - name: CWE-326
+        title: Inadequate Encryption Strength
+        children:
+          - name: CWE-328
+            title: Use of Weak Hash
+            children:
+              - name: CWE-916
+                title: Use of Password Hash With Insufficient Computational Effort
+                children:
+                  - name: CWE-759
+                    title: Use of a One-Way Hash without a Salt
+                  - name: CWE-760
+                    title: Use of a One-Way Hash with a Predictable Salt
+      - name: CWE-654
+        title: Reliance on a Single Factor in a Security Decision
+        children:
+          - name: CWE-308
+            title: Use of Single-factor Authentication
+          - name: CWE-309
+            title: Use of Password System for Primary Authentication
+      - name: CWE-807
+        title: Reliance on Untrusted Inputs in a Security Decision
+        children:
+          - name: CWE-350
+            title: Reliance on Reverse DNS Resolution for a Security-Critical Action
+          - name: CWE-784
+            title: Reliance on Cookies without Validation and Integrity Checking in a Security Decision
+          - name: CWE-302
+            title: Authentication Bypass by Assumed-Immutable Data
+      - name: CWE-757
+        title: Selection of Less-Secure Algorithm During Negotiation ('Algorithm Downgrade')
+  - name: CWE-703
+    title: Improper Check or Handling of Exceptional Conditions
+    children:
+      - name: CWE-168
+        title: Improper Handling of Inconsistent Special Elements
+      - name: CWE-333
+        title: Improper Handling of Insufficient Entropy in TRNG
+      - name: CWE-167
+        title: Improper Handling of Additional Special Element
+      - name: CWE-397
+        title: Declaration of Throws for Generic Exception
+      - name: CWE-166
+        title: Improper Handling of Missing Special Element
+      - name: CWE-393
+        title: Return of Wrong Status Code
+      - name: CWE-228
+        title: Improper Handling of Syntactically Invalid Structure
+        children:
+          - name: CWE-229
+            title: Improper Handling of Values
+            children:
+              - name: CWE-231
+                title: Improper Handling of Extra Values
+              - name: CWE-232
+                title: Improper Handling of Undefined Values
+              - name: CWE-230
+                title: Improper Handling of Missing Values
+          - name: CWE-241
+            title: Improper Handling of Unexpected Data Type
+          - name: CWE-233
+            title: Improper Handling of Parameters
+            children:
+              - name: CWE-236
+                title: Improper Handling of Undefined Parameters
+              - name: CWE-235
+                title: Improper Handling of Extra Parameters
+              - name: CWE-234
+                title: Failure to Handle Missing Parameter
+          - name: CWE-237
+            title: Improper Handling of Structural Elements
+            children:
+              - name: CWE-239
+                title: Failure to Handle Incomplete Element
+              - name: CWE-240
+                title: Improper Handling of Inconsistent Structural Elements
+                children:
+                  - name: CWE-130
+                    title: Improper Handling of Length Parameter Inconsistency
+              - name: CWE-238
+                title: Improper Handling of Incomplete Structural Elements
+      - name: CWE-755
+        title: Improper Handling of Exceptional Conditions
+        children:
+          - name: CWE-280
+            title: Improper Handling of Insufficient Permissions or Privileges
+          - name: CWE-756
+            title: Missing Custom Error Page
+            children:
+              - name: CWE-7
+                title: J2EE Misconfiguration  Missing Custom Error Page
+              - name: CWE-12
+                title: ASP.NET Misconfiguration  Missing Custom Error Page
+          - name: CWE-392
+            title: Missing Report of Error Condition
+          - name: CWE-274
+            title: Improper Handling of Insufficient Privileges
+          - name: CWE-209
+            title: Generation of Error Message Containing Sensitive Information
+            children:
+              - name: CWE-210
+                title: Self-generated Error Message Containing Sensitive Information
+              - name: CWE-211
+                title: Externally-Generated Error Message Containing Sensitive Information
+                children:
+                  - name: CWE-537
+                    title: Java Runtime Error Message Containing Sensitive Information
+                  - name: CWE-536
+                    title: Servlet Runtime Error Message Containing Sensitive Information
+                  - name: CWE-535
+                    title: Exposure of Information Through Shell Error Message
+              - name: CWE-550
+                title: Server-generated Error Message Containing Sensitive Information
+          - name: CWE-395
+            title: Use of NullPointerException Catch to Detect NULL Pointer Dereference
+          - name: CWE-460
+            title: Improper Cleanup on Thrown Exception
+          - name: CWE-544
+            title: Missing Standardized Error Handling Mechanism
+          - name: CWE-390
+            title: Detection of Error Condition Without Action
+          - name: CWE-396
+            title: Declaration of Catch for Generic Exception
+          - name: CWE-636
+            title: Not Failing Securely ('Failing Open')
+            children:
+              - name: CWE-455
+                title: Non-exit on Failed Initialization
+          - name: CWE-248
+            title: Uncaught Exception
+            children:
+              - name: CWE-600
+                title: Uncaught Exception in Servlet
+      - name: CWE-1384
+        title: Improper Handling of Physical or Environmental Conditions
+        children:
+          - name: CWE-1247
+            title: Improper Protection Against Voltage and Clock Glitches
+          - name: CWE-1351
+            title: Improper Handling of Hardware Behavior in Exceptionally Cold Environments
+          - name: CWE-1332
+            title: Improper Handling of Faults that Lead to Instruction Skips
+          - name: CWE-1261
+            title: Improper Handling of Single Event Upsets
+      - name: CWE-754
+        title: Improper Check for Unusual or Exceptional Conditions
+        children:
+          - name: CWE-253
+            title: Incorrect Check of Function Return Value
+          - name: CWE-273
+            title: Improper Check for Dropped Privileges
+          - name: CWE-252
+            title: Unchecked Return Value
+            children:
+              - name: CWE-690
+                title: Unchecked Return Value to NULL Pointer Dereference
+          - name: CWE-391
+            title: Unchecked Error Condition
+          - name: CWE-394
+            title: Unexpected Status Code or Return Value
+          - name: CWE-476
+            title: NULL Pointer Dereference
+          - name: CWE-354
+            title: Improper Validation of Integrity Check Value
+  - name: CWE-697
+    title: Incorrect Comparison
+    children:
+      - name: CWE-1077
+        title: Floating Point Comparison with Incorrect Operator
+      - name: CWE-1254
+        title: Incorrect Comparison Logic Granularity
+      - name: CWE-1025
+        title: Comparison Using Wrong Factors
+        children:
+          - name: CWE-486
+            title: Comparison of Classes by Name
+          - name: CWE-595
+            title: Comparison of Object References Instead of Object Contents
+            children:
+              - name: CWE-597
+                title: Use of Wrong Operator in String Comparison
+      - name: CWE-1039
+        title: Automated Recognition Mechanism with Inadequate Detection or Handling of Adversarial Input Perturbations
+      - name: CWE-581
+        title: Object Model Violation  Just One of Equals and Hashcode Defined
+      - name: CWE-183
+        title: Permissive List of Allowed Inputs
+        children:
+          - name: CWE-942
+            title: Permissive Cross-domain Policy with Untrusted Domains
+      - name: CWE-185
+        title: Incorrect Regular Expression
+        children:
+          - name: CWE-625
+            title: Permissive Regular Expression
+            children:
+              - name: CWE-777
+                title: Regular Expression without Anchors
+          - name: CWE-186
+            title: Overly Restrictive Regular Expression
+      - name: CWE-1024
+        title: Comparison of Incompatible Types
+      - name: CWE-1023
+        title: Incomplete Comparison with Missing Factors
+        children:
+          - name: CWE-184
+            title: Incomplete List of Disallowed Inputs
+            children:
+              - name: CWE-692
+                title: Incomplete Denylist to Cross-Site Scripting
+          - name: CWE-187
+            title: Partial String Comparison
+          - name: CWE-478
+            title: Missing Default Case in Multiple Condition Expression
+          - name: CWE-839
+            title: Numeric Range Comparison Without Minimum Check
+  - name: CWE-664
+    title: Improper Control of a Resource Through its Lifetime
+    children:
+      - name: CWE-1250
+        title: Improper Preservation of Consistency Between Independent Representations of Shared State
+        children:
+          - name: CWE-1249
+            title: Application-Level Admin Tool with Inconsistent View of Underlying Operating System
+          - name: CWE-1251
+            title: Mirrored Regions with Different Values
+      - name: CWE-913
+        title: Improper Control of Dynamically-Managed Code Resources
+        children:
+          - name: CWE-502
+            title: Deserialization of Untrusted Data
+          - name: CWE-94
+            title: Improper Control of Generation of Code ('Code Injection')
+            children:
+              - name: CWE-1336
+                title: Improper Neutralization of Special Elements Used in a Template Engine
+              - name: CWE-96
+                title: Improper Neutralization of Directives in Statically Saved Code ('Static Code Injection')
+                children:
+                  - name: CWE-97
+                    title: Improper Neutralization of Server-Side Includes (SSI) Within a Web Page
+              - name: CWE-95
+                title: Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection')
+          - name: CWE-914
+            title: Improper Control of Dynamically-Identified Variables
+            children:
+              - name: CWE-627
+                title: Dynamic Variable Evaluation
+              - name: CWE-621
+                title: Variable Extraction Error
+          - name: CWE-470
+            title: Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')
+          - name: CWE-915
+            title: Improperly Controlled Modification of Dynamically-Determined Object Attributes
+            children:
+              - name: CWE-1321
+                title: Improperly Controlled Modification of Object Prototype Attributes ('Prototype Pollution')
+      - name: CWE-1229
+        title: Creation of Emergent Resource
+        children:
+          - name: CWE-514
+            title: Covert Channel
+            children:
+              - name: CWE-385
+                title: Covert Timing Channel
+              - name: CWE-515
+                title: Covert Storage Channel
+      - name: CWE-496
+        title: Public Data Assigned to Private Array-Typed Field
+      - name: CWE-471
+        title: Modification of Assumed-Immutable Data (MAID)
+        children:
+          - name: CWE-607
+            title: Public Static Final Field References Mutable Object
+          - name: CWE-473
+            title: PHP External Variable Modification
+          - name: CWE-472
+            title: External Control of Assumed-Immutable Web Parameter
+          - name: CWE-291
+            title: Reliance on IP Address for Authentication
+      - name: CWE-410
+        title: Insufficient Resource Pool
+      - name: CWE-704
+        title: Incorrect Type Conversion or Cast
+        children:
+          - name: CWE-681
+            title: Incorrect Conversion between Numeric Types
+            children:
+              - name: CWE-194
+                title: Unexpected Sign Extension
+              - name: CWE-192
+                title: Integer Coercion Error
+              - name: CWE-196
+                title: Unsigned to Signed Conversion Error
+              - name: CWE-197
+                title: Numeric Truncation Error
+              - name: CWE-195
+                title: Signed to Unsigned Conversion Error
+          - name: CWE-843
+            title: Access of Resource Using Incompatible Type ('Type Confusion')
+          - name: CWE-588
+            title: Attempt to Access Child of a Non-structure Pointer
+          - name: CWE-1389
+            title: Incorrect Parsing of Numbers with Different Radices
+      - name: CWE-669
+        title: Incorrect Resource Transfer Between Spheres
+        children:
+          - name: CWE-494
+            title: Download of Code Without Integrity Check
+          - name: CWE-243
+            title: Creation of chroot Jail Without Changing Working Directory
+          - name: CWE-434
+            title: Unrestricted Upload of File with Dangerous Type
+          - name: CWE-829
+            title: Inclusion of Functionality from Untrusted Control Sphere
+            children:
+              - name: CWE-830
+                title: Inclusion of Web Functionality from an Untrusted Source
+              - name: CWE-98
+                title: Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion')
+              - name: CWE-827
+                title: Improper Control of Document Type Definition
+          - name: CWE-212
+            title: Improper Removal of Sensitive Information Before Storage or Transfer
+            children:
+              - name: CWE-226
+                title: Sensitive Information in Resource Not Removed Before Reuse
+                children:
+                  - name: CWE-1342
+                    title: Information Exposure through Microarchitectural State after Transient Execution
+                  - name: CWE-1301
+                    title: Insufficient or Incomplete Data Removal within Hardware Component
+                    children:
+                      - name: CWE-1330
+                        title: Remanent Data Readable after Memory Erase
+                  - name: CWE-1239
+                    title: Improper Zeroization of Hardware Register
+                  - name: CWE-1272
+                    title: Sensitive Information Uncleared Before Debug/Power State Transition
+                  - name: CWE-244
+                    title: Improper Clearing of Heap Memory Before Release ('Heap Inspection')
+              - name: CWE-1258
+                title: Exposure of Sensitive System Information Due to Uncleared Debug Information
+      - name: CWE-118
+        title: Incorrect Access of Indexable Resource ('Range Error')
+        children:
+          - name: CWE-119
+            title: Improper Restriction of Operations within the Bounds of a Memory Buffer
+            children:
+              - name: CWE-466
+                title: Return of Pointer Value Outside of Expected Range
+              - name: CWE-822
+                title: Untrusted Pointer Dereference
+              - name: CWE-823
+                title: Use of Out-of-range Pointer Offset
+              - name: CWE-786
+                title: Access of Memory Location Before Start of Buffer
+                children:
+                  - name: CWE-124
+                    title: Buffer Underwrite ('Buffer Underflow')
+                  - name: CWE-127
+                    title: Buffer Under-read
+              - name: CWE-788
+                title: Access of Memory Location After End of Buffer
+                children:
+                  - name: CWE-121
+                    title: Stack-based Buffer Overflow
+                  - name: CWE-122
+                    title: Heap-based Buffer Overflow
+                  - name: CWE-126
+                    title: Buffer Over-read
+              - name: CWE-805
+                title: Buffer Access with Incorrect Length Value
+                children:
+                  - name: CWE-806
+                    title: Buffer Access Using Size of Source Buffer
+              - name: CWE-824
+                title: Access of Uninitialized Pointer
+              - name: CWE-825
+                title: Expired Pointer Dereference
+                children:
+                  - name: CWE-416
+                    title: Use After Free
+                  - name: CWE-415
+                    title: Double Free
+              - name: CWE-125
+                title: Out-of-bounds Read
+                children:
+                  - name: CWE-127
+                    title: Buffer Under-read
+                  - name: CWE-126
+                    title: Buffer Over-read
+              - name: CWE-120
+                title: Buffer Copy without Checking Size of Input ('Classic Buffer Overflow')
+                children:
+                  - name: CWE-785
+                    title: Use of Path Manipulation Function without Maximum-sized Buffer
+              - name: CWE-787
+                title: Out-of-bounds Write
+                children:
+                  - name: CWE-121
+                    title: Stack-based Buffer Overflow
+                  - name: CWE-122
+                    title: Heap-based Buffer Overflow
+                  - name: CWE-123
+                    title: Write-what-where Condition
+                  - name: CWE-124
+                    title: Buffer Underwrite ('Buffer Underflow')
+      - name: CWE-580
+        title: clone() Method Without super.clone()
+      - name: CWE-673
+        title: External Influence of Sphere Definition
+        children:
+          - name: CWE-426
+            title: Untrusted Search Path
+      - name: CWE-922
+        title: Insecure Storage of Sensitive Information
+        children:
+          - name: CWE-312
+            title: Cleartext Storage of Sensitive Information
+            children:
+              - name: CWE-526
+                title: Cleartext Storage of Sensitive Information in an Environment Variable
+              - name: CWE-317
+                title: Cleartext Storage of Sensitive Information in GUI
+              - name: CWE-313
+                title: Cleartext Storage in a File or on Disk
+              - name: CWE-315
+                title: Cleartext Storage of Sensitive Information in a Cookie
+              - name: CWE-318
+                title: Cleartext Storage of Sensitive Information in Executable
+              - name: CWE-316
+                title: Cleartext Storage of Sensitive Information in Memory
+              - name: CWE-314
+                title: Cleartext Storage in the Registry
+          - name: CWE-921
+            title: Storage of Sensitive Data in a Mechanism without Access Control
+      - name: CWE-706
+        title: Use of Incorrectly-Resolved Name or Reference
+        children:
+          - name: CWE-41
+            title: Improper Resolution of Path Equivalence
+            children:
+              - name: CWE-53
+                title: Path Equivalence  '\multiple\\internal\backslash'
+              - name: CWE-52
+                title: Path Equivalence  '/multiple/trailing/slash//'
+              - name: CWE-51
+                title: Path Equivalence  '/multiple//internal/slash'
+              - name: CWE-49
+                title: Path Equivalence  'filename/' (Trailing Slash)
+              - name: CWE-48
+                title: Path Equivalence  'file name' (Internal Whitespace)
+              - name: CWE-46
+                title: Path Equivalence  'filename ' (Trailing Space)
+              - name: CWE-50
+                title: Path Equivalence  '//multiple/leading/slash'
+              - name: CWE-57
+                title: Path Equivalence  'fakedir/../realdir/filename'
+              - name: CWE-58
+                title: Path Equivalence  Windows 8.3 Filename
+              - name: CWE-56
+                title: Path Equivalence  'filedir*' (Wildcard)
+              - name: CWE-47
+                title: Path Equivalence  ' filename' (Leading Space)
+              - name: CWE-55
+                title: Path Equivalence  '/./' (Single Dot Directory)
+              - name: CWE-54
+                title: Path Equivalence  'filedir\' (Trailing Backslash)
+              - name: CWE-42
+                title: Path Equivalence  'filename.' (Trailing Dot)
+                children:
+                  - name: CWE-43
+                    title: Path Equivalence  'filename....' (Multiple Trailing Dot)
+              - name: CWE-44
+                title: Path Equivalence  'file.name' (Internal Dot)
+                children:
+                  - name: CWE-45
+                    title: Path Equivalence  'file...name' (Multiple Internal Dot)
+          - name: CWE-59
+            title: Improper Link Resolution Before File Access ('Link Following')
+            children:
+              - name: CWE-61
+                title: UNIX Symbolic Link (Symlink) Following
+              - name: CWE-1386
+                title: Insecure Operation on Windows Junction / Mount Point
+              - name: CWE-64
+                title: Windows Shortcut Following (.LNK)
+              - name: CWE-62
+                title: UNIX Hard Link
+              - name: CWE-65
+                title: Windows Hard Link
+          - name: CWE-827
+            title: Improper Control of Document Type Definition
+          - name: CWE-22
+            title: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')
+            children:
+              - name: CWE-36
+                title: Absolute Path Traversal
+                children:
+                  - name: CWE-38
+                    title: Path Traversal  '\absolute\pathname\here'
+                  - name: CWE-39
+                    title: Path Traversal  'C dirname'
+                  - name: CWE-37
+                    title: Path Traversal  '/absolute/pathname/here'
+                  - name: CWE-40
+                    title: Path Traversal  '\\UNC\share\name\' (Windows UNC Share)
+              - name: CWE-23
+                title: Relative Path Traversal
+                children:
+                  - name: CWE-24
+                    title: Path Traversal  '../filedir'
+                  - name: CWE-29
+                    title: Path Traversal  '\..\filename'
+                  - name: CWE-31
+                    title: Path Traversal  'dir\..\..\filename'
+                  - name: CWE-25
+                    title: Path Traversal  '/../filedir'
+                  - name: CWE-28
+                    title: Path Traversal  '..\filedir'
+                  - name: CWE-30
+                    title: Path Traversal  '\dir\..\filename'
+                  - name: CWE-35
+                    title: Path Traversal  '.../...//'
+                  - name: CWE-32
+                    title: Path Traversal  '...' (Triple Dot)
+                  - name: CWE-26
+                    title: Path Traversal  '/dir/../filename'
+                  - name: CWE-33
+                    title: Path Traversal  '....' (Multiple Dot)
+                  - name: CWE-34
+                    title: Path Traversal  '....//'
+                  - name: CWE-27
+                    title: Path Traversal  'dir/../../filename'
+          - name: CWE-178
+            title: Improper Handling of Case Sensitivity
+          - name: CWE-386
+            title: Symbolic Name not Mapping to Correct Object
+          - name: CWE-98
+            title: Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion')
+          - name: CWE-66
+            title: Improper Handling of File Names that Identify Virtual Resources
+            children:
+              - name: CWE-72
+                title: Improper Handling of Apple HFS+ Alternate Data Stream Path
+              - name: CWE-69
+                title: Improper Handling of Windows   DATA Alternate Data Stream
+              - name: CWE-67
+                title: Improper Handling of Windows Device Names
+      - name: CWE-666
+        title: Operation on Resource in Wrong Phase of Lifetime
+        children:
+          - name: CWE-826
+            title: Premature Release of Resource During Expected Lifetime
+          - name: CWE-593
+            title: Authentication Bypass  OpenSSL CTX Object Modified after SSL Objects are Created
+          - name: CWE-415
+            title: Double Free
+          - name: CWE-672
+            title: Operation on a Resource after Expiration or Release
+            children:
+              - name: CWE-298
+                title: Improper Validation of Certificate Expiration
+              - name: CWE-825
+                title: Expired Pointer Dereference
+                children:
+                  - name: CWE-416
+                    title: Use After Free
+                  - name: CWE-415
+                    title: Double Free
+              - name: CWE-613
+                title: Insufficient Session Expiration
+              - name: CWE-324
+                title: Use of a Key Past its Expiration Date
+              - name: CWE-910
+                title: Use of Expired File Descriptor
+          - name: CWE-605
+            title: Multiple Binds to the Same Port
+      - name: CWE-1329
+        title: Reliance on Component That is Not Updateable
+        children:
+          - name: CWE-1277
+            title: Firmware Not Updateable
+          - name: CWE-1310
+            title: Missing Ability to Patch ROM Code
+      - name: CWE-501
+        title: Trust Boundary Violation
+      - name: CWE-662
+        title: Improper Synchronization
+        children:
+          - name: CWE-1058
+            title: Invokable Control Element in Multi-Thread Context with non-Final Static Storable or Member Element
+          - name: CWE-821
+            title: Incorrect Synchronization
+            children:
+              - name: CWE-1264
+                title: Hardware Logic with Insecure De-Synchronization between Control and Data Channels
+              - name: CWE-572
+                title: Call to Thread run() instead of start()
+              - name: CWE-574
+                title: EJB Bad Practices  Use of Synchronization Primitives
+              - name: CWE-1088
+                title: Synchronous Access of Remote Resource without Timeout
+          - name: CWE-820
+            title: Missing Synchronization
+            children:
+              - name: CWE-567
+                title: Unsynchronized Access to Shared Data in a Multithreaded Context
+              - name: CWE-543
+                title: Use of Singleton Pattern Without Synchronization in a Multithreaded Context
+              - name: CWE-1096
+                title: Singleton Class Instance Creation without Proper Locking or Synchronization
+          - name: CWE-663
+            title: Use of a Non-reentrant Function in a Concurrent Context
+            children:
+              - name: CWE-479
+                title: Signal Handler Use of a Non-reentrant Function
+              - name: CWE-558
+                title: Use of getlogin() in Multithreaded Application
+          - name: CWE-667
+            title: Improper Locking
+            children:
+              - name: CWE-412
+                title: Unrestricted Externally Accessible Lock
+              - name: CWE-413
+                title: Improper Resource Locking
+                children:
+                  - name: CWE-591
+                    title: Sensitive Data Storage in Improperly Locked Memory
+              - name: CWE-765
+                title: Multiple Unlocks of a Critical Resource
+              - name: CWE-764
+                title: Multiple Locks of a Critical Resource
+              - name: CWE-832
+                title: Unlock of a Resource that is not Locked
+              - name: CWE-414
+                title: Missing Lock Check
+              - name: CWE-609
+                title: Double-Checked Locking
+              - name: CWE-1233
+                title: Security-Sensitive Hardware Controls with Missing Lock Bit Protection
+              - name: CWE-1234
+                title: Hardware Internal or Debug Modes Allow Override of Locks
+              - name: CWE-1232
+                title: Improper Lock Behavior After Power State Transition
+              - name: CWE-833
+                title: Deadlock
+      - name: CWE-668
+        title: Exposure of Resource to Wrong Sphere
+        children:
+          - name: CWE-499
+            title: Serializable Class Containing Sensitive Data
+          - name: CWE-732
+            title: Incorrect Permission Assignment for Critical Resource
+            children:
+              - name: CWE-277
+                title: Insecure Inherited Permissions
+              - name: CWE-281
+                title: Improper Preservation of Permissions
+              - name: CWE-279
+                title: Incorrect Execution-Assigned Permissions
+              - name: CWE-1004
+                title: Sensitive Cookie Without 'HttpOnly' Flag
+              - name: CWE-766
+                title: Critical Data Element Declared Public
+              - name: CWE-276
+                title: Incorrect Default Permissions
+              - name: CWE-278
+                title: Insecure Preserved Inherited Permissions
+          - name: CWE-374
+            title: Passing Mutable Objects to an Untrusted Method
+          - name: CWE-22
+            title: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')
+            children:
+              - name: CWE-36
+                title: Absolute Path Traversal
+                children:
+                  - name: CWE-38
+                    title: Path Traversal  '\absolute\pathname\here'
+                  - name: CWE-39
+                    title: Path Traversal  'C dirname'
+                  - name: CWE-37
+                    title: Path Traversal  '/absolute/pathname/here'
+                  - name: CWE-40
+                    title: Path Traversal  '\\UNC\share\name\' (Windows UNC Share)
+              - name: CWE-23
+                title: Relative Path Traversal
+                children:
+                  - name: CWE-24
+                    title: Path Traversal  '../filedir'
+                  - name: CWE-29
+                    title: Path Traversal  '\..\filename'
+                  - name: CWE-31
+                    title: Path Traversal  'dir\..\..\filename'
+                  - name: CWE-25
+                    title: Path Traversal  '/../filedir'
+                  - name: CWE-28
+                    title: Path Traversal  '..\filedir'
+                  - name: CWE-30
+                    title: Path Traversal  '\dir\..\filename'
+                  - name: CWE-35
+                    title: Path Traversal  '.../...//'
+                  - name: CWE-32
+                    title: Path Traversal  '...' (Triple Dot)
+                  - name: CWE-26
+                    title: Path Traversal  '/dir/../filename'
+                  - name: CWE-33
+                    title: Path Traversal  '....' (Multiple Dot)
+                  - name: CWE-34
+                    title: Path Traversal  '....//'
+                  - name: CWE-27
+                    title: Path Traversal  'dir/../../filename'
+          - name: CWE-642
+            title: External Control of Critical State Data
+            children:
+              - name: CWE-15
+                title: External Control of System or Configuration Setting
+              - name: CWE-73
+                title: External Control of File Name or Path
+                children:
+                  - name: CWE-114
+                    title: Process Control
+              - name: CWE-472
+                title: External Control of Assumed-Immutable Web Parameter
+              - name: CWE-426
+                title: Untrusted Search Path
+              - name: CWE-565
+                title: Reliance on Cookies without Validation and Integrity Checking
+                children:
+                  - name: CWE-784
+                    title: Reliance on Cookies without Validation and Integrity Checking in a Security Decision
+          - name: CWE-522
+            title: Insufficiently Protected Credentials
+            children:
+              - name: CWE-260
+                title: Password in Configuration File
+                children:
+                  - name: CWE-258
+                    title: Empty Password in Configuration File
+                  - name: CWE-13
+                    title: ASP.NET Misconfiguration  Password in Configuration File
+                  - name: CWE-555
+                    title: J2EE Misconfiguration  Plaintext Password in Configuration File
+              - name: CWE-257
+                title: Storing Passwords in a Recoverable Format
+              - name: CWE-549
+                title: Missing Password Field Masking
+              - name: CWE-256
+                title: Plaintext Storage of a Password
+              - name: CWE-523
+                title: Unprotected Transport of Credentials
+              - name: CWE-261
+                title: Weak Encoding for Password
+          - name: CWE-927
+            title: Use of Implicit Intent for Sensitive Communication
+          - name: CWE-377
+            title: Insecure Temporary File
+            children:
+              - name: CWE-379
+                title: Creation of Temporary File in Directory with Insecure Permissions
+              - name: CWE-378
+                title: Creation of Temporary File With Insecure Permissions
+          - name: CWE-1189
+            title: Improper Isolation of Shared Resources on System-on-a-Chip (SoC)
+            children:
+              - name: CWE-1303
+                title: Non-Transparent Sharing of Microarchitectural Resources
+          - name: CWE-524
+            title: Use of Cache Containing Sensitive Information
+            children:
+              - name: CWE-525
+                title: Use of Web Browser Cache Containing Sensitive Information
+          - name: CWE-493
+            title: Critical Public Variable Without Final Modifier
+            children:
+              - name: CWE-500
+                title: Public Static Field Not Marked Final
+          - name: CWE-200
+            title: Exposure of Sensitive Information to an Unauthorized Actor
+            children:
+              - name: CWE-359
+                title: Exposure of Private Personal Information to an Unauthorized Actor
+              - name: CWE-538
+                title: Insertion of Sensitive Information into Externally-Accessible File or Directory
+                children:
+                  - name: CWE-651
+                    title: Exposure of WSDL File Containing Sensitive Information
+                  - name: CWE-540
+                    title: Inclusion of Sensitive Information in Source Code
+                    children:
+                      - name: CWE-615
+                        title: Inclusion of Sensitive Information in Source Code Comments
+                      - name: CWE-531
+                        title: Inclusion of Sensitive Information in Test Code
+                      - name: CWE-541
+                        title: Inclusion of Sensitive Information in an Include File
+                  - name: CWE-532
+                    title: Insertion of Sensitive Information into Log File
+              - name: CWE-209
+                title: Generation of Error Message Containing Sensitive Information
+                children:
+                  - name: CWE-210
+                    title: Self-generated Error Message Containing Sensitive Information
+                  - name: CWE-211
+                    title: Externally-Generated Error Message Containing Sensitive Information
+                    children:
+                      - name: CWE-537
+                        title: Java Runtime Error Message Containing Sensitive Information
+                      - name: CWE-536
+                        title: Servlet Runtime Error Message Containing Sensitive Information
+                      - name: CWE-535
+                        title: Exposure of Information Through Shell Error Message
+                  - name: CWE-550
+                    title: Server-generated Error Message Containing Sensitive Information
+              - name: CWE-1258
+                title: Exposure of Sensitive System Information Due to Uncleared Debug Information
+              - name: CWE-1273
+                title: Device Unlock Credential Sharing
+              - name: CWE-215
+                title: Insertion of Sensitive Information Into Debugging Code
+              - name: CWE-203
+                title: Observable Discrepancy
+                children:
+                  - name: CWE-208
+                    title: Observable Timing Discrepancy
+                    children:
+                      - name: CWE-1254
+                        title: Incorrect Comparison Logic Granularity
+                  - name: CWE-1303
+                    title: Non-Transparent Sharing of Microarchitectural Resources
+                  - name: CWE-1300
+                    title: Improper Protection of Physical Side Channels
+                    children:
+                      - name: CWE-1255
+                        title: Comparison Logic is Vulnerable to Power Side-Channel Attacks
+                  - name: CWE-205
+                    title: Observable Behavioral Discrepancy
+                    children:
+                      - name: CWE-206
+                        title: Observable Internal Behavioral Discrepancy
+                      - name: CWE-207
+                        title: Observable Behavioral Discrepancy With Equivalent Products
+                  - name: CWE-204
+                    title: Observable Response Discrepancy
+              - name: CWE-213
+                title: Exposure of Sensitive Information Due to Incompatible Policies
+              - name: CWE-497
+                title: Exposure of Sensitive System Information to an Unauthorized Control Sphere
+                children:
+                  - name: CWE-548
+                    title: Exposure of Information Through Directory Listing
+                  - name: CWE-214
+                    title: Invocation of Process Using Visible Sensitive Information
+              - name: CWE-201
+                title: Insertion of Sensitive Information Into Sent Data
+                children:
+                  - name: CWE-598
+                    title: Use of GET Request Method With Sensitive Query Strings
+              - name: CWE-1295
+                title: Debug Messages Revealing Unnecessary Information
+          - name: CWE-491
+            title: Public cloneable() Method Without Final ('Object Hijack')
+          - name: CWE-498
+            title: Cloneable Class Containing Sensitive Information
+          - name: CWE-402
+            title: Transmission of Private Resources into a New Sphere ('Resource Leak')
+            children:
+              - name: CWE-619
+                title: Dangling Database Cursor ('Cursor Injection')
+              - name: CWE-403
+                title: Exposure of File Descriptor to Unintended Control Sphere ('File Descriptor Leak')
+          - name: CWE-427
+            title: Uncontrolled Search Path Element
+          - name: CWE-583
+            title: finalize() Method Declared Public
+          - name: CWE-428
+            title: Unquoted Search Path or Element
+          - name: CWE-8
+            title: J2EE Misconfiguration  Entity Bean Declared Remote
+          - name: CWE-1327
+            title: Binding to an Unrestricted IP Address
+          - name: CWE-1331
+            title: Improper Isolation of Shared Resources in Network On Chip (NoC)
+          - name: CWE-582
+            title: Array Declared Public, Final, and Static
+          - name: CWE-552
+            title: Files or Directories Accessible to External Parties
+            children:
+              - name: CWE-527
+                title: Exposure of Version-Control Repository to an Unauthorized Control Sphere
+              - name: CWE-529
+                title: Exposure of Access Control List Files to an Unauthorized Control Sphere
+              - name: CWE-220
+                title: Storage of File With Sensitive Data Under FTP Root
+              - name: CWE-528
+                title: Exposure of Core Dump File to an Unauthorized Control Sphere
+              - name: CWE-530
+                title: Exposure of Backup File to an Unauthorized Control Sphere
+              - name: CWE-219
+                title: Storage of File with Sensitive Data Under Web Root
+                children:
+                  - name: CWE-433
+                    title: Unparsed Raw Web Content Delivery
+              - name: CWE-553
+                title: Command Shell in Externally Accessible Directory
+              - name: CWE-539
+                title: Use of Persistent Cookies Containing Sensitive Information
+          - name: CWE-134
+            title: Use of Externally-Controlled Format String
+          - name: CWE-488
+            title: Exposure of Data Element to Wrong Session
+          - name: CWE-767
+            title: Access to Critical Private Variable via Public Method
+          - name: CWE-1282
+            title: Assumed-Immutable Data is Stored in Writable Memory
+          - name: CWE-608
+            title: Struts  Non-private Field in ActionForm Class
+          - name: CWE-492
+            title: Use of Inner Class Containing Sensitive Data
+          - name: CWE-375
+            title: Returning a Mutable Object to an Untrusted Caller
+      - name: CWE-400
+        title: Uncontrolled Resource Consumption
+        children:
+          - name: CWE-770
+            title: Allocation of Resources Without Limits or Throttling
+            children:
+              - name: CWE-789
+                title: Memory Allocation with Excessive Size Value
+              - name: CWE-774
+                title: Allocation of File Descriptors or Handles Without Limits or Throttling
+              - name: CWE-1325
+                title: Improperly Controlled Sequential Memory Allocation
+          - name: CWE-779
+            title: Logging of Excessive Data
+          - name: CWE-920
+            title: Improper Restriction of Power Consumption
+          - name: CWE-1246
+            title: Improper Write Handling in Limited-write Non-Volatile Memories
+          - name: CWE-405
+            title: Asymmetric Resource Consumption (Amplification)
+            children:
+              - name: CWE-1084
+                title: Invokable Control Element with Excessive File or Data Access Operations
+              - name: CWE-1073
+                title: Non-SQL Invokable Control Element with Excessive Number of Data Resource Accesses
+              - name: CWE-1094
+                title: Excessive Index Range Scan for a Data Resource
+              - name: CWE-776
+                title: Improper Restriction of Recursive Entity References in DTDs ('XML Entity Expansion')
+              - name: CWE-408
+                title: Incorrect Behavior Order  Early Amplification
+              - name: CWE-1050
+                title: Excessive Platform Resource Consumption within a Loop
+              - name: CWE-1089
+                title: Large Data Table with Excessive Number of Indices
+              - name: CWE-1176
+                title: Inefficient CPU Computation
+                children:
+                  - name: CWE-1049
+                    title: Excessive Data Query Operations in a Large Data Table
+                  - name: CWE-1063
+                    title: Creation of Class Instance within a Static Code Block
+                  - name: CWE-1042
+                    title: Static Member Data Element outside of a Singleton Class Element
+                  - name: CWE-1067
+                    title: Excessive Execution of Sequential Searches of Data Resource
+                  - name: CWE-1046
+                    title: Creation of Immutable Text Using String Concatenation
+              - name: CWE-406
+                title: Insufficient Control of Network Message Volume (Network Amplification)
+              - name: CWE-409
+                title: Improper Handling of Highly Compressed Data (Data Amplification)
+              - name: CWE-407
+                title: Inefficient Algorithmic Complexity
+                children:
+                  - name: CWE-1333
+                    title: Inefficient Regular Expression Complexity
+              - name: CWE-1072
+                title: Data Resource Access without Use of Connection Pooling
+          - name: CWE-771
+            title: Missing Reference to Active Allocated Resource
+            children:
+              - name: CWE-773
+                title: Missing Reference to Active File Descriptor or Handle
+          - name: CWE-1235
+            title: Incorrect Use of Autoboxing and Unboxing for Performance Critical Operations
+      - name: CWE-372
+        title: Incomplete Internal State Distinction
+      - name: CWE-665
+        title: Improper Initialization
+        children:
+          - name: CWE-908
+            title: Use of Uninitialized Resource
+            children:
+              - name: CWE-457
+                title: Use of Uninitialized Variable
+          - name: CWE-770
+            title: Allocation of Resources Without Limits or Throttling
+            children:
+              - name: CWE-789
+                title: Memory Allocation with Excessive Size Value
+              - name: CWE-774
+                title: Allocation of File Descriptors or Handles Without Limits or Throttling
+              - name: CWE-1325
+                title: Improperly Controlled Sequential Memory Allocation
+          - name: CWE-1279
+            title: Cryptographic Operations are run Before Supporting Units are Ready
+          - name: CWE-909
+            title: Missing Initialization of Resource
+            children:
+              - name: CWE-1271
+                title: Uninitialized Value on Reset for Registers Holding Security Settings
+              - name: CWE-456
+                title: Missing Initialization of a Variable
+          - name: CWE-1419
+            title: Incorrect Initialization of Resource
+            children:
+              - name: CWE-1221
+                title: Incorrect Register Defaults or Module Parameters
+              - name: CWE-454
+                title: External Initialization of Trusted Variables or Data Stores
+              - name: CWE-1052
+                title: Excessive Use of Hard-Coded Literals in Initialization
+              - name: CWE-1188
+                title: Initialization of a Resource with an Insecure Default
+                children:
+                  - name: CWE-453
+                    title: Insecure Default Variable Initialization
+              - name: CWE-1051
+                title: Initialization with Hard-Coded Network Resource Configuration Data
+          - name: CWE-455
+            title: Non-exit on Failed Initialization
+      - name: CWE-221
+        title: Information Loss or Omission
+        children:
+          - name: CWE-224
+            title: Obscured Security-relevant Information by Alternate Name
+          - name: CWE-397
+            title: Declaration of Throws for Generic Exception
+          - name: CWE-451
+            title: User Interface (UI) Misrepresentation of Critical Information
+            children:
+              - name: CWE-1007
+                title: Insufficient Visual Distinction of Homoglyphs Presented to User
+              - name: CWE-1021
+                title: Improper Restriction of Rendered UI Layers or Frames
+          - name: CWE-356
+            title: Product UI does not Warn User of Unsafe Actions
+          - name: CWE-396
+            title: Declaration of Catch for Generic Exception
+          - name: CWE-223
+            title: Omission of Security-relevant Information
+            children:
+              - name: CWE-778
+                title: Insufficient Logging
+          - name: CWE-222
+            title: Truncation of Security-relevant Information
+      - name: CWE-495
+        title: Private Data Structure Returned From A Public Method
+      - name: CWE-911
+        title: Improper Update of Reference Count
+      - name: CWE-404
+        title: Improper Resource Shutdown or Release
+        children:
+          - name: CWE-299
+            title: Improper Check for Certificate Revocation
+            children:
+              - name: CWE-370
+                title: Missing Check for Certificate Revocation after Initial Check
+          - name: CWE-459
+            title: Incomplete Cleanup
+            children:
+              - name: CWE-568
+                title: finalize() Method Without super.finalize()
+              - name: CWE-226
+                title: Sensitive Information in Resource Not Removed Before Reuse
+                children:
+                  - name: CWE-1342
+                    title: Information Exposure through Microarchitectural State after Transient Execution
+                  - name: CWE-1301
+                    title: Insufficient or Incomplete Data Removal within Hardware Component
+                    children:
+                      - name: CWE-1330
+                        title: Remanent Data Readable after Memory Erase
+                  - name: CWE-1239
+                    title: Improper Zeroization of Hardware Register
+                  - name: CWE-1272
+                    title: Sensitive Information Uncleared Before Debug/Power State Transition
+                  - name: CWE-244
+                    title: Improper Clearing of Heap Memory Before Release ('Heap Inspection')
+              - name: CWE-460
+                title: Improper Cleanup on Thrown Exception
+          - name: CWE-763
+            title: Release of Invalid Pointer or Reference
+            children:
+              - name: CWE-762
+                title: Mismatched Memory Management Routines
+                children:
+                  - name: CWE-590
+                    title: Free of Memory not on the Heap
+              - name: CWE-761
+                title: Free of Pointer not at Start of Buffer
+          - name: CWE-1266
+            title: Improper Scrubbing of Sensitive Data from Decommissioned Device
+          - name: CWE-772
+            title: Missing Release of Resource after Effective Lifetime
+            children:
+              - name: CWE-1091
+                title: Use of Object without Invoking Destructor Method
+              - name: CWE-401
+                title: Missing Release of Memory after Effective Lifetime
+              - name: CWE-775
+                title: Missing Release of File Descriptor or Handle after Effective Lifetime
+      - name: CWE-610
+        title: Externally Controlled Reference to a Resource in Another Sphere
+        children:
+          - name: CWE-15
+            title: External Control of System or Configuration Setting
+          - name: CWE-441
+            title: Unintended Proxy or Intermediary ('Confused Deputy')
+            children:
+              - name: CWE-1021
+                title: Improper Restriction of Rendered UI Layers or Frames
+              - name: CWE-918
+                title: Server-Side Request Forgery (SSRF)
+          - name: CWE-73
+            title: External Control of File Name or Path
+            children:
+              - name: CWE-114
+                title: Process Control
+          - name: CWE-384
+            title: Session Fixation
+          - name: CWE-601
+            title: URL Redirection to Untrusted Site ('Open Redirect')
+          - name: CWE-611
+            title: Improper Restriction of XML External Entity Reference
+          - name: CWE-470
+            title: Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')
+      - name: CWE-487
+        title: Reliance on Package-level Scope
+  - name: CWE-284
+    title: Improper Access Control
+    children:
+      - name: CWE-1315
+        title: Improper Setting of Bus Controlling Capability in Fabric End-point
+      - name: CWE-269
+        title: Improper Privilege Management
+        children:
+          - name: CWE-267
+            title: Privilege Defined With Unsafe Actions
+            children:
+              - name: CWE-623
+                title: Unsafe ActiveX Control Marked Safe For Scripting
+          - name: CWE-274
+            title: Improper Handling of Insufficient Privileges
+          - name: CWE-250
+            title: Execution with Unnecessary Privileges
+          - name: CWE-268
+            title: Privilege Chaining
+          - name: CWE-648
+            title: Incorrect Use of Privileged APIs
+          - name: CWE-271
+            title: Privilege Dropping / Lowering Errors
+            children:
+              - name: CWE-273
+                title: Improper Check for Dropped Privileges
+              - name: CWE-272
+                title: Least Privilege Violation
+          - name: CWE-270
+            title: Privilege Context Switching Error
+          - name: CWE-266
+            title: Incorrect Privilege Assignment
+            children:
+              - name: CWE-9
+                title: J2EE Misconfiguration  Weak Access Permissions for EJB Methods
+              - name: CWE-556
+                title: ASP.NET Misconfiguration  Use of Identity Impersonation
+              - name: CWE-1022
+                title: Use of Web Link to Untrusted Target with window.opener Access
+              - name: CWE-520
+                title: .NET Misconfiguration  Use of Impersonation
+      - name: CWE-1316
+        title: Fabric-Address Map Allows Programming of Unwarranted Overlaps of Protected and Unprotected Ranges
+      - name: CWE-1274
+        title: Improper Access Control for Volatile Memory Containing Boot Code
+      - name: CWE-1296
+        title: Incorrect Chaining or Granularity of Debug Components
+      - name: CWE-1191
+        title: On-Chip Debug and Test Interface With Improper Access Control
+      - name: CWE-1233
+        title: Security-Sensitive Hardware Controls with Missing Lock Bit Protection
+      - name: CWE-285
+        title: Improper Authorization
+        children:
+          - name: CWE-732
+            title: Incorrect Permission Assignment for Critical Resource
+            children:
+              - name: CWE-277
+                title: Insecure Inherited Permissions
+              - name: CWE-281
+                title: Improper Preservation of Permissions
+              - name: CWE-279
+                title: Incorrect Execution-Assigned Permissions
+              - name: CWE-1004
+                title: Sensitive Cookie Without 'HttpOnly' Flag
+              - name: CWE-766
+                title: Critical Data Element Declared Public
+              - name: CWE-276
+                title: Incorrect Default Permissions
+              - name: CWE-278
+                title: Insecure Preserved Inherited Permissions
+          - name: CWE-862
+            title: Missing Authorization
+            children:
+              - name: CWE-425
+                title: Direct Request ('Forced Browsing')
+              - name: CWE-638
+                title: Not Using Complete Mediation
+                children:
+                  - name: CWE-424
+                    title: Improper Protection of Alternate Path
+                    children:
+                      - name: CWE-425
+                        title: Direct Request ('Forced Browsing')
+              - name: CWE-939
+                title: Improper Authorization in Handler for Custom URL Scheme
+              - name: CWE-1314
+                title: Missing Write Protection for Parametric Data Values
+          - name: CWE-1256
+            title: Improper Restriction of Software Interfaces to Hardware Features
+          - name: CWE-1328
+            title: Security Version Number Mutable to Older Versions
+          - name: CWE-926
+            title: Improper Export of Android Application Components
+          - name: CWE-863
+            title: Incorrect Authorization
+            children:
+              - name: CWE-639
+                title: Authorization Bypass Through User-Controlled Key
+                children:
+                  - name: CWE-566
+                    title: Authorization Bypass Through User-Controlled SQL Primary Key
+              - name: CWE-551
+                title: Incorrect Behavior Order  Authorization Before Parsing and Canonicalization
+              - name: CWE-804
+                title: Guessable CAPTCHA
+              - name: CWE-1244
+                title: Internal Asset Exposed to Unsafe Debug Access Level or State
+              - name: CWE-647
+                title: Use of Non-Canonical URL Paths for Authorization Decisions
+              - name: CWE-942
+                title: Permissive Cross-domain Policy with Untrusted Domains
+          - name: CWE-927
+            title: Use of Implicit Intent for Sensitive Communication
+          - name: CWE-1230
+            title: Exposure of Sensitive Information Through Metadata
+            children:
+              - name: CWE-612
+                title: Improper Authorization of Index Containing Sensitive Information
+              - name: CWE-202
+                title: Exposure of Sensitive Information Through Data Queries
+          - name: CWE-1297
+            title: Unprotected Confidential Information on Device is Accessible by OSAT Vendors
+          - name: CWE-552
+            title: Files or Directories Accessible to External Parties
+            children:
+              - name: CWE-527
+                title: Exposure of Version-Control Repository to an Unauthorized Control Sphere
+              - name: CWE-529
+                title: Exposure of Access Control List Files to an Unauthorized Control Sphere
+              - name: CWE-220
+                title: Storage of File With Sensitive Data Under FTP Root
+              - name: CWE-528
+                title: Exposure of Core Dump File to an Unauthorized Control Sphere
+              - name: CWE-530
+                title: Exposure of Backup File to an Unauthorized Control Sphere
+              - name: CWE-219
+                title: Storage of File with Sensitive Data Under Web Root
+                children:
+                  - name: CWE-433
+                    title: Unparsed Raw Web Content Delivery
+              - name: CWE-553
+                title: Command Shell in Externally Accessible Directory
+              - name: CWE-539
+                title: Use of Persistent Cookies Containing Sensitive Information
+      - name: CWE-1270
+        title: Generation of Incorrect Security Tokens
+      - name: CWE-1259
+        title: Improper Restriction of Security Token Assignment
+      - name: CWE-923
+        title: Improper Restriction of Communication Channel to Intended Endpoints
+        children:
+          - name: CWE-419
+            title: Unprotected Primary Channel
+          - name: CWE-941
+            title: Incorrectly Specified Destination in a Communication Channel
+          - name: CWE-291
+            title: Reliance on IP Address for Authentication
+          - name: CWE-420
+            title: Unprotected Alternate Channel
+            children:
+              - name: CWE-1299
+                title: Missing Protection Mechanism for Alternate Hardware Interface
+              - name: CWE-422
+                title: Unprotected Windows Messaging Channel ('Shatter')
+              - name: CWE-421
+                title: Race Condition During Access to Alternate Channel
+          - name: CWE-297
+            title: Improper Validation of Certificate with Host Mismatch
+          - name: CWE-940
+            title: Improper Verification of Source of a Communication Channel
+            children:
+              - name: CWE-925
+                title: Improper Verification of Intent by Broadcast Receiver
+          - name: CWE-1275
+            title: Sensitive Cookie with Improper SameSite Attribute
+          - name: CWE-942
+            title: Permissive Cross-domain Policy with Untrusted Domains
+          - name: CWE-300
+            title: Channel Accessible by Non-Endpoint
+      - name: CWE-1313
+        title: Hardware Allows Activation of Test or Debug Logic at Runtime
+      - name: CWE-1312
+        title: Missing Protection for Mirrored Regions in On-Chip Fabric Firewall
+      - name: CWE-286
+        title: Incorrect User Management
+        children:
+          - name: CWE-842
+            title: Placement of User into Incorrect Group
+      - name: CWE-1276
+        title: Hardware Child Block Incorrectly Connected to Parent System
+      - name: CWE-749
+        title: Exposed Dangerous Method or Function
+        children:
+          - name: CWE-618
+            title: Exposed Unsafe ActiveX Method
+          - name: CWE-782
+            title: Exposed IOCTL with Insufficient Access Control
+      - name: CWE-1268
+        title: Policy Privileges are not Assigned Consistently Between Control and Data Agents
+      - name: CWE-1304
+        title: Improperly Preserved Integrity of Hardware Configuration State During a Power Save/Restore Operation
+      - name: CWE-346
+        title: Origin Validation Error
+        children:
+          - name: CWE-940
+            title: Improper Verification of Source of a Communication Channel
+            children:
+              - name: CWE-925
+                title: Improper Verification of Intent by Broadcast Receiver
+          - name: CWE-1385
+            title: Missing Origin Validation in WebSockets
+      - name: CWE-287
+        title: Improper Authentication
+        children:
+          - name: CWE-1390
+            title: Weak Authentication
+            children:
+              - name: CWE-290
+                title: Authentication Bypass by Spoofing
+                children:
+                  - name: CWE-350
+                    title: Reliance on Reverse DNS Resolution for a Security-Critical Action
+                  - name: CWE-293
+                    title: Using Referer Field for Authentication
+                  - name: CWE-291
+                    title: Reliance on IP Address for Authentication
+              - name: CWE-263
+                title: Password Aging with Long Expiration
+              - name: CWE-289
+                title: Authentication Bypass by Alternate Name
+              - name: CWE-309
+                title: Use of Password System for Primary Authentication
+              - name: CWE-522
+                title: Insufficiently Protected Credentials
+                children:
+                  - name: CWE-260
+                    title: Password in Configuration File
+                    children:
+                      - name: CWE-258
+                        title: Empty Password in Configuration File
+                      - name: CWE-13
+                        title: ASP.NET Misconfiguration  Password in Configuration File
+                      - name: CWE-555
+                        title: J2EE Misconfiguration  Plaintext Password in Configuration File
+                  - name: CWE-257
+                    title: Storing Passwords in a Recoverable Format
+                  - name: CWE-549
+                    title: Missing Password Field Masking
+                  - name: CWE-256
+                    title: Plaintext Storage of a Password
+                  - name: CWE-523
+                    title: Unprotected Transport of Credentials
+                  - name: CWE-261
+                    title: Weak Encoding for Password
+              - name: CWE-294
+                title: Authentication Bypass by Capture-replay
+              - name: CWE-603
+                title: Use of Client-Side Authentication
+              - name: CWE-620
+                title: Unverified Password Change
+              - name: CWE-305
+                title: Authentication Bypass by Primary Weakness
+              - name: CWE-836
+                title: Use of Password Hash Instead of Password for Authentication
+              - name: CWE-1391
+                title: Use of Weak Credentials
+                children:
+                  - name: CWE-798
+                    title: Use of Hard-coded Credentials
+                    children:
+                      - name: CWE-321
+                        title: Use of Hard-coded Cryptographic Key
+                      - name: CWE-259
+                        title: Use of Hard-coded Password
+                  - name: CWE-1392
+                    title: Use of Default Credentials
+                    children:
+                      - name: CWE-1393
+                        title: Use of Default Password
+                      - name: CWE-1394
+                        title: Use of Default Cryptographic Key
+                  - name: CWE-521
+                    title: Weak Password Requirements
+                    children:
+                      - name: CWE-258
+                        title: Empty Password in Configuration File
+              - name: CWE-262
+                title: Not Using Password Aging
+              - name: CWE-307
+                title: Improper Restriction of Excessive Authentication Attempts
+              - name: CWE-593
+                title: Authentication Bypass  OpenSSL CTX Object Modified after SSL Objects are Created
+              - name: CWE-301
+                title: Reflection Attack in an Authentication Protocol
+              - name: CWE-804
+                title: Guessable CAPTCHA
+              - name: CWE-640
+                title: Weak Password Recovery Mechanism for Forgotten Password
+              - name: CWE-302
+                title: Authentication Bypass by Assumed-Immutable Data
+              - name: CWE-308
+                title: Use of Single-factor Authentication
+              - name: CWE-303
+                title: Incorrect Implementation of Authentication Algorithm
+                children:
+                  - name: CWE-304
+                    title: Missing Critical Step in Authentication
+          - name: CWE-295
+            title: Improper Certificate Validation
+            children:
+              - name: CWE-298
+                title: Improper Validation of Certificate Expiration
+              - name: CWE-299
+                title: Improper Check for Certificate Revocation
+                children:
+                  - name: CWE-370
+                    title: Missing Check for Certificate Revocation after Initial Check
+              - name: CWE-599
+                title: Missing Validation of OpenSSL Certificate
+              - name: CWE-296
+                title: Improper Following of a Certificate's Chain of Trust
+              - name: CWE-297
+                title: Improper Validation of Certificate with Host Mismatch
+          - name: CWE-645
+            title: Overly Restrictive Account Lockout Mechanism
+          - name: CWE-306
+            title: Missing Authentication for Critical Function
+            children:
+              - name: CWE-322
+                title: Key Exchange without Entity Authentication
+              - name: CWE-288
+                title: Authentication Bypass Using an Alternate Path or Channel
+                children:
+                  - name: CWE-425
+                    title: Direct Request ('Forced Browsing')
+                  - name: CWE-1299
+                    title: Missing Protection Mechanism for Alternate Hardware Interface
+      - name: CWE-1323
+        title: Improper Management of Sensitive Trace Data
+      - name: CWE-1334
+        title: Unauthorized Error Injection Can Degrade Hardware Redundancy
+      - name: CWE-1252
+        title: CPU Hardware Not Configured to Support Exclusivity of Write and Execute Operations
+      - name: CWE-1292
+        title: Incorrect Conversion of Security Identifiers
+      - name: CWE-1294
+        title: Insecure Security Identifier Mechanism
+        children:
+          - name: CWE-1302
+            title: Missing Security Identifier
+      - name: CWE-1320
+        title: Improper Protection for Outbound Error Messages and Alert Signals
+      - name: CWE-1220
+        title: Insufficient Granularity of Access Control
+        children:
+          - name: CWE-1222
+            title: Insufficient Granularity of Address Regions Protected by Register Locks
+      - name: CWE-1280
+        title: Access Control Check Implemented After Asset is Accessed
+      - name: CWE-1283
+        title: Mutable Attestation or Measurement Reporting Data
+      - name: CWE-1311
+        title: Improper Translation of Security Attributes by Fabric Bridge
+      - name: CWE-1263
+        title: Improper Physical Access Control
+        children:
+          - name: CWE-1243
+            title: Sensitive Non-Volatile Information Not Protected During Debug
+      - name: CWE-1267
+        title: Policy Uses Obsolete Encoding
+      - name: CWE-1231
+        title: Improper Prevention of Lock Bit Modification
+      - name: CWE-1257
+        title: Improper Access Control Applied to Mirrored or Aliased Memory Regions
+      - name: CWE-1317
+        title: Improper Access Control in Fabric Bridge
+      - name: CWE-282
+        title: Improper Ownership Management
+        children:
+          - name: CWE-708
+            title: Incorrect Ownership Assignment
+          - name: CWE-283
+            title: Unverified Ownership
+      - name: CWE-1242
+        title: Inclusion of Undocumented Features or Chicken Bits
+      - name: CWE-1262
+        title: Improper Access Control for Register Interface
+      - name: CWE-1290
+        title: Incorrect Decoding of Security Identifiers
+      - name: CWE-1224
+        title: Improper Restriction of Write-Once Bit Fields
+      - name: CWE-1260
+        title: Improper Handling of Overlap Between Protected Memory Ranges
