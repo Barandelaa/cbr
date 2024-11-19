@@ -15,8 +15,6 @@ def main(args):
 
     # incializar tasador
     tasador = TasadorCBR(base_de_casos, num_casos_similares=args.num_similares, 
-                                        taxonomia_colors=args.colores,
-                                        taxonomia_manufacturer=args.fabricantes,
                                         debug=args.debug)
 
     # procesar casos a resolver
@@ -56,19 +54,15 @@ def extraer_casos_a_resolver(base_de_casos, cantidad):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Ejemplo de uso del modelo CBR para tasaciones de coches')
     parser.add_argument('-b', '--base_casos',
-                        type=str, default='datos/base_de_casos.json',  required=False,
+                        type=str, default='datos/cve.base_de_casos.json',  required=False,
                         help='Path al fichero JSON con la base de casos (lista de objetos coche)' )
     parser.add_argument('-r', '--casos',
-                        type=str, default='datos/casos_a_resolver.json', required=False,
+                        type=str, default='datos/cve.casos_a_resolver.json', required=False,
                         help='Path al fichero JSON con los casos a resolver (lista de objetos coche)',
                         )
-    parser.add_argument('-c', '--colores',
-                        type=str, default='datos/paint_color.yaml', required=False,
+    parser.add_argument('-c', '--cwe',
+                        type=str, default='datos/jerarquia_cwe_1000.yaml', required=False,
                         help='Path al fichero YAML con la taxonomia de colores',
-                        )
-    parser.add_argument('-f', '--fabricantes',
-                        type=str, default='datos/cars-taxonomy.yaml', required=False,
-                        help='Path al fichero YAML con la taxonomia de fabricantes',
                         )
     parser.add_argument('-n', '--num_similares',
                         type=int, default=5, required=False,  
